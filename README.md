@@ -258,7 +258,7 @@ Luminile se vor porni daca afara este intuneric si daca cineva este acasa. Totus
 Alarma se va activa daca nimeni nu este acasa si fie este intuneric, fie fereastra este deschisa.
 
 Casa are multi senzori care primesc informatii:
-Valoarea temperaturii
+* Valoarea temperaturii
 * Daca este sau nu cineva acasa
 * Daca este sau nu intuneric afara
 * Daca este sau nu fereastra deschisa
