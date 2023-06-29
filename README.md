@@ -6,7 +6,6 @@
 ### 1. [LIVE] Scrie un program care sa citeasca de la tastatura numele tau, iar apoi sa afiseze mesajul “Salut”, urmat de numele tau.
 
 
-
 ### 2. Scrie un program care sa interschimbe valorile a doua variabile de tip int
 De exemplu, pentru valorile initiale: 
 ```json
@@ -162,9 +161,9 @@ va afisa in consola textul "numarul mai mare este 14", pentru ca Java concatenea
 HINT2: Ar putea exista cazuri la care nu ne-am gandit? Daca da, trateaza-le.
  
 ### 2. [LIVE] Produci software pentru un fierbator de apa. Citeste de la tastatura temperatura curenta a apei si:
-Var1: afiseaza un mesaj corespunzator daca temperatura este mai mare de 100 de grade (apa fierbe)
-Var2: afiseaza un mesaj corespunzator daca apa fierbe, si un alt mesaj corespunzator in caz contrar
-Var3: afiseaza un mesaj corespunzator daca temperatura este mai mare de 100 de grade (apa fierbe), un alt mesaj daca temperatura este mai mica decat 50 de grade (apa este in curs de fierbere) si un altul daca apa are temperatura intre 50 si 100 de grade (apa este aproape fiarta)
+* Var1: afiseaza un mesaj corespunzator daca temperatura este mai mare de 100 de grade (apa fierbe)
+* Var2: afiseaza un mesaj corespunzator daca apa fierbe, si un alt mesaj corespunzator in caz contrar
+* Var3: afiseaza un mesaj corespunzator daca temperatura este mai mare de 100 de grade (apa fierbe), un alt mesaj daca temperatura este mai mica decat 50 de grade (apa este in curs de fierbere) si un altul daca apa are temperatura intre 50 si 100 de grade (apa este aproape fiarta)
 
 ### 3.[LIVE] Citeste de la tastatura un caracter care reprezinta da sau nu. In functie de acest input, afiseaza in consola “de acord” sau “nu sunt de acord”.
 De exemplu, pentru:
@@ -187,9 +186,9 @@ Ai grija sa tratezi cazul in care se face impartire la 0.
 
 ### 6. Vrei sa determini BMI-ul (Body Mass Index) al unei persoane. Citeste de la tastatura greutatea si inaltimea unui om. Apoi calculeaza BMI-ul utilizand formula: “greutate / (inaltime * intaltime)”
 Apoi, daca BMI-ul este mai mic decat 18, 5 afiseaza in consola “esti sub greutatea normala”.
-Daca BMI-ul este intre 18.5 si 24.9, afiseaza in consola “ai greutatea normala”.
-Daca BMI-ul este intre 25 si 29.9, afiseaza in consola “esti peste greutatea normala”.
-Daca BMI-ule este mai mare deact 29.9, afiseaza in consola “esti obez”.
+* Daca BMI-ul este intre 18.5 si 24.9, afiseaza in consola “ai greutatea normala”.
+* Daca BMI-ul este intre 25 si 29.9, afiseaza in consola “esti peste greutatea normala”.
+* Daca BMI-ule este mai mare deact 29.9, afiseaza in consola “esti obez”.
 
 ### 7. Ai o aplicatie de bilete la cinema si vrei sa determini pretul unui bilet. Pretul normal este de 10 lei. Daca persoana este copil (are varsta mai mica decat 12 ani), sau pensionar (mai mult de 65 de ani), atunci pretul este de 5 lei. In fiecare marti, este un discount de 2 lei pentru toata lumea.
 Citeste de la tastatura varsta persoanei si ziua din saptamana, apoi afiseaza in consola pretul biletului.
@@ -219,9 +218,9 @@ int number = 9
 se va afisa in consola "fizz", pentru ca 9 se imparte exact doar la 3
  
 ### 10. Citeste 3 numere de la tastatura si scrie un program care sa printeze in consola:
-“toate numerele sunt egale”, daca toate numerele sunt egale
-“toate numerele sunt diferite”, daca toate numerele sunt diferite
-“cel putin doua sunt egale”, daca oricare doua numere dintre cele trei sunt egale 
+* “toate numerele sunt egale”, daca toate numerele sunt egale
+* “toate numerele sunt diferite”, daca toate numerele sunt diferite
+* “cel putin doua sunt egale”, daca oricare doua numere dintre cele trei sunt egale 
 De exemplu, pentru valorile initiale:
 ```json
 int a = 3
@@ -238,9 +237,9 @@ int year = 2020
 se va afisa in consola: "anul 2020 este bisect"
  
 ### 12. Citeste de la tastatura doua numere, guess si answer si creeaza un joc de ghicit:
-daca raspunsul este mai mic decat solutia (adica valoarea variabilei guess, afiseaza “nu ai ghicit, numarul este prea mic”
-daca raspunsul este mai mare decat solutia, afiseaza “nu ai ghicit, numarul este prea mare”
-daca raspunsul este egal cu solutia, afiseaza “ai ghicit” 
+* daca raspunsul este mai mic decat solutia (adica valoarea variabilei guess, afiseaza “nu ai ghicit, numarul este prea mic”
+* daca raspunsul este mai mare decat solutia, afiseaza “nu ai ghicit, numarul este prea mare”
+* daca raspunsul este egal cu solutia, afiseaza “ai ghicit” 
 De exemplu, pentru valorile initiale:
 ```json
 int guess = 7
@@ -260,11 +259,11 @@ Alarma se va activa daca nimeni nu este acasa si fie este intuneric, fie fereast
 
 Casa are multi senzori care primesc informatii:
 Valoarea temperaturii
-Daca este sau nu cineva acasa
-Daca este sau nu intuneric afara
-Daca este sau nu fereastra deschisa
-Daca persoana din casa doarme
-Daca este iarna
+* Daca este sau nu cineva acasa
+* Daca este sau nu intuneric afara
+* Daca este sau nu fereastra deschisa
+* Daca persoana din casa doarme
+* Daca este iarna
 
 Citeste de la tastatura valorile senzorilor si apoi implementeaza logica necesara.
 
@@ -279,22 +278,22 @@ au completat cel putin 2 cursuri in trecut si au un rating mediu mai mare decat 
 au recomandat plaftorma la cel putin 3 prieteni in trecut.
 
 Citeste de la tastatura urmatoarele informatii:
-Daca studentul a platit costul cursului sau nu
-Daca studentul are bursa sau nu
-Numarul de locuri disponibile la curs
-Daca perioada de inscrieri este deschisa sau nu
-Daca studentul are cont premium sau nu
-Numarul de cursuri completate in trecut de catre sutdent
-Rating-ul mediu obtinut de student
-Numarul de prieteni recomandati de student
+* Daca studentul a platit costul cursului sau nu
+* Daca studentul are bursa sau nu
+* Numarul de locuri disponibile la curs
+* Daca perioada de inscrieri este deschisa sau nu
+* Daca studentul are cont premium sau nu
+* Numarul de cursuri completate in trecut de catre sutdent
+* Rating-ul mediu obtinut de student
+* Numarul de prieteni recomandati de student
 
 Apoi implementeaza logica necesara
 
 ### 16. Dorim sa implementam logica unui semafor pentru masini.
 Avem urmatoarele scenarii:
-Daca lumina este verde, afisam in consola in consola faptul ca masinile circula. Apoi lumina trebuie sa devina galben
-Daca lumina este galben, afisam in consola faptul ca masinile se pregatesc sa opreasca. Apoi lumina trebuie sa devina rosu
-Daca lumina este rosu, afisam in consola faptul ca masinile s-au oprit. Apoi lumina trebuie sa devina verde
+* Daca lumina este verde, afisam in consola in consola faptul ca masinile circula. Apoi lumina trebuie sa devina galben
+* Daca lumina este galben, afisam in consola faptul ca masinile se pregatesc sa opreasca. Apoi lumina trebuie sa devina rosu
+* Daca lumina este rosu, afisam in consola faptul ca masinile s-au oprit. Apoi lumina trebuie sa devina verde
 
 Implementeaza codul care face toate verificarile in locul indicat din urmatoarea bucata de cod:
 
@@ -314,11 +313,11 @@ Implementeaza codul care face toate verificarile in locul indicat din urmatoarea
 
 ### 17. Dorim sa implementam logica unui lift.
 Trebuie sa tinem cont de urmatoarele conditii:
-Daca etajul curent este mai mic decat etajul dorit, afisam in consola faptul ca liftul urca
-Daca etajul curent este mai mare decat etajul dorit, afisam in consola faptul ca liftul coboara
-Daca etajul curent este acelasi cu etajul dorit, afisam in consola ca usile se deschis
-Liftul poate functiona doar daca nu este in mentenanta
-Daca liftul este la etajul 0 si nu este in mentenanta, afisam in consola ca usile sunt deschise (adica tot timpul usile raman deschise la parter)
+* Daca etajul curent este mai mic decat etajul dorit, afisam in consola faptul ca liftul urca
+* Daca etajul curent este mai mare decat etajul dorit, afisam in consola faptul ca liftul coboara
+* Daca etajul curent este acelasi cu etajul dorit, afisam in consola ca usile se deschis
+* Liftul poate functiona doar daca nu este in mentenanta
+* Daca liftul este la etajul 0 si nu este in mentenanta, afisam in consola ca usile sunt deschise (adica tot timpul usile raman deschise la parter)
 
 Citeste de la tastatura etajul curent, etajul dorit, si daca liftul este in mentenanta sau nu.
 Apoi implementeaza logica necesara.
