@@ -325,10 +325,10 @@ Apoi implementeaza logica necesara.
 
 ### 18. Dorim sa implementam logica unui semafor pentru masini, unde exista o trecere de pietoni.
 Trebuie sa luam in considerare urmatoarele scenarii:
-Daca semaforul este verde si nu asteapta niciun pieton, afisam in consola faptul ca masinile circula
-Daca semaforul este verde si exista pietoni care asteapta, afisam in consola faptul ca lumina se va schimba la rosu. Si dupa un delay, semaforul trebuie sa se schimbe la rosu
-Daca semaforul este rosu si inca exista pietoni care asteapta, afisam in consola faptul ca acum trec pietonii
-Daca semaforul este rosu si nu mai exista pietoni care asteapta, afisam in consola ca lumina se va schimba la verde. SI dupa un delay, semaforul trebuie sa se schimbe la verde.
+*Daca semaforul este verde si nu asteapta niciun pieton, afisam in consola faptul ca masinile circula
+*Daca semaforul este verde si exista pietoni care asteapta, afisam in consola faptul ca lumina se va schimba la rosu. Si dupa un delay, semaforul trebuie sa se schimbe la rosu
+*Daca semaforul este rosu si inca exista pietoni care asteapta, afisam in consola faptul ca acum trec pietonii
+*Daca semaforul este rosu si nu mai exista pietoni care asteapta, afisam in consola ca lumina se va schimba la verde. SI dupa un delay, semaforul trebuie sa se schimbe la verde.
 
 
 Citeste de la tastatura lumina semaforului pentru masini (trafficLight) si statusul pietonilor (arePedestriansWaiting).
