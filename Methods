@@ -13,3 +13,11 @@ Cauta pe Google o metoda deja implementata care sa faca inlocuirea.
 De exemplu, pentru mesajul introdus "Hello :) Goodbye :(", se va afisa in consola Hello 🙂 Goodbye 🙁
 Cauta pe Google o metoda deja implementata care sa faca inlocuirea.
 
+### 4. Scrie un program care sa construiasca o adresa de e-mail. Citeste de la tastatura numele si domeniul.
+De exemplu, pentru numele "stefan.olimpiu" si domeniul "gmail", functia va returna "stefan.olimpiu@gmail.com"
+
+### 5. Scrie un program care sa verifice daca un cuvant este intr-un text. 
+Citeste de la tastatura un String reprezetand un text si cuvantul pe care doresti sa il cauti
+De exempluu, pentru textul "eu sunt aici" si cuvantul "sunt", metoda va returna true pentru ca a gasit cuvantul "sunt" in text.
+Cauta pe Google o metoda deja implementata care sa faca verificarea pentru tine.
+
