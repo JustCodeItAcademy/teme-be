@@ -21,3 +21,4 @@ Citeste de la tastatura un String reprezetand un text si cuvantul pe care dorest
 De exempluu, pentru textul "eu sunt aici" si cuvantul "sunt", metoda va returna true pentru ca a gasit cuvantul "sunt" in text.
 Cauta pe Google o metoda deja implementata care sa faca verificarea pentru tine.
 
+
