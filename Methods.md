@@ -38,5 +38,5 @@ Atunci cand le apelezi, paseaza-le ca parametri niste valori citite de la tastat
 Un colet poate fi in 4 etape inainte de a ajunge la destinatie: preluare, procesare, trimitere, livrare.\
 Citeste de la tastatura numarul de identificare al coletului.\
 Creeaza cate o metoda pentru fiecare dintre etape, care sa returneze un mesaj cu starea pachetului.\
-De exemplu, metoda pentru etapa de preluare ar putea returna urmatorul mesaj: "Coletul cu numarul 32445 a fost preluat"\
+De exemplu, metoda pentru etapa de preluare ar putea returna urmatorul mesaj: "Coletul cu numarul 32445 a fost preluat".
 
