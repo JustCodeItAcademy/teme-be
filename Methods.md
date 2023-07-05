@@ -33,3 +33,10 @@ Metoda ar trebui sa creeze notificarea in functie de parametri, apoi sa afiseze 
 \
 Apeleaza apoi metodele sendNotificationText si sendNotificationEmail din metoda main. 
 Atunci cand le apelezi, paseaza-le ca parametri niste valori citite de la tastatura (mesajele notificarilor, cine le primeste si cine le trimite).
+
+### 7. Creaza un sistem de tracking pentru colete.
+Un colet poate fi in 4 etape inainte de a ajunge la destinatie: preluare, procesare, trimitere, livrare.\
+Citeste de la tastatura numarul de identificare al coletului.\
+Creeaza cate o metoda pentru fiecare dintre etape, care sa returneze un mesaj cu starea pachetului.\
+De exemplu, metoda pentru etapa de preluare ar putea returna urmatorul mesaj: "Coletul cu numarul 32445 a fost preluat"\
+
