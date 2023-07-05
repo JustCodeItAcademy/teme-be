@@ -21,4 +21,12 @@ Citeste de la tastatura un String reprezetand un text si cuvantul pe care dorest
 De exempluu, pentru textul "eu sunt aici" si cuvantul "sunt", metoda va returna true pentru ca a gasit cuvantul "sunt" in text.
 Cauta pe Google o metoda deja implementata care sa faca verificarea pentru tine.
 
-
+### 6. Scrie scheletul unui program care sa trimita notificari text sau prin e-mail.
+Defineste o metoda cu numele "createNotification", care sa accepte ca si parametri mesajul notificarii, cine a trimis notificarea, si cine va primi notificare.
+Metoda ar trebui sa returneze textul notificarii.
+Defineste o metoda cu numele sendNotificationText, care sa accepte ca si parametri mesajul notificarii, cine a trimis notificarea, si cine va primi notificare.
+Metoda ar trebui sa creeze notificarea in functie de parametri, apoi sa afiseze la consola: "notificarea a fost trimisa prin mesaj", urmat de textul notificarii.
+Defineste o metoda cu numele sendNotificationEmail, care sa accepte ca si parametri mesajul notificarii, cine a trimis notificarea, si cine va primi notificare.
+Metoda ar trebui sa creeze notificarea in functie de parametri, apoi sa afiseze la consola: "notificarea a fost trimisa prin e-mail", , urmat de textul notificarii.
+Apeleaza apoi metodele sendNotificationText si sendNotificationEmail din metoda main. 
+Paseaza ca parametri pentru cele doua metode niste valori citite de la tastatura (mesajele notificarilor, cine le primeste si cine le trimite).
