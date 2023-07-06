@@ -242,6 +242,12 @@ pentru a introduce un delay de 2 secunde acolo unde este cazul
 
 Ruleaza codul si observa cum se desfasoara traficul.
 
-### 23. Citeste de la tastatura 3 numere si afiseaza in consola cel mai mare(maximul) si cel mai mic (minimul) dintre cele 3 numere.
+### 23. Creeaza un automat de cafea. 
+Automatul are 3 tipuri de cafea: espresso, care costa 5 lei, latte, care costa 7 lei si cappuccino, care costa 6 lei.\
+Clientul poate adauga extra lapte pentru 1 leu, sau extra zahar in mod gratuit.\
+Citeste de la tastatura tipul cafelei si daca clientul doreste extra lapte sau extra zahar.\
+Apoi afiseaza in consola pretul total.\
 
-### 24. Citeste de la tastatura 3 numere si afiseaza-le in ordine crescatoare in consola. Foloseste doar instructiunea IF
+### 24. Citeste de la tastatura 3 numere si afiseaza in consola cel mai mare(maximul) si cel mai mic (minimul) dintre cele 3 numere.
+
+### 25. Citeste de la tastatura 3 numere si afiseaza-le in ordine crescatoare in consola. Foloseste doar instructiunea IF
