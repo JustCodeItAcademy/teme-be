@@ -105,11 +105,33 @@ int answer = 8
 ```  
 se va afisa in consola: "nu ai ghicit, numarul este prea mare"
 
-### 13. Scrie un program care citeste de la tastatura 3 numere, reprezentand lugimile laturilor unui triunghi.
+### 13. Citeste de la tastatura un numar intre -10 si 10. 
+* Daca valoarea citita este 10, -10, sau 0, printeaza un mesaj corespunzator (ex: "numarul este -10", in caz ca valoarea citita este -10)
+* Altfel, printeaza fie "numarul este pozitiv", fie "numarul este negativ", dupa caz
+
+### 14. Scrie un program care citeste de la tastatura 3 numere, reprezentand lugimile laturilor unui triunghi.
 Trebuie sa afisezi in consola daca cele 3 laturi formeaza un triunghi valid, sau nu.
 Un triunghi este valid daca suma lungimilor oricaror doua laturi este mai mare decat lugimea celei de-a 3-a laturi.
 
-### 14. Vrem sa construim un sistem “smart home”. Sistemul controleaza caldura, lumina, si alarma.
+### 15. Scrie un program care intreaba utilizatorul care este parola secreta. 
+Citeste de la tastatura raspunsul utilizatorului.\
+* Printeaza apoi "corect", daca utilizatorul a raspuns cu 42, "forty-two" sau "forty-two", indiferent daca a folosit litere mari sau mici
+* Atlfel, printeaza "incorect"
+
+### 16. Angajatii unei banci trebuie sa intampine clientii cu salutul "Buna ziua", altfel vor fi penalizati.
+Scrie un program care citeste de la tastatura salutul folosit.
+* Daca salutul incepe cu "Buna ziua", atunci printeaza "nicio penalizare"
+* Daca salutul incepe cu "B", dar nu este "Buna ziua", atunci printeaza "20 de lei penalizare"
+* Daca salutul nici macar nu incepe cu "B", printeaza "100 de lei penalizare"
+Ignora literele mari si literele mici din salut. Ignora si orice spatii care apar inainte de primul cuvant din salut
+
+### 17. Scrie un program care sa spuna ce format media are un fisier, in functie de extensia lui.
+Citeste de la tastatura numele fisierului.
+* Daca extensia fisierului este .jpg, .jpeg, sau .png, atunci fisierul este o imagine
+* Daca extensia fisierului este .webm, su .mp4, fisierul este un video.
+* Daca extensia fisierului este .zip, fisierul este o arhiva
+
+### 18. Vrem sa construim un sistem “smart home”. Sistemul controleaza caldura, lumina, si alarma.
 Trebuie sa tinem cont de urmatoarele conditii:
 Cladura se va porni daca temperatura este mai mica decat 20 de grade si fie este iarna, fie este cineva acasa
 Luminile se vor porni daca afara este intuneric si daca cineva este acasa. Totusi, daca persoana care este acasa doarme, atunci luminile nu se vor porni
@@ -125,7 +147,7 @@ Casa are multi senzori care primesc informatii:
 
 Citeste de la tastatura valorile senzorilor si apoi implementeaza logica necesara.
 
-### 15. Avem o platforma de cursuri online. 
+### 19. Avem o platforma de cursuri online. 
 Cursantii se pot inscrie la un curs daca indeplinesc toate urmatoarele 3 conditii:
 Au platit costul cursului sau au o bursa pentru curs
 Exista locuri disponibile in curs
@@ -147,7 +169,7 @@ Citeste de la tastatura urmatoarele informatii:
 
 Apoi implementeaza logica necesara
 
-### 16. Dorim sa implementam logica unui semafor pentru masini.
+### 20. Dorim sa implementam logica unui semafor pentru masini.
 Avem urmatoarele scenarii:
 * Daca lumina este verde, afisam in consola in consola faptul ca masinile circula. Apoi lumina trebuie sa devina galben
 * Daca lumina este galben, afisam in consola faptul ca masinile se pregatesc sa opreasca. Apoi lumina trebuie sa devina rosu
@@ -169,7 +191,7 @@ Implementeaza codul care face toate verificarile in locul indicat din urmatoarea
 
 ```  
 
-### 17. Dorim sa implementam logica unui lift.
+### 21. Dorim sa implementam logica unui lift.
 Trebuie sa tinem cont de urmatoarele conditii:
 * Daca etajul curent este mai mic decat etajul dorit, afisam in consola faptul ca liftul urca
 * Daca etajul curent este mai mare decat etajul dorit, afisam in consola faptul ca liftul coboara
@@ -180,7 +202,7 @@ Trebuie sa tinem cont de urmatoarele conditii:
 Citeste de la tastatura etajul curent, etajul dorit, si daca liftul este in mentenanta sau nu.
 Apoi implementeaza logica necesara.
 
-### 18. Dorim sa implementam logica unui semafor pentru masini, unde exista o trecere de pietoni.
+### 22. Dorim sa implementam logica unui semafor pentru masini, unde exista o trecere de pietoni.
 Trebuie sa luam in considerare urmatoarele scenarii:
 * Daca semaforul este verde si nu asteapta niciun pieton, afisam in consola faptul ca masinile circula
 * Daca semaforul este verde si exista pietoni care asteapta, afisam in consola faptul ca lumina se va schimba la rosu. Si dupa un delay, semaforul trebuie sa se schimbe la rosu
@@ -220,10 +242,6 @@ pentru a introduce un delay de 2 secunde acolo unde este cazul
 
 Ruleaza codul si observa cum se desfasoara traficul.
 
-### 18. Citeste de la tastatura un numar intre -10 si 10. 
-* Daca valoarea citita este 10, -10, sau 0, printeaza un mesaj corespunzator (ex: "numarul este -10", in caz ca valoarea citita este -10)
-* Altfel, printeaza fie "numarul este pozitiv", fie "numarul este negativ", dupa caz
+### 23. Citeste de la tastatura 3 numere si afiseaza in consola cel mai mare(maximul) si cel mai mic (minimul) dintre cele 3 numere.
 
-### 19. Citeste de la tastatura 3 numere si afiseaza in consola cel mai mare(maximul) si cel mai mic (minimul) dintre cele 3 numere.
-
-### 20. Citeste de la tastatura 3 numere si afiseaza-le in ordine crescatoare in consola. Foloseste doar instructiunea IF
+### 24. Citeste de la tastatura 3 numere si afiseaza-le in ordine crescatoare in consola. Foloseste doar instructiunea IF
