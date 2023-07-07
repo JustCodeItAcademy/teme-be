@@ -170,6 +170,7 @@ Citeste de la tastatura urmatoarele informatii:
 Apoi implementeaza logica necesara
 
 ### 20. Dorim sa implementam logica unui semafor pentru masini.
+Culorile posibile ale semaforului sunt verde, galben si rosu.
 Avem urmatoarele scenarii:
 * Daca lumina este verde, afisam in consola in consola faptul ca masinile circula. Apoi lumina trebuie sa devina galben
 * Daca lumina este galben, afisam in consola faptul ca masinile se pregatesc sa opreasca. Apoi lumina trebuie sa devina rosu
@@ -203,6 +204,7 @@ Citeste de la tastatura etajul curent, etajul dorit, si daca liftul este in ment
 Apoi implementeaza logica necesara.
 
 ### 22. Dorim sa implementam logica unui semafor pentru masini, unde exista o trecere de pietoni.
+Culorile posibile ale semaforului sunt verde, si rosu.
 Trebuie sa luam in considerare urmatoarele scenarii:
 * Daca semaforul este verde si nu asteapta niciun pieton, afisam in consola faptul ca masinile circula
 * Daca semaforul este verde si exista pietoni care asteapta, afisam in consola faptul ca lumina se va schimba la rosu. Si dupa un delay, semaforul trebuie sa se schimbe la rosu
