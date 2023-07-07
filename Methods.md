@@ -40,3 +40,24 @@ Citeste de la tastatura numarul de identificare al coletului.\
 Creeaza cate o metoda pentru fiecare dintre etape, care sa returneze un mesaj cu starea pachetului.\
 De exemplu, metoda pentru etapa de preluare ar putea returna urmatorul mesaj: "Coletul cu numarul 32445 a fost preluat".
 
+### 8. Creeaza o aplicatie pentru impartirea automata a notei de plata
+Aplicatia va trebui sa imparta nota pentru 2 oameni, in functie de valoarea notei de plata, taxele adaugate, si bacsis.\
+Se va citi de tastatura valoarea notei de plata, valoarea taxelor, si valoarea bacsisului.\
+Valoarea notei de plata va reprezenta cati lei costa, insa valoarea taxelor si a bacsisului vor fi introduse ca procente.\
+Taxele trebuie adaugate la suma totala inainte sa fie adaugat bacsisul.\
+Trebuie sa calculezi jumatate din suma totala, incluzand valoarea notei, taxele si bacsisul.\
+Creeaza o metoda pentru a face acest calcul.\
+**HINT:** Pentru a calcula spre exemplu valoarea taxei, in functie de procentaj, trebuie sa inmultesti valoarea notei cu valoarea procentului taxei, apoi sa imparti la 100.
+De exemplu, pentru datele de intrare:
+```json
+Bill before tax and tip: 12.50
+Sale Tax Percent: 8.875
+Tip percent: 20
+```
+se va afisa in consola: 
+```json
+Fiecare trebuie sa contribuie cu 8.17 lei
+```
+
+
+
