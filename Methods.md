@@ -47,6 +47,7 @@ Valoarea notei de plata va reprezenta cati lei costa, insa valoarea taxelor si a
 Taxele trebuie adaugate la suma totala inainte sa fie adaugat bacsisul.\
 Trebuie sa calculezi jumatate din suma totala, incluzand valoarea notei, taxele si bacsisul.\
 Creeaza o metoda pentru a face acest calcul.\
+\
 **HINT:** Pentru a calcula spre exemplu valoarea taxei, in functie de procentaj, trebuie sa inmultesti valoarea notei cu valoarea procentului taxei, apoi sa imparti la 100.
 De exemplu, pentru datele de intrare:
 ```json
