@@ -48,7 +48,7 @@ Apoi, daca BMI-ul este mai mic decat 18, 5 afiseaza in consola “esti sub greut
 * Daca BMI-ul este intre 25 si 29.9, afiseaza in consola “esti peste greutatea normala”.
 * Daca BMI-ule este mai mare deact 29.9, afiseaza in consola “esti obez”.
 
-### 7. Ai o aplicatie de bilete la cinema si vrei sa determini pretul unui bilet. Pretul normal este de 10 lei. Daca persoana este copil (are varsta mai mica decat 12 ani), sau pensionar (mai mult de 65 de ani), atunci pretul este de 5 lei. In fiecare marti, este un discount de 2 lei pentru toata lumea.
+### 7. Ai o aplicatie de bilete la cinema si vrei sa determini pretul unui bilet. Pretul normal este de 10 lei. Daca persoana este copil (are varsta mai mica decat 12 ani), sau pensionar (mai mult de 65 de ani), atunci pretul este de 5 lei. In plus, in fiecare marti, este un discount de 2 lei pentru toata lumea.
 Citeste de la tastatura varsta persoanei si ziua din saptamana, apoi afiseaza in consola pretul biletului.
  
 ### 8. Vrei sa construiesti un serviciu de tip RO-ALERT
