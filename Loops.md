@@ -75,7 +75,30 @@ Implementeaza un program care ii cere utilizatorului sa introduca cate o moneda 
 O data ce utilizatorul a introdus minim 50 de centi, afiseaza cati centi trebuie sa primeasca rest.\
 Ca si simulam introducerea monedelor, vom citi de la tastatura numere reprezetand valoarea monedelor.\
 
-### 15. 
+### 15. Creeaza un sistem automat de dat rest.
+Atunci cand dai rest pentru un produs, vrei sa minimizezi numarul de monede pe care le dai ca rest.\
+Daca ai de ales ca pentru suma de 50 de centi sa dai rest 2 monede de 25 de centi, sau 5 monede de 10 centi, vei alege prima varianta.\
+Avem la dispozitie monede de 25 centi, 10 centi, 5 centi, 1 cent.\
+Sa luam inca un exemplu:\
+* Daca restul este de 41 de centi, vrei sa ii dai o moneda de 25 de centi.
+* Mai raman 16 centi, asa ca ii mai dai o moneda de 10 centi (cea mai mare ca valoare pe care poti sa i-o dai)
+* Mai raman 6 centi, asa ca ii mai dai o moneda de 5 centi
+* Mai ramane 1 cent, asa ca ii mai dai o moneda de 1 cent
+
+Programul trebuie sa citeasca de la tastatura valoarea restului si sa afiseze de cate monede este nevoie pentru a da rest, respectand algoritmul din exemplu.\
+Programul nu trebuie sa afiseze de cate monede de fiecare tip este nevoie, ci de cate monede in total (chiar daca vor fi monede de tipuri diferite).\
+
+Testeaza codul:\
+* pentru input -1, programul iti cere sa introduci din nou o valoare?
+* pentru input 0, afiseaza programul 0?
+* pentru input 4, afiseaza programul 4?
+* pentru input 5, afiseaza programul 1?
+* pentru input 24, afiseaza programul 6?
+* pentru input 25, afiseaza programul 1?
+* pentru input 26, afiseaza programul 2?
+* pentru input 99, afiseaza programul 9?
+
+
 
 
 
