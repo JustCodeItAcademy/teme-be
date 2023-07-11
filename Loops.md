@@ -79,7 +79,7 @@ Ca si simulam introducerea monedelor, vom citi de la tastatura numere reprezetan
 Atunci cand dai rest pentru un produs, vrei sa minimizezi numarul de monede pe care le dai ca rest.\
 Daca ai de ales ca pentru suma de 50 de centi sa dai rest 2 monede de 25 de centi, sau 5 monede de 10 centi, vei alege prima varianta.\
 Avem la dispozitie monede de 25 centi, 10 centi, 5 centi, 1 cent.\
-Sa luam inca un exemplu:\
+Sa luam inca un exemplu:
 * Daca restul este de 41 de centi, vrei sa ii dai o moneda de 25 de centi.
 * Mai raman 16 centi, asa ca ii mai dai o moneda de 10 centi (cea mai mare ca valoare pe care poti sa i-o dai)
 * Mai raman 6 centi, asa ca ii mai dai o moneda de 5 centi
@@ -88,7 +88,21 @@ Sa luam inca un exemplu:\
 Programul trebuie sa citeasca de la tastatura valoarea restului si sa afiseze de cate monede este nevoie pentru a da rest, respectand algoritmul din exemplu.\
 Programul nu trebuie sa afiseze de cate monede de fiecare tip este nevoie, ci de cate monede in total (chiar daca vor fi monede de tipuri diferite).\
 
-Testeaza codul:\
+HINT: porneste cu un pseudocod, care poate arata asa:
+```json
+* citesc de la tastatura valoarea restului, in centi
+* calculez cate monede de 25 pot sa ii dau si le adun la numarul total de monede
+* scad valoarea monedelor de 25 din valoarea restului
+* calculez cate monede de 10 pot sa ii dau si le adun la numarul total de monede
+* scad valoarea monedelor de 10 din centii ramasi de dat ca rest
+* calculez cate monede de 5 pot sa ii dau si le adun la numarul total de monede
+* scad valoarea monedelor de 5 din centii ramasi de dat ca rest
+* calculez cate monede de 1 pot sa ii dau si le adun la numarul total de monede
+* scad valoarea monedelor de 1 din centii ramasi de dat ca rest
+* afisez numarul total de monede
+```
+
+Testeaza codul:
 * pentru input -1, programul iti cere sa introduci din nou o valoare?
 * pentru input 0, afiseaza programul 0?
 * pentru input 4, afiseaza programul 4?
