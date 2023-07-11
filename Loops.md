@@ -84,6 +84,7 @@ Sa luam inca un exemplu:
 * Mai raman 16 centi, asa ca ii mai dai o moneda de 10 centi (cea mai mare ca valoare pe care poti sa i-o dai)
 * Mai raman 6 centi, asa ca ii mai dai o moneda de 5 centi
 * Mai ramane 1 cent, asa ca ii mai dai o moneda de 1 cent
+In total 4 monede.
 
 Programul trebuie sa citeasca de la tastatura valoarea restului si sa afiseze de cate monede este nevoie pentru a da rest, respectand algoritmul din exemplu.\
 Programul nu trebuie sa afiseze de cate monede de fiecare tip este nevoie, ci de cate monede in total (chiar daca vor fi monede de tipuri diferite).\
