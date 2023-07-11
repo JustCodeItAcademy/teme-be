@@ -90,19 +90,19 @@ Programul nu trebuie sa afiseze de cate monede de fiecare tip este nevoie, ci de
 
 HINT: porneste cu un pseudocod, care poate arata asa:
 ```json
-* citesc de la tastatura valoarea restului, in centi
-* calculez cate monede de 25 pot sa ii dau si le adun la numarul total de monede
-* scad valoarea monedelor de 25 din valoarea restului
-* calculez cate monede de 10 pot sa ii dau si le adun la numarul total de monede
-* scad valoarea monedelor de 10 din centii ramasi de dat ca rest
-* calculez cate monede de 5 pot sa ii dau si le adun la numarul total de monede
-* scad valoarea monedelor de 5 din centii ramasi de dat ca rest
-* calculez cate monede de 1 pot sa ii dau si le adun la numarul total de monede
-* scad valoarea monedelor de 1 din centii ramasi de dat ca rest
-* afisez numarul total de monede
+// citesc de la tastatura valoarea restului, in centi
+// calculez cate monede de 25 pot sa ii dau si le adun la numarul total de monede
+// scad valoarea monedelor de 25 din valoarea restului
+// calculez cate monede de 10 pot sa ii dau si le adun la numarul total de monede
+// scad valoarea monedelor de 10 din centii ramasi de dat ca rest
+// calculez cate monede de 5 pot sa ii dau si le adun la numarul total de monede
+// scad valoarea monedelor de 5 din centii ramasi de dat ca rest
+// calculez cate monede de 1 pot sa ii dau si le adun la numarul total de monede
+// scad valoarea monedelor de 1 din centii ramasi de dat ca rest
+// afisez numarul total de monede
 ```
 
-Testeaza codul:
+Testeaza codul la final:
 * pentru input -1, programul iti cere sa introduci din nou o valoare?
 * pentru input 0, afiseaza programul 0?
 * pentru input 4, afiseaza programul 4?
