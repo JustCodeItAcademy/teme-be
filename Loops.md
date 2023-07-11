@@ -31,7 +31,7 @@ De exemplu, numarul 12321 este palindrom deoarece atunci cand e inversat, este t
 De exemplu, pentru numerele 21 si 15, cel mai mare divizor comun este 3.\
 3 este cel mai mare numar la care si 21 si 15 se impart exact.\
 
-### 10. Determina cat timp (in ani) ii ia unei populatii sa ajunga la o anumite marime.
+### 10. Scrie un program care sa determine cat timp (in ani) ii ia unei populatii sa ajunga la o anumita marime.
 Initial, pornim cu o populatie de n oi. In fiecare an, n/3 oi noi se nasc, si n/4 oi mor.\
 \
 De exemplu, daca am pornit cu o populatie de n = 1200 de oi, in primul an 1200/3=400 de oi se nasca si 1200/4=300 de oi mor.\
@@ -40,7 +40,19 @@ Asa ca la sfarsitul anului vom avea 1200 + 400 - 300 = 1300 oi
 Citeste de la tastatura populatia initiala (startSize) si populatia la care vrei sa ajungi (endSize)\
 * Daca utilizatorul introduce un startSize mai mic decat 9, cere-i sa introduca valori in continuare pana cand introduce minim numarul 9
 * Daca utilizatorul introduce un endSize mai mic decat startSize-ul introdus enterior, cere-i sa introduca valori in continuare pana cand introduce o valoare mai mare decat startSize
-
 \
 Programul trebuie sa calcueze numarul de ani necesari ca populatia sa creasca la valoarea endSize
+
+### 11. Scrie un program care sa determine in cati ani economiile tale vor creste la target-ul pe care ti l-ai propus.
+Sa presupunem ca deschizi un cont de economii cu o suma initiala de bani, la care se adauga in fiecare an o dobanda.\
+\
+De exemplu, daca deschizi un cont de 1000 de lei cu o dobanda anuala de 10%, dupa primul an vei avea 1000 + 0.1 * 1000 = 1100 de lei.\
+Apoi, dupa al doilea an vei avea 1100 + 0.1 * 1100 = 1210\
+Si tot asa, in fiecare an.\
+\
+Citeste de la tastatura suma initiala, procentul de dobanda anual, si suma target la care vrei sa ajungi.\
+Apoi calculeaza cati ani e nevoie sa treaca pana ca in cont sa ajungi la suma target.\
+
+
+
 
