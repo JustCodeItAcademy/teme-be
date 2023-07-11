@@ -58,7 +58,7 @@ Programul tau trebuie sa genereze un numar random (intre 1 si 100), iar apoi sa 
 * Daca numarul dat de utilizator este mai mic decat numarul generat, atunci afiseaza mesajul "Prea mic, mai incearca" si da-i posibilitatea utilizatorului sa introduca un nou numar.
 * Daca numarul dat de utilizator este mai mare decat numarul generat, atunci afiseaza mesajul "Prea mare, mai incearca" si da-i posibilitatea utilizatorului sa introduca un nou numar.
 * Daca numarul dat de utilizator este egal cu numarul generat, atunci afiseaza mesajul "Ai ghicit".\
-\
+
 Imbunatateste apoi programul dandu-i posibilitatea utilizatorului sa faca maxim 5 incercari.\
 Daca ghiceste numarul din maxim 5 incercari, afiseaza in consola si din cate incercari a reusit.\
 Altfel, afiseaza in consola faptul ca nu a reusit sa ghiceasca si ca jocul s-a terminat.\
