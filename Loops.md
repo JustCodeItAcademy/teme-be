@@ -63,5 +63,20 @@ Imbunatateste apoi programul dandu-i posibilitatea utilizatorului sa faca maxim 
 Daca ghiceste numarul din maxim 5 incercari, afiseaza in consola si din cate incercari a reusit.\
 Altfel, afiseaza in consola faptul ca nu a reusit sa ghiceasca si ca jocul s-a terminat.\
 
+### 13. Creeaza un sistem de verificare a PIN-ului.
+Defineste in cadrul programului o variabila care sa contina un PIN, format din 4 cifre, care va reprezenta PIN-ul corect.\
+Un utilizator are maxim 3 incercari sa introduca de la tastatura PIN-ul corect.\
+Daca reuseste sa faca asta, se va afisa in consola "PIN corect" si programul se va opri.\
+Daca nu reuseste sa faca asta, se va afisa in consola "PIN incorect" si programul se va opri.\
+
+### 14. Creeaza un automat de Coca Cola.
+Presupunem ca o masina vinde sticle de cola care costa 50 de centi si accepta doar urmatoarele monede: 25 de centi, 10 centi si 5 centi.\
+Implementeaza un program care ii cere utilizatorului sa introduca cate o moneda pe rand, si de fiecare data il informeaza cat mai are de platit pana la cei 50 de centi.\
+O data ce utilizatorul a introdus minim 50 de centi, afiseaza cati centi trebuie sa primeasca rest.\
+Ca si simulam introducerea monedelor, vom citi de la tastatura numere reprezetand valoarea monedelor.\
+
+### 15. 
+
+
 
 
