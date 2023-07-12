@@ -17,21 +17,27 @@ Primele doua numere sunt intodeauna 0 si 1.
 0, 1, 1, 2, 3, 5, 8, 13, 21, ...
 ```
 
-### 6. Scrie un program care sa calculeze suma cifrelor unui numar, numarul fiind citit de la tastatura.
+### 6. Scrie un program care calculeaza factorialul unui numar n, n fiind citit de la tastatura
+De exemplu, factorialul numarului 3 este 1 * 2 * 3 = 6\
+Factorialul numarului 4 este 1 * 2 * 3 * 4 = 24\
+Factorialul numarului 5 este 1 * 2 * 3 * 4 * 5 = 120\
+Practic trebuie inmultite toate numerele consecutive pana la numarul citit de la tastatura.
 
-### 7. Scrie un program care inverseaza cifrele unui numar, numarul fiind citit de la tastatura.
+### 7. Scrie un program care sa calculeze suma cifrelor unui numar, numarul fiind citit de la tastatura.
+
+### 8. Scrie un program care inverseaza cifrele unui numar, numarul fiind citit de la tastatura.
 Bazeaza-te pe faptul ca ultima cifra a oricarui numar este, de fapt, restul impartirii acelui numar la 10.
 In plus, catul impartirii acelui numar la 10 este, de fapt, numarul initial, fara ultima cifra.
 
-### 8. Scrie un program care afiseaza daca un numar este, sau nu, palindrom, numarul fiind citit de la tastatura.
+### 9. Scrie un program care afiseaza daca un numar este, sau nu, palindrom, numarul fiind citit de la tastatura.
 Un numar este palindrom daca ramane la fel atunci cand cifrele ii sunt inversate.
 De exemplu, numarul 12321 este palindrom deoarece atunci cand e inversat, este tot 12321.
 
-### 9. Scrie un program care afiseaza cel mai mare divizor comun al doua numere, citite de la tastatura.
+### 10. Scrie un program care afiseaza cel mai mare divizor comun al doua numere, citite de la tastatura.
 De exemplu, pentru numerele 21 si 15, cel mai mare divizor comun este 3.\
 3 este cel mai mare numar la care si 21 si 15 se impart exact.\
 
-### 10. Scrie un program care sa determine cat timp (in ani) ii ia unei populatii sa ajunga la o anumita marime.
+### 11. Scrie un program care sa determine cat timp (in ani) ii ia unei populatii sa ajunga la o anumita marime.
 Initial, pornim cu o populatie de n oi. In fiecare an, n/3 oi noi se nasc, si n/4 oi mor.\
 \
 De exemplu, daca am pornit cu o populatie de n = 1200 de oi, in primul an 1200/3=400 de oi se nasca si 1200/4=300 de oi mor.\
@@ -43,7 +49,7 @@ Citeste de la tastatura populatia initiala (startSize) si populatia la care vrei
 \
 Programul trebuie sa calcueze numarul de ani necesari ca populatia sa creasca la valoarea endSize
 
-### 11. Scrie un program care sa determine in cati ani economiile tale vor creste la target-ul pe care ti l-ai propus.
+### 12. Scrie un program care sa determine in cati ani economiile tale vor creste la target-ul pe care ti l-ai propus.
 Sa presupunem ca deschizi un cont de economii cu o suma initiala de bani, la care se adauga in fiecare an o dobanda.\
 \
 De exemplu, daca deschizi un cont de 1000 de lei cu o dobanda anuala de 10%, dupa primul an vei avea 1000 + 0.1 * 1000 = 1100 de lei.\
@@ -53,29 +59,36 @@ Si tot asa, in fiecare an.\
 Citeste de la tastatura suma initiala, procentul de dobanda anual, si suma target la care vrei sa ajungi.\
 Apoi calculeaza cati ani e nevoie sa treaca pana ca in cont sa ajungi la suma target.\
 
-### 12. Creeaza un guessing game.
+### 13. Creeaza un guessing game.
 Programul tau trebuie sa genereze un numar random (intre 1 si 100), iar apoi sa ii ceara utilizatorului sa il ghiceasca.
 * Daca numarul dat de utilizator este mai mic decat numarul generat, atunci afiseaza mesajul "Prea mic, mai incearca" si da-i posibilitatea utilizatorului sa introduca un nou numar.
 * Daca numarul dat de utilizator este mai mare decat numarul generat, atunci afiseaza mesajul "Prea mare, mai incearca" si da-i posibilitatea utilizatorului sa introduca un nou numar.
 * Daca numarul dat de utilizator este egal cu numarul generat, atunci afiseaza mesajul "Ai ghicit".\
 
+Pentru a genera un numar random intre 1 si 100, si a-l introduce intr-o variabila, foloseste:
+```json
+int numberToGuess = random.nextInt(100) + 1;
+```
+
+HINT: s-ar putea ca "do while" sa se potriveasca mai bine aici.
+
 Imbunatateste apoi programul dandu-i posibilitatea utilizatorului sa faca maxim 5 incercari.\
 Daca ghiceste numarul din maxim 5 incercari, afiseaza in consola si din cate incercari a reusit.\
 Altfel, afiseaza in consola faptul ca nu a reusit sa ghiceasca si ca jocul s-a terminat.\
 
-### 13. Creeaza un sistem de verificare a PIN-ului.
+### 14. Creeaza un sistem de verificare a PIN-ului.
 Defineste in cadrul programului o variabila care sa contina un PIN, format din 4 cifre, care va reprezenta PIN-ul corect.\
 Un utilizator are maxim 3 incercari sa introduca de la tastatura PIN-ul corect.\
 Daca reuseste sa faca asta, se va afisa in consola "PIN corect" si programul se va opri.\
 Daca nu reuseste sa faca asta, se va afisa in consola "PIN incorect" si programul se va opri.\
 
-### 14. Creeaza un automat de Coca Cola.
+### 15. Creeaza un automat de Coca Cola.
 Presupunem ca o masina vinde sticle de cola care costa 50 de centi si accepta doar urmatoarele monede: 25 de centi, 10 centi si 5 centi.\
 Implementeaza un program care ii cere utilizatorului sa introduca cate o moneda pe rand, si de fiecare data il informeaza cat mai are de platit pana la cei 50 de centi.\
 O data ce utilizatorul a introdus minim 50 de centi, afiseaza cati centi trebuie sa primeasca rest.\
 Ca si simulam introducerea monedelor, vom citi de la tastatura numere reprezetand valoarea monedelor.\
 
-### 15. Creeaza un sistem automat de dat rest.
+### 16. Creeaza un sistem automat de dat rest.
 Atunci cand dai rest pentru un produs, vrei sa minimizezi numarul de monede pe care le dai ca rest.\
 Daca ai de ales ca pentru suma de 50 de centi sa dai rest 2 monede de 25 de centi, sau 5 monede de 10 centi, vei alege prima varianta.\
 Avem la dispozitie monede de 25 centi, 10 centi, 5 centi, 1 cent.\
