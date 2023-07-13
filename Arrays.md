@@ -37,19 +37,32 @@ Un array este palindrom daca ordinea elementelor este aceeași dacă o parcurgem
 
 ## Arrays (normal)
 
-### 1. Scrie un program care sa gaseasca intersectia a doua array-uri.
+### 12. Scrie un program care sa evalueze automat raspunsurile date de un student la un quiz.
+Ca si input (pe care il poti hardcoda initial) vei avea raspunsurile corecte si raspunsurile date de student.
+/De exemplu, pentru:
+```json
+studentAnswers : {"C", "D", "D", "B", "A", "C", "B"}
+teachersAnswers : {"A", "D", "D", "B", "B", "C", "B"}
+```
+functia va returna 5, deoarece sunt 5 raspunsuri care corespund, la indecsii 1,2,3,5,6.
+
+### 13. Scrie un program care sa gaseasca intersectia a doua array-uri.
 Intersectia a doua array-uri este un array format din elementele care apar atat in primul, cat si in al doilea array.
 
-### 2.Scrie un program care sa insereze un element intr-un array, la o pozitie specificata
+### 14.Scrie un program care sa insereze un element intr-un array, la o pozitie specificata
 De exemplu, pentru {1, 7, 3, 10, 9}, daca vrem sa inseram elementul 4 la indexul 2, array-ul va deveni {1, 7, 4, 3, 10, 9}\
 HINT: array-ul avand o lungime fixa, este necesar sa copiem elementele din prim-ul array (impreuna cu elementul de inserat) intr-un nou array care sa aiba lungimea cu 1 mai mare.
         
-### 3. Scrie un program care sa gaseasca al doilea cel mai mare numar dintr-un array: 
+### 15. Scrie un program care sa gaseasca al doilea cel mai mare numar dintr-un array: 
 De exemplu, pentru {1, 7, 3, 10, 9}, se va afisa in consola 9.
 
-### 4. Scrie un program care gaseasca perechea de elemente dintr-un array care are produsul maxim
+### 16. Scrie un program care gaseasca perechea de elemente dintr-un array care are produsul maxim
 
-### 5.Scrie un program care sa gaseasca toate perechile de elemente dintr-un array, a caror suma este egala cu un numar n citit de la tastatura
+### 17. Scrie un program care sa gaseasca toate perechile de elemente dintr-un array, a caror suma este egala cu un numar n citit de la tastatura
+
+### 18. Scrie un program care citeste de la tastatura un numar n, si genereaza un array bidimensional de marime n.
+Fiecare element din array-ului bidimensional va fi un element generat random.
+
 
 
 
