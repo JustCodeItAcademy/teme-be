@@ -134,6 +134,20 @@ Testeaza codul la final:
 
 ### 17. Scrie un program care sa afiseze numerele de la 1 la n, n fiind citit de la tastatura.
 
+### 18. Scrie un program care sa printeze urmatorul pattern, in functie de numar n citit de la tastatura.
+De exemplu, pentru n = 400 se va afisa:
+```json
+0
+moo
+2
+moo
+[si tot asa in continuare…]
+398
+moo
+400
+moo
+```
+
 ### 18. Scrie un program care sa afiseze suma numerelor de la 1 la n, n fiind citit de la tastatura.
 
 ### 19. Scrie un program care sa afiseze numerele pare de la 1 la n, n fiind citit de la tastatura.
@@ -153,11 +167,41 @@ Testeaza codul la final:
 ### 25. Printeaza jumatate de piramida la tastatura, in functie de un numar n citit de la tastatura.
 De exemplu, pentru n = 5, se va printa:
 ```json
+#
+##
+###
+####
+#####
+```
+
+### 25. Printeaza cealalta jumatate de piramida la tastatura, in functie de un numar n citit de la tastatura.
+De exemplu, pentru n = 5, se va printa:
+```json
        #
       ##
      ###
     ####
    #####
+```
+
+### 25. Printeaza jumatate de piramida rasturnata, in functie de un numar n citit de la tastatura.
+De exemplu, pentru n = 5, se va printa:
+```json
+#####
+####
+###
+##
+#
+```
+
+### 25. Printeaza o piramida, in functie de un numar n citit de la tastatura.
+De exemplu, pentru n = 5, se va printa:
+```json
+    #
+   # #
+  # # #
+ # # # #
+# # # # #
 ```
 
 ### 26. Printeaza o piramida cu un spatiu in mijloc, in functie de un numar n citit de la tastatura.
