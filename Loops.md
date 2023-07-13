@@ -160,5 +160,15 @@ De exemplu, pentru n = 5, se va printa:
    #####
 ```
 
+### 26. Printeaza o piramida cu un spatiu in mijloc, in functie de un numar n citit de la tastatura.
+De exemplu, pentru n = 5, se va printa:
+```json
+       # #
+      ## ##
+     ### ###
+    #### ####
+   ##### #####
+```
+
 
 
