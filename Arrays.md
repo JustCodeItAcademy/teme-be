@@ -78,6 +78,29 @@ De exemplu, pentru {1, 7, 3, 10, 9}, se va afisa in consola 9.
 ### 22. Scrie un program care citeste de la tastatura un numar n, si genereaza un array bidimensional de marime n.
 Fiecare element din array-ului bidimensional va fi un element generat random.
 
+## Arrays (confortabil)
+
+### 23. Gaseste cea mai mica diferente intre doua numere dintr-un array.
+
+### 24. Gaseste cea mai lunga secventa crescatoare dintr-un array.
+Fiecare element din array-ului bidimensional va fi un element generat random.
+De exemplu, pentru {1, 2, 2, 3, 3, 4, 1, 2, 3, 4, 5}, cea mai lunga secventa crescatoare este 5 (secventa formata din "1,2,3,4,5")
+
+### 25. Gaseste cea mai lunga secventa crescatoare dintr-un array.
+De exemplu, pentru {1, 2, 2, 3, 3, 4, 1, 2, 3, 4, 5}, cea mai lunga secventa crescatoare este 5 (secventa formata din "1,2,3,4,5")
+
+### 26. Avand un array de n numere, unde valoare lor este in intervalul 1->n+1, fiecare numar apare o singura data.
+Scrie un program care sa printeze numarul care lipseste.
+De exemplu, pentru {1, 2, 4, 6, 3, 7, 8}, se va afisa 5.
+
+### 27. Scrie un program care sa rearanjeze elementele pozitive și negative dintr-un array.
+Toate elementele negative trebuie sa mearga in stanga si toate elementele pozitive trebuie sa mearga in dreapta, pastrandu-si orindea initiala din array.
+De exemplu, pentru {-1, 2, -3, 4, 5, -6, 7, -8, 9}, array-ul va deveni: {-1 -3 -6 -8 5 2 7 4 9}
+
+### 28. Gaseste subsecventa cu suma maxima dintr-un array.
+De exemplu, pentru {-2, -3, 4, -1, -2, 1, 5, -3}, se va afisa in consola 7, adica suma secventei {4, -1, -2, 1, 5}
+
+
 
 
 
