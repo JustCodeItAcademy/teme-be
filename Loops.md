@@ -215,7 +215,17 @@ De exemplu, pentru n = 5, se va printa:
 # # # # #
 ```
 
-### 31. Printeaza o piramida cu un spatiu in mijloc, in functie de un numar n citit de la tastatura.
+### 31. Afiseaza laturile unui partrat forma din "*", cu latura de lunigime n, n fiind citit de la tastatura.
+De exemplu, pentru n = 5, se va printa:
+```json
+* * * * *
+*       *
+*       *
+*       *
+* * * * *
+```
+
+### 32. Printeaza o piramida cu un spatiu in mijloc, in functie de un numar n citit de la tastatura.
 De exemplu, pentru n = 5, se va printa:
 ```json
        # #
@@ -226,7 +236,7 @@ De exemplu, pentru n = 5, se va printa:
 ```
 
 
-### 32. Printeaza o piramida din numere, in functie de un numar n citit de la tastatura.
+### 33. Printeaza o piramida din numere, in functie de un numar n citit de la tastatura.
 De exemplu, pentru n = 4, se va printa:
 ```json
    4
