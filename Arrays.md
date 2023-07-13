@@ -16,28 +16,38 @@ Cat timp utilizatorul introduce numere de la tastatura (maxim 100 de numere), ad
 ### 5. Scrie un program care sa afiseze pretul mediu pe metru patrat, dintr-o lista de preturi ale unor proprietati imobiliare:
 De exempu, pentru {1, 7, 3, 10, 9}, se va afisa in consola valoarea 6
 
-### 6. Vrei sa vezi cat studiezi saptamanal pentru programare
+### 6. Scrie un program care sa calculeze produsul numerelor impare din intervalul x si y, unde numerele x si y sunt introduse de la tastatura
+
+### 7. Vrei sa pui un discount de n lei (n fiind citit de la tastatura), pentru fiecare produs.
+De exemplu, pentru n = 2 si lista de preturi {3, 7, 3, 10, 9}, lista de preturi va deveni {1, 5, 1, 8, 7}
+
+### 8. Vrei sa vezi cat studiezi saptamanal pentru programare
 Citeste de la tastatura numarul de zile pe care le-ai petrecut invatand programare.\
 Citeste apoi cate ore ai invatat in fiecare din aceste zile.\
 Calculeaza media de studiu pe zi.
 
-### 7. Scrie un program care sa afiseze cel mai mare si cel mai mic pret dintr-o lista de preturi.
-De exemplu, pentru {1, 7, 3, 10, 9], se vor afisa in consola valorile 1 si 10
+### 9. Scrie un program care sa afiseze cel mai mare si cel mai mic pret dintr-o lista de preturi.
+De exemplu, pentru {1, 7, 3, 10, 9}, se vor afisa in consola valorile 1 si 10
 
-### 8. Scrie un program care sa inverseze elementele unui array: 
-De exemplu, pentru {1, 7, 3, 10, 9], sa va afisa in consola "9, 10, 3, 7, 1"
+### 10. Scrie un program care sa inverseze elementele unui array. Adica vrei ca utilizatorul sa poata vedea o lista de preturi de la coada la cap: 
+De exemplu, pentru {1, 7, 3, 10, 9}, sa va afisa in consola "9, 10, 3, 7, 1"
 
-### 9.Scrie un program care sa afiseze cate numere pare si cate numere impare se afla intr-un array:
+### 11.Scrie un program care sa afiseze cate numere pare si cate numere impare se afla intr-un array:
 De exemplu, pentru {1, 7, 3, 10, 9}, sa va afisa in consola Odd=4; Even=1
 
-### 10. Scrie un program care sa verifica daca un array este sortat crescator
+### 12. Scrie un program care sa verifica daca un array este sortat crescator
 
-### 11. Scrie un program care verifică dacă un array este palindrom.
+### 13. Scrie un program care verifică dacă un array este palindrom.
 Un array este palindrom daca ordinea elementelor este aceeași dacă o parcurgem de la început la sfârșit, sau de la sfârșit la început.
+
+### 14. Scrie un program care afiseaza produsul a cate 2 numere consecutive din array. 
+Daca numarul de elemente este impar, ultimul produs va fi numarul insusi.\
+De exemplu, pentru {1, 7, 3, 10, 9}, se va afisa in consola 7, 30, 9.\
+Explicatie: (7 = 1 * 7, 30 = 3 * 10, 9 = 1 * 9)\
 
 ## Arrays (normal)
 
-### 12. Scrie un program care sa evalueze automat raspunsurile date de un student la un quiz.
+### 15. Scrie un program care sa evalueze automat raspunsurile date de un student la un quiz.
 Ca si input (pe care il poti hardcoda initial) vei avea raspunsurile corecte si raspunsurile date de student.
 /De exemplu, pentru:
 ```json
@@ -46,21 +56,26 @@ teachersAnswers : {"A", "D", "D", "B", "B", "C", "B"}
 ```
 functia va returna 5, deoarece sunt 5 raspunsuri care corespund, la indecsii 1,2,3,5,6.
 
-### 13. Scrie un program care sa gaseasca intersectia a doua array-uri.
+### 16. Esti programator si dezvolti un magazin online. Vrei sa ii arati utilizatorului care este cel mai apropiat pret (dintr-o lista de preturi) de bugetul utilizatorului. 
+Scrie un program care afiseaza cel mai apropiat element din array de un numar introdus de la tastatura, n. Daca exista mai multe numere la fel de apropiate,se afiseaza oricare dintre ele.
+De exemplu, pentru n=12 si array-ul {1, 7, 3, 10, 9, 18, 0} se va afisa 10.
+De exemplu, pentru n=5 si array-ul {1, 7, 3, 10, 9, 18, 0} se va afisa 7 sau 3.
+
+### 17. Scrie un program care sa gaseasca intersectia a doua array-uri.
 Intersectia a doua array-uri este un array format din elementele care apar atat in primul, cat si in al doilea array.
 
-### 14.Scrie un program care sa insereze un element intr-un array, la o pozitie specificata
+### 18. Scrie un program care sa insereze un element intr-un array, la o pozitie specificata
 De exemplu, pentru {1, 7, 3, 10, 9}, daca vrem sa inseram elementul 4 la indexul 2, array-ul va deveni {1, 7, 4, 3, 10, 9}\
 HINT: array-ul avand o lungime fixa, este necesar sa copiem elementele din prim-ul array (impreuna cu elementul de inserat) intr-un nou array care sa aiba lungimea cu 1 mai mare.
         
-### 15. Scrie un program care sa gaseasca al doilea cel mai mare numar dintr-un array: 
+### 19. Scrie un program care sa gaseasca al doilea cel mai mare numar dintr-un array: 
 De exemplu, pentru {1, 7, 3, 10, 9}, se va afisa in consola 9.
 
-### 16. Scrie un program care gaseasca perechea de elemente dintr-un array care are produsul maxim
+### 20. Scrie un program care gaseasca perechea de elemente dintr-un array care are produsul maxim.
 
-### 17. Scrie un program care sa gaseasca toate perechile de elemente dintr-un array, a caror suma este egala cu un numar n citit de la tastatura
+### 21. Scrie un program care sa gaseasca toate perechile de elemente dintr-un array, a caror suma este egala cu un numar n citit de la tastatura
 
-### 18. Scrie un program care citeste de la tastatura un numar n, si genereaza un array bidimensional de marime n.
+### 22. Scrie un program care citeste de la tastatura un numar n, si genereaza un array bidimensional de marime n.
 Fiecare element din array-ului bidimensional va fi un element generat random.
 
 
