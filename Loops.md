@@ -132,21 +132,21 @@ Testeaza codul la final:
 
 ## For loops (mai putin confortabil)
 
-### 17. Scrie un program care sa afiseze numerele de la 1 la 10
+### 17. Scrie un program care sa afiseze numerele de la 1 la n, n fiind citit de la tastatura.
 
-### 18. Scrie un program care sa afiseze suma numerelor de la 1 la 10
+### 18. Scrie un program care sa afiseze suma numerelor de la 1 la n, n fiind citit de la tastatura.
 
-### 19. Scrie un program care sa afiseze numerele pare de la 1 la 10
+### 19. Scrie un program care sa afiseze numerele pare de la 1 la n, n fiind citit de la tastatura.
 
 ### 20. Scrie un program care sa faca media tuturor numerelor consecutive de la x la y, unde x si y sunt citite de la tastatura.
 
-### 21. Scrie un program care sa afiseze suma numerelor divizibile cu 3 de la 1 la 10
+### 21. Scrie un program care sa afiseze suma numerelor divizibile cu 3 de la 1 la n, n fiind citit de la tastatura.
 
 ### 22. Scrie un program care sa afiseze factorialul unui numar.
 
-### 23. Scrie un program care sa afiseze numerele prime din intervalul 1 - N.
+### 23. Scrie un program care sa afiseze numerele prime din intervalul 1 - n, n fiind citit de la tastatura.
 
-### 24. Scrie un program care calculeaza x la puterea y
+### 24. Scrie un program care calculeaza x la puterea y, unde x si y sunt citite de la tastatura.
 
 ## For loops (confortabil)
 
