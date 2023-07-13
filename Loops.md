@@ -69,6 +69,7 @@ Programul tau trebuie sa genereze un numar random (intre 1 si 100), iar apoi sa 
 
 Pentru a genera un numar random intre 1 si 100, si a-l introduce intr-o variabila, foloseste:
 ```json
+Random random = new Random(); 
 int numberToGuess = random.nextInt(100) + 1;
 ```
 
