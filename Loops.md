@@ -1,6 +1,6 @@
 # TEME BACK-END 📚
 
-## Loops
+## While loops (mai putin confortabil)
 
 ### 1. Scrie un program care afiseaza numerele de la 1 la n, n fiind citit de la tastatura
 
@@ -24,6 +24,8 @@ Factorialul numarului 5 este 1 * 2 * 3 * 4 * 5 = 120\
 Practic trebuie inmultite toate numerele consecutive pana la numarul citit de la tastatura.
 
 ### 7. Scrie un program care sa calculeze suma cifrelor unui numar, numarul fiind citit de la tastatura.
+
+## While loops (normal)
 
 ### 8. Scrie un program care inverseaza cifrele unui numar, numarul fiind citit de la tastatura.
 Bazeaza-te pe faptul ca ultima cifra a oricarui numar este, de fapt, restul impartirii acelui numar la 10.
@@ -82,6 +84,8 @@ Un utilizator are maxim 3 incercari sa introduca de la tastatura PIN-ul corect.\
 Daca reuseste sa faca asta, se va afisa in consola "PIN corect" si programul se va opri.\
 Daca nu reuseste sa faca asta, se va afisa in consola "PIN incorect" si programul se va opri.\
 
+## While loops (confortabil)
+
 ### 15. Creeaza un automat de Coca Cola.
 Presupunem ca o masina vinde sticle de cola care costa 50 de centi si accepta doar urmatoarele monede: 25 de centi, 10 centi si 5 centi.\
 Implementeaza un program care ii cere utilizatorului sa introduca cate o moneda pe rand, si de fiecare data il informeaza cat mai are de platit pana la cei 50 de centi.\
@@ -126,8 +130,35 @@ Testeaza codul la final:
 * pentru input 26, afiseaza programul 2?
 * pentru input 99, afiseaza programul 9?
 
+## For loops (mai putin confortabil)
 
+### 17. Scrie un program care sa afiseze numerele de la 1 la 10
 
+### 18. Scrie un program care sa afiseze suma numerelor de la 1 la 10
+
+### 19. Scrie un program care sa afiseze numerele pare de la 1 la 10
+
+### 20. Scrie un program care sa faca media tuturor numerelor consecutive de la x la y, unde x si y sunt citite de la tastatura.
+
+### 21. Scrie un program care sa afiseze suma numerelor divizibile cu 3 de la 1 la 10
+
+### 22. Scrie un program care sa afiseze factorialul unui numar.
+
+### 23. Scrie un program care sa afiseze numerele prime din intervalul 1 - N.
+
+### 24. Scrie un program care calculeaza x la puterea y
+
+## For loops (confortabil)
+
+### 25. Printeaza jumatate de piramida la tastatura, in functie de un numar n citit de la tastatura.
+De exemplu, pentru n = 5, se va printa:
+```json
+       #
+      ##
+     ###
+    ####
+   #####
+```
 
 
 
