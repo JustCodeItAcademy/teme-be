@@ -93,9 +93,9 @@ Creeaza o functie chooseWord() care alege din lista de cuvinte predefinite un cu
 Acesta va fi cuvantul secret, care trebuie ghicit.\
 
 Utilizatorul are 6 incercari sa ghiceasca cuvantul secret. Aceste incercari se vor citi de la tastatura. La fiecare incercare, va primi un hint (afisat in consola).\
-Creeaza o functie getHint care returneaza un hint in functie de incercarea utilizatorului.\
+Creeaza o functie getHint() care returneaza un hint in functie de incercarea utilizatorului.\
 Hint-ul va fi un cuvant format din dublul numarului de caractere ale incercarii utilizatorului.\
-Pentru fiecare litera din incercarea data de utilizator, se va mai alatura o un nou caracter imediat dupa:\
+Pentru fiecare litera din incercarea data de utilizator, se va mai alatura o un nou caracter imediat dupa:
 * Daca litera din incercare este aceeasi cu litera din cuvantul secret, de la aceeasi pozitie, atunci in hint se va pune litera din incercare urmata de caracterul "#".\
 Asta semnifica faptul ca utilizatorul a ghicit acea litera. Este exact in locul potrivit.\
 * Daca litera din incercare exista in cuvantul secret, doar ca in alta pozitie, atunci in hint se va pune litera din incercare urmata de caracterul "?".\
@@ -103,6 +103,7 @@ Asta semnifica faptul ca utilizatorul a ghicit litera, doar ca este la alta pozi
 * Daca litera din incercare nu exista in cuvantul secret, atunci in hint se va pune litera din incercare urmata de caracterul "_".\
 Asta semnifica faptul ca utilizatorul nu a ghicit deloc litera.\
 \
+
 Exemplu (pentru cuvantul secret since)
 * Daca utilizatorul introduce in prima incercare cuvantul crash, i se va printa ca hint : c?r_a_s?h_
 * Daca utilizatorul introduce in a doua incercare cuvantul scone, i se va printa ca hint : s#c?o_n?e#
