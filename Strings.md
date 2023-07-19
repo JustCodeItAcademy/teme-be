@@ -46,12 +46,13 @@ HINT: foloseste metoda split() pentru a "sparge" string-ul intr-un array a carui
 Utilizatorul poate introduce maxim 10 hobby-uri. Fiecare hobby este adaugat intr-un array de String-uri.\
 La sfarsit, cand utilizatorul a introdus “stop” sau “exit”, se vor afisa in consola toate hobby-urile din array.
 
+## Strings (normal)
+
 ### 13. Scrie un program care sa numere literele, spatiile, numerele, si celelalte caractere dintr-un String. (folositi metodele String-ului)
 De exemplu, pentru “Aa kiu, I swd skieo 2387. GH kiu: sieo?? 25.33”, se va afisa in consola: "23 litere, 9 spatii, 8 numere, 6 alte caractere".\
 Foloseste-te de metodele disponibile in lucrul cu caractere: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html
 
-### 14. Implement a program that prompts the user for the name of a variable in camel case and outputs the corresponding name in snake case.
-Scrie un program care sa citeasca un String de la tastatura in format camel case si sa il printeze apoi in format snake case.\
+### 14. Scrie un program care sa citeasca un String de la tastatura in format camel case si sa il printeze apoi in format snake case.\
 De exemplu, pentru "thisIsAVariabile", se va afisa "this_is_a_variable".\
 Presupune ca input-ul citit de la tastatura va fi in format camel case.
 
@@ -75,6 +76,8 @@ In plus, nu sunt acceptate virgule, spatii, sau alte semne de punctuatie.
 Regula este ca litera a (indiferent daca este mica sau mare) se codifica cu cifra 4, e cu 3, i cu 1, o cu 0 si u cu 7.\
 De exemplu, pentru "antrenor" se va afisa "4ntr3n0r".
 
+## Strings (confortabil)
+
 ### 19. Implementeaza o parte din jocul Scrabble.
 In scrabble, fiecare cuvant are un punctaj bazat pe suma punctelor echivalente fiecarei litere din cuvant.\
 De exemplu, cuvantul "code" are 7 puncte (c valoreaza 3 puncte, o -> 1 punct, d -> 2 puncte, e -> 1 punct).\
@@ -84,7 +87,7 @@ Foloseste-te de acest array care reprezinta scorul fiecarei litere in alfabet, d
 int[] letterScores = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
 ```
 
-### 20. Implementeaza jocul Spanzuratoarea
+### 20. Implementeaza jocul Spanzuratoarea.
 Tu, ca jucator, ai posibilitatea sa incerci sa ghicesti cuvinte intre 5 si 8 litere.\
 Jocul va avea o lista cu cuvinte predefinite pe care le poti ghici, atat cu 5, cat si cu 6-7-8 litere.\
 De la tastatura se va citi numarul de litere - adica din cate litere sa fie cuvantul pe care sa il ghiceasca utilizatoul.\
