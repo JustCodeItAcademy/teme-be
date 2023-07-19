@@ -106,10 +106,10 @@ Asta semnifica faptul ca utilizatorul a ghicit litera, doar ca este la alta pozi
 * Daca litera din incercare nu exista in cuvantul secret, atunci in hint se va pune litera din incercare urmata de caracterul "_".\
 Asta semnifica faptul ca utilizatorul nu a ghicit deloc litera.\
 
-Exemplu (pentru cuvantul secret since)
+Exemplu pentru cuvantul secret "since":
 * Daca utilizatorul introduce in prima incercare cuvantul crash, i se va printa ca hint : c?r_a_s?h_
 * Daca utilizatorul introduce in a doua incercare cuvantul scone, i se va printa ca hint : s#c?o_n?e#
-* Daca utilizatorul intrduca in a 3-a incercare cuvantul science, i se va printa ca hint: s#i#n#c#e si jocul va lua sfarsit.
+* Daca utilizatorul intrduca in a 3-a incercare cuvantul since, i se va printa ca hint: s#i#n#c#e si jocul va lua sfarsit.
 
 
 
