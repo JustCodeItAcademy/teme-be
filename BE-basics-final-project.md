@@ -55,7 +55,41 @@ Clasa ProductCatalog va contine si urmatoarele operatii:
   - Se va cauta produsul in lista de produse dupa nume.
   - Daca produsul nu a fost gasit se va returna  false (adica operatia a esuat)
   - Altfel, produsul va fi sters din lista de produse si se va returna true  (adica operatia s-a efectuat cu success)
-  - Sugestie: operatia de cautare a unui produs dupa nume se foloseste in 2 locuri astfel ca se poate crea o metoda privata pentru a cauta produsul dupa nume in lista, care sa returneze indexul din array la care se afla produsul sau -1 daca nu a fost gasit 
+  - Sugestie: operatia de cautare a unui produs dupa nume se foloseste in 2 locuri astfel ca se poate crea o metoda privata pentru a cauta produsul dupa nume in lista, care sa returneze indexul din array la care se afla produsul sau -1 daca nu a fost gasit
+
+### 3. Creeaza clasa CalorieCounter
+Clasa CalorieCounter nu va avea field-uri, ci va contine metoda main (punctul de intrare in aplicatie)
+* In main se va afisa un meniu de optiuni pentru utilizator care se va reafisa dupa fiecare alegere efectuata pana cand utilizatorul alege optiunea de a iesii din aplicatie (EXIT)
+Pentru afisarea meniului se va creea o alta metoda: printMenu (care va fi apelata in main) 
+* Va afisa in consola meniul pentru utilizator
+```json
+MENIU: 
+"1. Adauga produs in calculator si calculeaza-i caloriile"
+"2. Calculeaza caloriile pentru un produs fara a fi adaugat in catalog"
+"3. Afiseaza toate produsele din catalog si caloriile pentru fiecare"
+ "4. Sterge un produs din catalog"
+ "5. Gaseste produs dupa nume"
+ "6. Iesi din aplicatie"
+ "----------------------------------------------------------------”
+"Alege actiunea cu numarul:" ;
+```
+Dupa afisarea meniului se va citi numarul corespunzator optiunii, introdus de utilizator in consola si se va efectua operatia specifiica optiunii alese.\
+
+Pe baza inputului (numarul citit de la consola) se va decide ce operatie trebuie efectuata folosind instructiunea switch. Acest bloc de cod se va incadra intr-o metoda performSelectedAction (care va fi apelata in main dupa citirea inputului) (primeste ca parametru numarul citit din colosa, specific optiunii alese de utilizator si nu returneaza nimic, doar efectueaza operatia specifica numarului introdus). Pe fiecare ramura case din instructiunea switch se va apela pe obiectul de tip ProductCatalog, metoda corespunzatoare optiunii alese.\
+
+Pentru efectuarea operatiilor 1,3,4,5 este nevoie de o instanta a clasei ProductCatalog. Aceasta instanta (obiect) se creeaza in metoda  main inainte de orice linie de cod si se paseaza ca si parametru metodei performSelectedAction (impreuna cu inputul de la consola) pentru a putea fi folosita in efectuarea operatiilor necesare.\
+
+Rezumat Metoda main:
+* In metoda main va trebui instantia unui obiect de tip ProductCatalog
+* Atat timp cat utilizatorul nu introduce de la consola optiunea 6 (optiunea de iesire din aplicatie), va trebui sa:
+  - Se apeleze metoda printMenu - pentru a afisa meniul utilizatorului
+  - Sa se citeasca numarul introdus de utilizator (optiunea aleasa)
+  - Se apeleze metoda performSelectedAction - pentru a face actiunea aleasa de utilizator
+  - Sugestie: orice declarari de variabile (sau obiecte) se vor face in afara intructiunilor repetitive (in interiorul instr. repetitive doare se vor folosit sau initializa)
+* Atentie: Toate metodele create in clasa CalorieCounter care se apeleaza in metoda main, trebuie sa contina in semnatura, cuvantul cheie(keyword-ul) static (inainte tipului returnat)
+* Sugestie: Pentru fiecare operatie e nevoie sa mai efectuati citiri de la tastatura pentru a citii detaliile necesare efectuarii actiunii selecate, efectuare operatiei propriu zise si apoi afisarea unui mesaj corespunzator dupa efectuarea operatiei.
+Astfel ca, pentru fiecare actiune selectata se poate face cate o metoda separata care efectueaza toate aceste actiuni (citire, efectuare operatie, afisare mesaj rezultat) care va fi apelata conform optiunii selectate in case-ul instructiunii switch
+
 
 
 
