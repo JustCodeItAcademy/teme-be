@@ -30,6 +30,7 @@ Clasa Car are urmatoarele functionalitati:
 * decelereaza (scade viteza curenta cu o anumita valoare, iar daca se decelereaza cu mai mult de 20 km/ora, treapta de viteza se scade automat)
 * mareste treapta de viteza
 * scade treapta de viteza
+* converteste o anumita valoare a vitezei din km/ora in mile/ora
 
 Creeaza mai multe masini in Main si apeleaza-le comportamentele.
 
