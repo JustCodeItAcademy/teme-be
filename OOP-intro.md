@@ -2,18 +2,20 @@
 
 ## Clase si obiecte (mai putin confortabil)
 
-### 1. Creeaza o clasa care sa simuleze un caine
+### 1. Creeaza un program care sa simuleze un caine
 Creeaza clasa Dog care are ca si atribute nume, culoare si rasa.
 Comportamentele cainelui sunt "bark" (adica se afiseaza in consola "woof") si "run" (adica se afiseaza in consola "dog is running").
-Creeaza mai multi caini si apeleaza-le comportamentele.
+Creeaza mai multi caini in Main si apeleaza-le comportamentele.
 
-### 2. Creeaza o clasa care sa simuleze un calculator
+### 2. Creeaza un program care sa simuleze un calculator
 Clasa nu are niciun atribut, dar are ca si functionalitati:
 * suma a doua numere
 * diferenta a doua numere
 * factorialul unui numar
 
-### 3. Creeaza o clasa care sa simuleze o masina
+Creeaza un calculator in Main si apeleaza-i comportamentele.
+
+### 3. Creeaza un program care sa simuleze o masina
 Clasa Car are urmatoarele atribute:
 * numar de roti
 * viteza maxima
@@ -21,6 +23,7 @@ Clasa Car are urmatoarele atribute:
 * culoare
 * viteza curenta
 * treapta curenta de viteza
+
 Clasa Car are urmatoarele functionalitati:
 * porneste masina
 * accelereaza (mareste viteza curenta cu o anumita valoare, iar daca se accelereaza cu mai mult de 20 km/ora, treapta de viteza se mareste automat)
@@ -28,13 +31,17 @@ Clasa Car are urmatoarele functionalitati:
 * mareste treapta de viteza
 * scade treapta de viteza
 
+Creeaza mai multe masini in Main si apeleaza-le comportamentele.
 
+### 4. Creeaza un program care sa simuleze un cont bancar
+Clasa BankAccount va avea urmatoarele atribute:
+* sold curent
+* moneda contului
+* limita maxima de retragere din cont
 
-### 15. Scrie un program care sa evalueze automat raspunsurile date de un student la un quiz.
-Ca si input (pe care il poti hardcoda initial) vei avea raspunsurile corecte si raspunsurile date de student.
-/De exemplu, pentru:
-```json
-studentAnswers : {"C", "D", "D", "B", "A", "C", "B"}
-teachersAnswers : {"A", "D", "D", "B", "B", "C", "B"}
-```
-functia va returna 5, deoarece sunt 5 raspunsuri care corespund, la indecsii 1,2,3,5,6.
+Clasa BankAccount va avea urmatoarele functionalitati:
+* retragerea unei anumite sume de bani (daca nu se depaseste limita maxima de retragere)
+* depunerea unei anumite sume de bani
+* afisarea unui extras de cont cu situatia actuala a contului
+
+Creeaza mai multe conturi bancare in Main si apeleaza-le comportamentele.  
