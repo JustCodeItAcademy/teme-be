@@ -25,7 +25,7 @@ Clasa Car are urmatoarele atribute:
 * treapta curenta de viteza
 
 Clasa Car are urmatoarele functionalitati:
-* porneste masina
+* porneste masina (treapta de viteza devine 1 si viteza curenta devine 1)
 * accelereaza (mareste viteza curenta cu o anumita valoare, iar daca se accelereaza cu mai mult de 20 km/ora, treapta de viteza se mareste automat)
 * decelereaza (scade viteza curenta cu o anumita valoare, iar daca se decelereaza cu mai mult de 20 km/ora, treapta de viteza se scade automat)
 * mareste treapta de viteza
