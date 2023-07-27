@@ -36,8 +36,8 @@ Clasa ProductCatalog va avea urmatoarele atribute:
 * Numarul de produse adaugate in lista
 Clasa ProductCatalog va contine si urmatoarele operatii:
 * Metoda printProducts
-+ Metoda nu accepta niciun parametru
-+ Metoda nu returneaza nimic, doar printeaza in consola lista de produse
+  - Metoda nu accepta niciun parametru
+  - Metoda nu returneaza nimic, doar printeaza in consola lista de produse
 * Metoda addProduct
 * Metoda primeste ca parametru un produs
 + Daca produsul se afla deja in lista sau daca lista e deja plina,  se va returna false (adica operatia a esuat)
