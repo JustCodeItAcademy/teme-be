@@ -25,15 +25,18 @@ Clasa Product va incapsula atributele unui produs:
 * Numarul de grame de carbohidrati
 * Numarul de grame de proteine
 * Numarul total de calorii
+
 Clasa Product va contine si operatiile pentru un produs
 * Metoda computeCalories care tine de clasa 
   - Metoda accepta ca si parametrii numarul de grame de grasimi, numarul de grame de carbohidrati si numarul de grame de proteine
   - Metoda returneaza numarul total de calorii
+
 ### 2. Creaza clasa ProductCatalog
 Clasa ProductCatalog va avea urmatoarele atribute:
 * O lista de produse (maxim 100 de produse sunt acceptate in lista)
 * Numar maxim de produse = 100 (constanta)
 * Numarul de produse adaugate in lista
+
 Clasa ProductCatalog va contine si urmatoarele operatii:
 * Metoda printProducts
   - Metoda nu accepta niciun parametru
