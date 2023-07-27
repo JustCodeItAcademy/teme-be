@@ -44,5 +44,6 @@ Clasa BankAccount va avea urmatoarele functionalitati:
 * retragerea unei anumite sume de bani (daca nu se depaseste limita maxima de retragere)
 * depunerea unei anumite sume de bani
 * afisarea unui extras de cont cu situatia actuala a contului
+* afisarea limitei maxime de retragere din cont
 
 Creeaza mai multe conturi bancare in Main si apeleaza-le comportamentele.  
