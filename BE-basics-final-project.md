@@ -35,13 +35,13 @@ Clasa Product va contine si operatiile pentru un produs
 Clasa ProductCatalog va avea urmatoarele atribute:
 * O lista de produse (maxim 100 de produse sunt acceptate in lista)
 * Numar maxim de produse = 100 (constanta)
-* Numarul de produse adaugate in lista
+* Numarul curent de produse adaugate in lista
 
 Clasa ProductCatalog va contine si urmatoarele operatii:
 * Metoda printProducts
   - Metoda nu accepta niciun parametru
   - Metoda nu returneaza nimic, doar printeaza in consola lista de produse
-* Metoda addProduct
+  - Metoda addProduct
 * Metoda primeste ca parametru un produs
   - Daca produsul se afla deja in lista sau daca lista e deja plina,  se va returna false (adica operatia a esuat)
   - Daca nu se afla deja in lista, se va aduga produsul in lista si se va returna true (adica operatia s-a efectuat cu success)
@@ -85,7 +85,7 @@ Rezumat Metoda main:
   - Se apeleze metoda printMenu - pentru a afisa meniul utilizatorului
   - Sa se citeasca numarul introdus de utilizator (optiunea aleasa)
   - Se apeleze metoda performSelectedAction - pentru a face actiunea aleasa de utilizator
-  - Sugestie: orice declarari de variabile (sau obiecte) se vor face in afara intructiunilor repetitive (in interiorul instr. repetitive doare se vor folosit sau initializa)
-* Atentie: Toate metodele create in clasa CalorieCounter care se apeleaza in metoda main, trebuie sa contina in semnatura, cuvantul cheie(keyword-ul) static (inainte tipului returnat)
-* Sugestie: Pentru fiecare operatie e nevoie sa mai efectuati citiri de la tastatura pentru a citii detaliile necesare efectuarii actiunii selecate, efectuare operatiei propriu zise si apoi afisarea unui mesaj corespunzator dupa efectuarea operatiei.
-Astfel ca, pentru fiecare actiune selectata se poate face cate o metoda separata care efectueaza toate aceste actiuni (citire, efectuare operatie, afisare mesaj rezultat) care va fi apelata conform optiunii selectate in case-ul instructiunii switch
+  - Sugestie: orice declarari de variabile (sau obiecte) se vor face in afara intructiunilor repetitive (in interiorul instr. repetitive doar se vor folosi sau se vor initializa)
+* Atentie: Toate metodele create in clasa CalorieCounter care se apeleaza in metoda main, trebuie sa contina in semnatura, cuvantul cheie( keyword-ul) static (inaintea tipului returnat)
+* Sugestie: Pentru fiecare operatie e nevoie ca inputurile operatiei respective sa fie citite de la tastatura, apoi se va efectua operatia propriu zisa, si apoi se va afisa un mesaj corespunzator (dupa efectuarea operatiei).
+Astfel ca, pentru fiecare actiune selectata se poate face cate o metoda separata care incorporeaza toate aceste actiuni (citire, efectuare operatie, afisare mesaj rezultat) care va fi apelata conform optiunii selectate in case-ul instructiunii switch
