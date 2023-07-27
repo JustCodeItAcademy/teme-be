@@ -27,9 +27,9 @@ Clasa Product va incapsula atributele unui produs:
 * Numarul total de calorii
 Clasa Product va contine si operatiile pentru un produs
 * Metoda computeCalories care tine de clasa 
-* Metoda accepta ca si parametrii numarul de grame de grasimi, numarul de grame de carbohidrati si numarul de grame de proteine
-* Metoda returneaza numarul total de calorii
-Creaza clasa ProductCatalog
+  - Metoda accepta ca si parametrii numarul de grame de grasimi, numarul de grame de carbohidrati si numarul de grame de proteine
+  - Metoda returneaza numarul total de calorii
+### 2. Creaza clasa ProductCatalog
 Clasa ProductCatalog va avea urmatoarele atribute:
 * O lista de produse (maxim 100 de produse sunt acceptate in lista)
 * Numar maxim de produse = 100 (constanta)
@@ -40,19 +40,19 @@ Clasa ProductCatalog va contine si urmatoarele operatii:
   - Metoda nu returneaza nimic, doar printeaza in consola lista de produse
 * Metoda addProduct
 * Metoda primeste ca parametru un produs
-+ Daca produsul se afla deja in lista sau daca lista e deja plina,  se va returna false (adica operatia a esuat)
-+ Daca nu se afla deja in lista, se va aduga produsul in lista si se va returna true (adica operatia s-a efectuat cu success)
+  - Daca produsul se afla deja in lista sau daca lista e deja plina,  se va returna false (adica operatia a esuat)
+  - Daca nu se afla deja in lista, se va aduga produsul in lista si se va returna true (adica operatia s-a efectuat cu success)
 * Metoda getProductByName
-+ Metoda primeste ca parametru numele unui produs
-+ Metoda returneaza produsul din lista care are numele egal cu numele primit ca parametru
-+ Daca produsul nu a fost gasit, se va returna null
-+ Sugestie: pentru compararea stringurilor folositi metoda equals in loc de == (Ex: string1.equals(string2) )
+  - Metoda primeste ca parametru numele unui produs
+  - Metoda returneaza produsul din lista care are numele egal cu numele primit ca parametru
+  - Daca produsul nu a fost gasit, se va returna null
+  - Sugestie: pentru compararea stringurilor folositi metoda equals in loc de == (Ex: string1.equals(string2) )
 * Metoda deleteProduct
-+ Metoda primeste ca parametru numele unui produs
-+ Se va cauta produsul in lista de produse dupa nume.
-+ Daca produsul nu a fost gasit se va returna  false (adica operatia a esuat)
-+ Altfel, produsul va fi sters din lista de produse si se va returna true  (adica operatia s-a efectuat cu success)
-+ Sugestie: operatia de cautare a unui produs dupa nume se foloseste in 2 locuri astfel ca se poate crea o metoda privata pentru a cauta produsul dupa nume in lista, care sa returneze indexul din array la care se afla produsul sau -1 daca nu a fost gasit 
+  - Metoda primeste ca parametru numele unui produs
+  - Se va cauta produsul in lista de produse dupa nume.
+  - Daca produsul nu a fost gasit se va returna  false (adica operatia a esuat)
+  - Altfel, produsul va fi sters din lista de produse si se va returna true  (adica operatia s-a efectuat cu success)
+  - Sugestie: operatia de cautare a unui produs dupa nume se foloseste in 2 locuri astfel ca se poate crea o metoda privata pentru a cauta produsul dupa nume in lista, care sa returneze indexul din array la care se afla produsul sau -1 daca nu a fost gasit 
 
 
 
