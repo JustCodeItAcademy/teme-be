@@ -1,104 +1,56 @@
 # TEME BACK-END 📚
 
-## Arrays (mai putin confortabil)
+## Algoritmi (mai putin confortabil)
 
-### 1. Scrie un program care sa caute un numar de telefon intr-o lista de numere. Programul va printa “numarul a fost gasit” sau “numarul nu a fost gasit”
+### 1. Scrie un program care sa calculeze cum vei vopsi un gard
+Avem un gard format din n scanduri, n fiind citit de la tastatura. n trebuie sa fie minim 3.
+Un copil vopseste cu culoarea rosie din 2 in 2 scanduri (prima scandura colorata cu rosu este scandura 2), iar alt copil vopseste cu culoarea albastra din 3 in 3 scanduri (prima scandura colorata cu albastru este scandura 3).
+Scandura 1 ramane nevopsita.
+Exista posibilitatea ca o scandura sa fie violet, atunci cand cand ambii copii o vopsesc (de exemplu, scandura 6 va fi vopsita de ambii copii).
+Calculeaza (din cele n scanduri) cate scanduri vopsite cu albastru vor fi, cate scanduri vopsite cu rosu vor fi, cate scanduri vopsite cu violet vor fi, si cate scanduri nevopsite vor fi.
 
-### 2. Scrie un program care sa adune toate preturile dintr-o lista (ca mai apoi sa fie afisata suma totala in cosul de cumparaturi):
-De exemplu, pentru {1, 7, 3, 10, 9}, se va afisa in consola valoarea 30.
+### 2. Implementeaza jocul "piatra-foarfece-hartie".
+Utilizatorul are la dispozitie alegerile "piatra", "foarfece", sau "hartie".
+Alegerea utilizatorului va fi citita de la tastatura.
+Alegerea calculatorului va fi generata random.
+Daca alegerile sunt egale, atunci se va afisa "remiza".
+Daca utilizatorul alege piatra si calculatorul foarfeca, sau utilizatorul foarfeca si calculatorul hartie, sau utilizatorul hartie si calculatorul piatra, atunci utilizatorul castiga.
+Daca este fix invers, atunci calculatorul castiga.
 
-### 3. Scrie un program care sa afiseze de cate ori apare un anumit numar n (citit de la tastatura) intr-un array.
-De exemplu, pentru {1, 2, 2, 3, 3, 3, 4, 4, 4, 4} si n=3, se va afisa "3 apare de 3 ori".
+Implementeaza apoi versiunea jocului in care se alege cel mai bun jucator din 3 runde de joc.
 
-### 4. Construieste un array bazat pe input-ul utilizatorului.
-Cat timp utilizatorul introduce numere de la tastatura (maxim 100 de numere), adauga-le intr-un array si apoi afiseaza elementele array-ului.
-
-### 5. Scrie un program care sa afiseze pretul mediu pe metru patrat, dintr-o lista de preturi ale unor proprietati imobiliare:
-De exempu, pentru {1, 7, 3, 10, 9}, se va afisa in consola valoarea 6
-
-### 6. Scrie un program care sa calculeze produsul numerelor impare din intervalul x si y, unde numerele x si y sunt introduse de la tastatura
-
-### 7. Vrei sa pui un discount de n lei (n fiind citit de la tastatura), pentru fiecare produs.
-De exemplu, pentru n = 2 si lista de preturi {3, 7, 3, 10, 9}, lista de preturi va deveni {1, 5, 1, 8, 7}
-
-### 8. Vrei sa vezi cat studiezi saptamanal pentru programare
-Citeste de la tastatura numarul de zile pe care le-ai petrecut invatand programare.\
-Citeste apoi cate ore ai invatat in fiecare din aceste zile.\
-Calculeaza media de studiu pe zi.
-
-### 9. Scrie un program care sa afiseze cel mai mare si cel mai mic pret dintr-o lista de preturi.
-De exemplu, pentru {1, 7, 3, 10, 9}, se vor afisa in consola valorile 1 si 10
-
-### 10. Scrie un program care sa inverseze elementele unui array. Adica vrei ca utilizatorul sa poata vedea o lista de preturi de la coada la cap: 
-De exemplu, pentru {1, 7, 3, 10, 9}, sa va afisa in consola "9, 10, 3, 7, 1"
-
-### 11.Scrie un program care sa afiseze cate numere pare si cate numere impare se afla intr-un array:
-De exemplu, pentru {1, 7, 3, 10, 9}, sa va afisa in consola Odd=4; Even=1
-
-### 12. Scrie un program care sa verifica daca un array este sortat crescator
-
-### 13. Scrie un program care verifică dacă un array este palindrom.
-Un array este palindrom daca ordinea elementelor este aceeași dacă o parcurgem de la început la sfârșit, sau de la sfârșit la început.
-
-### 14. Scrie un program care afiseaza produsul a cate 2 numere consecutive din array. 
-Daca numarul de elemente este impar, ultimul produs va fi numarul insusi.\
-De exemplu, pentru {1, 7, 3, 10, 9}, se va afisa in consola 7, 30, 9.\
-Explicatie: (7 = 1 * 7, 30 = 3 * 10, 9 = 1 * 9)\
-
-## Arrays (normal)
-
-### 15. Scrie un program care sa evalueze automat raspunsurile date de un student la un quiz.
-Ca si input (pe care il poti hardcoda initial) vei avea raspunsurile corecte si raspunsurile date de student.
-/De exemplu, pentru:
+### 3. Genereaza mesajele pentru sistemul de like-uri al Facebook-ului.
+Ai la dispozitie ca si input un array cu numele persoanelor care au dat like (la ceva) si trebuie sa generezi textul corespunzator, dupa regula pe care o deduci din urmatorul exemplu:
 ```json
-studentAnswers : {"C", "D", "D", "B", "A", "C", "B"}
-teachersAnswers : {"A", "D", "D", "B", "B", "C", "B"}
+[] -> "no one likes this"
+["Peter"] -> "Peter likes this"
+["Jacob", "Alex"] -> "Jacbok and Alex like this"
+["Max", "John", "Mark"] -> "Max, John and mark like this"
+["Alex", "Jacob", "Mark", "Max"] -> "Alex, Jacob and 2 others like this"
 ```
-functia va returna 5, deoarece sunt 5 raspunsuri care corespund, la indecsii 1,2,3,5,6.
+### 4. Verifica daca un String este o rotatie a altui String.
+De exemplu, String-ul "cab" este rotatie a string-ului "abc", dar string-ul "acb" nu este rotatie a string-ului "abc".
 
-### 16. Esti programator si dezvolti un magazin online. Vrei sa ii arati utilizatorului care este cel mai apropiat pret (dintr-o lista de preturi) de bugetul utilizatorului. 
-Scrie un program care afiseaza cel mai apropiat element din array de un numar introdus de la tastatura, n. Daca exista mai multe numere la fel de apropiate,se afiseaza oricare dintre ele.
-De exemplu, pentru n=12 si array-ul {1, 7, 3, 10, 9, 18, 0} se va afisa 10.
-De exemplu, pentru n=5 si array-ul {1, 7, 3, 10, 9, 18, 0} se va afisa 7 sau 3.
+### 5. Scrie un program care sa inverseze cuvintele dintr-un String.
+De exemplu, pentru "programarea este usoara", se va afisa "usoara este programarea".
 
-### 17. Scrie un program care sa gaseasca intersectia a doua array-uri.
-Intersectia a doua array-uri este un array format din elementele care apar atat in primul, cat si in al doilea array.
+### 6. Scrie un program care sa codifice un String dupa metoda "Run Length Encoding".
+Aceasta metoda detecteaza secventele de litere identice dintr-un String si le transforma intr-o cifra, care reprezinta de cate ori apare acea litera in acea secventa.
+De exemplu, String-ul "AAAAAAAAAAAAABBCCCCDD" va fi convertit in "9A4A2B4C2D". Observa ca nu se foloseste 13A, secventele maxime fiind de 9 litere.
 
-### 18. Scrie un program care sa insereze un element intr-un array, la o pozitie specificata
-De exemplu, pentru {1, 7, 3, 10, 9}, daca vrem sa inseram elementul 4 la indexul 2, array-ul va deveni {1, 7, 4, 3, 10, 9}\
-HINT: array-ul avand o lungime fixa, este necesar sa copiem elementele din prim-ul array (impreuna cu elementul de inserat) intr-un nou array care sa aiba lungimea cu 1 mai mare.
-        
-### 19. Scrie un program care sa gaseasca al doilea cel mai mare numar dintr-un array: 
-De exemplu, pentru {1, 7, 3, 10, 9}, se va afisa in consola 9.
+### 7. Scrie un program care sa construiasca o lista cu toate substring-urile unui String.
+De exemplu, pentru String-ul "baca", lista de substring-uri este ["b","ba","bac","baca","a","ac","aca","c","ca"]
 
-### 20. Scrie un program care gaseasca perechea de elemente dintr-un array care are produsul maxim.
+### 8.Scrie un program care sa calculeze costul stergerii caracterelor alaturate dintr-un String.
+Citeste de la tastatura un String s. Stergerea celei de-a k-a litere din s are costul costs[k].
+Dupa stergerea unei litere, costul stergerii celorlalte litere ramane acelasi.
+De exemplu, pentrus s = "ab" si costs=[1,3], dupa stergerea lui 'a', costul stergerii lui 'b' va fi tot 3.
 
-### 21. Scrie un program care sa gaseasca toate perechile de elemente dintr-un array, a caror suma este egala cu un numar n citit de la tastatura
+Vrei sa sterge niste litere din s astfel incat sa obtii un String fara litere identice una langa alta.
+Trebuie sa afisezi la ecran care este costu minim al tututor stergerilor pe care ar trebuie sa le faci ca sa obtii un astfel de String?
 
-### 22. Scrie un program care citeste de la tastatura un numar n, si genereaza un array bidimensional de marime n.
-Fiecare element din array-ului bidimensional va fi un element generat random.
-
-## Arrays (confortabil)
-
-### 23. Gaseste cea mai mica diferente intre doua numere dintr-un array.
-
-### 24. Gaseste cea mai lunga secventa crescatoare dintr-un array.
-Fiecare element din array-ului bidimensional va fi un element generat random.
-De exemplu, pentru {1, 2, 2, 3, 3, 4, 1, 2, 3, 4, 5}, cea mai lunga secventa crescatoare este 5 (secventa formata din "1,2,3,4,5")
-
-### 25. Gaseste cea mai lunga secventa crescatoare dintr-un array.
-De exemplu, pentru {1, 2, 2, 3, 3, 4, 1, 2, 3, 4, 5}, cea mai lunga secventa crescatoare este 5 (secventa formata din "1,2,3,4,5")
-
-### 26. Avand un array de n numere, unde valoare lor este in intervalul 1->n+1, fiecare numar apare o singura data.
-Scrie un program care sa printeze numarul care lipseste.
-De exemplu, pentru {1, 2, 4, 6, 3, 7, 8}, se va afisa 5.
-
-### 27. Scrie un program care sa rearanjeze elementele pozitive și negative dintr-un array.
-Toate elementele negative trebuie sa mearga in stanga si toate elementele pozitive trebuie sa mearga in dreapta, pastrandu-si orindea initiala din array.
-De exemplu, pentru {-1, 2, -3, 4, 5, -6, 7, -8, 9}, array-ul va deveni: {-1 -3 -6 -8 5 2 7 4 9}
-
-### 28. Gaseste subsecventa cu suma maxima dintr-un array.
-De exemplu, pentru {-2, -3, 4, -1, -2, 1, 5, -3}, se va afisa in consola 7, adica suma secventei {4, -1, -2, 1, 5}
+De exemplu, pentru s = "abccbd", si costs = [0,1,2,3,4,5], costul total este 2.
+De exemplu, pentru s = "aabbcc", si costs = [1,2,1,2,1,2], costul total este 3.
 
 
 
