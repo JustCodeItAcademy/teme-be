@@ -15,7 +15,15 @@ Clasa nu are niciun atribut, dar are ca si functionalitati:
 
 Creeaza un calculator in Main si apeleaza-i comportamentele.
 
-### 3. Creeaza un program care sa simuleze o masina
+### 3. Creeaza un program care sa numere cate pisici se nasc.
+Implementeaza o clasa Cat si o metoda getNumberOfCats(), care va returna numarul de pisici create.
+Clasa Cat va avea atributele:
+* name
+* counter - in care vom retine cate pisici s-au creat
+
+Atunci cand o noua pisica se creeaza, counter-ul trebuie sa fie incrementat.
+
+### 4. Creeaza un program care sa simuleze o masina
 Clasa Car are urmatoarele atribute:
 * numar de roti
 * viteza maxima
@@ -34,7 +42,7 @@ Clasa Car are urmatoarele functionalitati:
 
 Creeaza mai multe masini in Main si apeleaza-le comportamentele.
 
-### 4. Creeaza un program care sa simuleze un cont bancar
+### 5. Creeaza un program care sa simuleze un cont bancar
 Clasa BankAccount va avea urmatoarele atribute:
 * sold curent
 * moneda contului
@@ -48,7 +56,7 @@ Clasa BankAccount va avea urmatoarele functionalitati:
 
 Creeaza mai multe conturi bancare in Main si apeleaza-le comportamentele.  
 
-### 5. Creeaza un mini joc de lupte
+### 6. Creeaza un mini joc de lupte
 Jocul trebuie sa aiba o functie care sa returneze numele castigatorului unei lupte la care participa doi luptatori.
 Fiecare lupator ataca pe rand celalalt luptator si cel care il omoara pe celalalt primul, castiga (adica castiga cel care ramane in viata).
 Un jucator moare atunci cand health-ul lui este mai mic sau egal cu 0.
@@ -58,7 +66,7 @@ Un luptator are urmatoarele atribute:
 * name
 Se vor citi de la tastatura atributele celor 2 jucatori, dar si care dintre jucatori va ataca primul.
 
-### 6. Imagineaza-ti ca esti un student cu un ghiozdan.
+### 7. Imagineaza-ti ca esti un student cu un ghiozdan.
 Ghiozdanul are o anumita capacitate si tu trebuie sa pui niste carti in el.
 Fiecare carte are titlu, numar de pagini si greutate.
 Poti sa pui carti in ghiozdan pana la o anumita greutate maxima (daca la nu moment dat o carte depaseste greutate maxima, nu poti sa o mai pui in ghiozdan)
