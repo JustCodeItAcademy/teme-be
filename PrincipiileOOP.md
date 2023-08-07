@@ -13,6 +13,7 @@ Creează o clasă `Circle` care implementează interfața `Shape`
 
 Atribute: 
 * `radius` (raza cercului)
+
 Metode:
 * `computeArea()`
 
@@ -21,6 +22,7 @@ Creează o clasă `Rectangle` care implementează interfața `Shape`
 Atribute:
 * `height` (lungime)
 * `width` (lățime)
+
 Metode:
 * `computeArea()`
 
@@ -36,6 +38,7 @@ Creează o clasă `Person`, care să fie abstractă.
 Atribute:
 * `firstName`
 * `lastName`
+
 Metode: `introduce()` (care să fie metodă abstractă)
 
 Creează o clasă `Teacher`, care să extindă `Person`
@@ -43,6 +46,7 @@ Creează o clasă `Teacher`, care să extindă `Person`
 Atribute:
 * `department`
 * `subject` (adică ce predă profesorul)
+
 Metode: 
 * `introduce()` - implementează metoda abstractă din subclasă și afișează un mesaj. 
 ex: “I am John Decker, I teach Math and I am a teacher”
@@ -51,6 +55,7 @@ Creează o clasă `Student`, care să extindă `Person`
 
 Atribute:
 * `groupClass` (adică clasa în care este studentul)
+
 Metode: 
 * `introduce()` - implementează metoda abstractă din subclasă și afișează un mesaj. 
 ex: “I am Dave Brown, I am in 12A class and I am a student”
@@ -61,18 +66,21 @@ Creează clasa `Animal`
 Atribute:
 * `name`
 * `age`
+
 Metode:
 * metoda abstractă `makeSound()`
 
 Creează clasa `Cat`, care extinde `Animal`
 
 Atribute: niciun atribut nou
+
 Metoda `makeSound()`
 * va afișa un mesaj ca de exemplu: “Pisica Tom face miau”
 
 Creează clasa `Dog`, care extinde `Animal`
 
 Atribute: niciun atribut nou
+
 Metoda `makeSound()`
 * va afișa un mesaj ca de exemplu: “Câinele Azor latră”
 
@@ -80,6 +88,7 @@ Creează o clasă `Shelter`
 
 Atribute:
 * `animals` (adică o listă de animale)
+
 Metode:
 * `makeNoise()` - această metodă va face ca toate animalele din listă să scoată sunet
 * `addAnimal()` - această metodă va adăuga un animal în lista de animale
