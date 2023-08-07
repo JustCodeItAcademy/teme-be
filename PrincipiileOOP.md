@@ -96,24 +96,55 @@ Metode:
 
 
 
-### 4. Creeaza un program care sa simuleze o masina
-Clasa Car are urmatoarele atribute:
-* numar de roti
-* viteza maxima
-* brand
-* culoare
-* viteza curenta
-* treapta curenta de viteza
+### 4. Creează o aplicație de gestionare a conturilor deschise la o bancă pentru un client.
+Creează o clasă abstractă numită `BankAccount`
 
-Clasa Car are urmatoarele functionalitati:
-* porneste masina (treapta de viteza devine 1 si viteza curenta devine 1)
-* accelereaza (mareste viteza curenta cu o anumita valoare, iar daca se accelereaza cu mai mult de 20 km/ora, treapta de viteza se mareste automat)
-* decelereaza (scade viteza curenta cu o anumita valoare, iar daca se decelereaza cu mai mult de 20 km/ora, treapta de viteza se scade automat)
-* mareste treapta de viteza
-* scade treapta de viteza
-* converteste o anumita valoare a vitezei din km/ora in mile/ora
+Atribute:
+* `balance` (câți bani se află în cont, o valoare de tip `double` care semnifică suma în lei)
+* `accountNumber`
 
-Creeaza mai multe masini in Main si apeleaza-le comportamentele.
+Metode: (va trebui să îți dai seama ce returnează și ce parametrii primește fiecare metodă)
+* `withdraw()` - metodă abstractă
+* `deposit()` - metodă abstractă
+
+Creează o clasă numită `StudentAccount`, care să extindă `BankAccount`
+
+Atribute:
+* `maxDepositAmount` - va trebui să nu își schimbe valoarea o dată ce a fost inițializată
+
+Metode: (va trebui să îți dai seama ce returnează și ce parametrii primește fiecare metodă)
+* `withdraw()` - se pot retrage maxim câți bani sunt în cont în momentul retragerii
+* `deposit()` - se pot depune maxim “maxDepositAmount” bani o dată
+
+Creează o clasă numită `SpendingAccount`, care să extindă `BankAccount`
+
+Atribute:
+* `maxWithdrawalAmount` - poate să își schimbe valoarea o dată ce a fost inițializată
+
+Metode: (va trebui să îți dai seama ce returnează și ce parametrii primește fiecare metodă)
+* `withdraw()` - se pot retrage cu maxim “maxWithdrawalAmount” RON mai mult decât există în cont în momentul retragerii
+  * ex: dacă în cont sunt 5000 de RON, iar maxWithdrawalAmount este 2000 RON, se pot retrage maxim 7000 RON
+* `deposit()` - oricâți bani se pot depune în cont
+
+Creează o clasă `Person`
+
+Atribute:
+* `firstName`
+* `lastName`
+* `accountList` - adică un array care ține lista de conturi ale unei persoane
+
+Metode: (va trebui să îți dai seama ce returnează și ce parametrii primește fiecare metodă)
+* `addAccount()` - va da posibilitatea persoanei să adauge un cont în lista de conturi
+* `listAccounts()` - va printa `accountNumber` împreună cu `balance` pentru fiecare cont din listă
+* `deposit()` - va adăuga o anumită sumă de bani într-un cont
+* `withdraw()` - va retrage o anumită sumă de bani dintr-un cont
+* `checkAccountDetails()` - va printa toate detaliile unui anumit cont
+* `main()`
+
+Creează o clasă `BankingApp`
+
+Clasa va avea doar metoda `main()`, unde se va instanția o persoană și se vor testa metodele pe care le poate face persoana (adăugare cont, deposit, etc.).
+
 
 ### 5. Creeaza un program care sa simuleze un cont bancar
 Clasa BankAccount va avea urmatoarele atribute:
