@@ -17,6 +17,7 @@ Metode:
 * `computeArea()`
 
 Creează o clasă `Rectangle` care implementează interfața `Shape`
+
 Atribute:
 * `height` (lungime)
 * `width` (lățime)
@@ -31,12 +32,14 @@ Creează mai mulți câini în `Main` și apelează-le comportamentele.
 
 ### 2. Creează o aplicație care să simuleze o școală
 Creează o clasă `Person`, care să fie abstractă. 
+
 Atribute:
 * `firstName`
 * `lastName`
 Metode: `introduce()` (care să fie metodă abstractă)
 
 Creează o clasă `Teacher`, care să extindă `Person`
+
 Atribute:
 * `department`
 * `subject` (adică ce predă profesorul)
@@ -45,6 +48,7 @@ Metode:
 ex: “I am John Decker, I teach Math and I am a teacher”
 
 Creează o clasă `Student`, care să extindă `Person`
+
 Atribute:
 * `groupClass` (adică clasa în care este studentul)
 Metode: 
@@ -53,6 +57,7 @@ ex: “I am Dave Brown, I am in 12A class and I am a student”
 
 ### 3. Creează o clasă care să simuleze un adăpost de animale
 Creează clasa `Animal`
+
 Atribute:
 * `name`
 * `age`
@@ -60,16 +65,19 @@ Metode:
 * metoda abstractă `makeSound()`
 
 Creează clasa `Cat`, care extinde `Animal`
+
 Atribute: niciun atribut nou
 Metoda `makeSound()`
 * va afișa un mesaj ca de exemplu: “Pisica Tom face miau”
 
 Creează clasa `Dog`, care extinde `Animal`
+
 Atribute: niciun atribut nou
 Metoda `makeSound()`
 * va afișa un mesaj ca de exemplu: “Câinele Azor latră”
 
 Creează o clasă `Shelter`
+
 Atribute:
 * `animals` (adică o listă de animale)
 Metode:
