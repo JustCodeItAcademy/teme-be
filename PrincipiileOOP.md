@@ -5,10 +5,12 @@
 
 ### 1. Construiește o aplicație care să modeleze în cod forme geometrice și operațiile cu ele
 Creează o interfață `Shape`
+
 Metode: 
 * `computeArea()` - tipul returnat este `double` și nu primește niciun parametru
 
 Creează o clasă `Circle` care implementează interfața `Shape`
+
 Atribute: 
 * `radius` (raza cercului)
 Metode:
