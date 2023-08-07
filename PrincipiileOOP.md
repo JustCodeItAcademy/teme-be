@@ -146,48 +146,59 @@ Creează o clasă `BankingApp`
 Clasa va avea doar metoda `main()`, unde se va instanția o persoană și se vor testa metodele pe care le poate face persoana (adăugare cont, deposit, etc.).
 
 
-### 5. Creeaza un program care sa simuleze un cont bancar
-Clasa BankAccount va avea urmatoarele atribute:
-* sold curent
-* moneda contului
-* limita maxima de retragere din cont
+### 5.Creează o aplicație de plăți
 
-Clasa BankAccount va avea urmatoarele functionalitati:
-* retragerea unei anumite sume de bani (daca nu se depaseste limita maxima de retragere si daca exista suficienti bani)
-* depunerea unei anumite sume de bani
-* afisarea unui extras de cont cu situatia actuala a contului
-* afisarea limitei maxime de retragere din cont
+#### Interfața `Payable`
+Metode:
+* `pay(double amount)` - care primește ca parametru o valoare de tip double (suma plătită)
 
-Creeaza mai multe conturi bancare in Main si apeleaza-le comportamentele.  
+#### Clasa `Card`
+Atribute:
+* `isActive`
+* `PIN`
+* `cardNumber`
+* `cardHolderName`
+* `cardBalance`
+Metode:
+* `changePin()` - schimbă valoarea PIN-ului, dar doar dacă aceasta este o valoare formată din 4 cifre
+* `freezeCard()` - face ca cardul să fie inactiv
 
-### 6. Creeaza un mini joc de lupte
-Jocul trebuie sa aiba o functie care sa returneze numele castigatorului unei lupte la care participa doi luptatori.
-Fiecare lupator ataca pe rand celalalt luptator si cel care il omoara pe celalalt primul, castiga (adica castiga cel care ramane in viata).
-Un jucator moare atunci cand health-ul lui este mai mic sau egal cu 0.
-Un luptator are urmatoarele atribute:
-* health
-* damagePerAttack (cat din health i se scade celuilalt jucator, atunci cand jucatorul curent ataca)
-* name
-Se vor citi de la tastatura atributele celor 2 jucatori, dar si care dintre jucatori va ataca primul.
+#### Clasa `DebitCard`, care va extinde `Card` și va implementa interfața `Payable`
+Atribute:
+* `maxTransactionAmount`
+Metode:
+* `pay()` - nu se va putea plăti mai mult decât `maxTransactionAmount`
+* `changeTransactionLimit()` - va da o nouă valoare atributului `maxTransactionAmount`
 
-### 7. Imagineaza-ti ca esti un student cu un ghiozdan.
-Ghiozdanul are o anumita capacitate si tu trebuie sa pui niste carti in el.
-Fiecare carte are titlu, numar de pagini si greutate.
-Poti sa pui carti in ghiozdan pana la o anumita greutate maxima (daca la nu moment dat o carte depaseste greutate maxima, nu poti sa o mai pui in ghiozdan)
-Clasa Book va avea atributele:
-* title
-* numberOfPages
-* Weight
+#### Clasa `CreditCard`, care va extinde `Card` și va implementa interfața `Payable`
+Atribute:
+* `maxOverDraft` - nu se va putea schimba valoarea acestui atribut
+Metode:
+* `pay()` - nu se va putea plăti mai mult decât `cardBalance + maxOverDraft`
 
-Clasa Backpack va avea atributele:
-* maxWeight
-* currentWeight
-* bookList (un array de maxim 30 de carti)
-* numberOfBooks (numarul curent de carti din bookList)
+#### Clasa `Address`
+Atribute:
+* `street`
+* `number`
+* `city`
+Metode: doar getteri și setteri
 
-Clasa Backpack va avea urmatoarele functionalitati:
-* getTotalPages() - va returna numarul total de pagini ale tuturor cartilor din ghiozdan
-* getCurrentBooks() - va returna lista de carti care sunt in ghiozdan
-* addBook() - va adauga o carte in ghiozdan, daca adaugarea ei nu depaseste greutatea maxima
+#### Clasa `ShoppingAccount`
+Atribute:
+* `cardList` - o listă de carduri
+* `addressList` - o listă de adrese
+* `firstName`
+* `lastName`
+* `currentPaymentMethod` - poate fi de fapt un `CreditCard` sau un `DebitCard`
+* `currentBillingAddress`
+Metode:
+* `addPaymentMethod()`
+* `addAddress()` 
+* `removePaymentMethod()` 
+* `removeAddress()`
+* `selectPaymentMethod(String cardNumber)` - setează `currentPaymentMethod` în funcție de numărul de card primit ca și parametru
+* `selectAddress(String street)` - setează `currentBillingAddress` în funcție de strada primită ca și parametru
+* `generateInvoice(amount, address, card)` - se va printa un mesaj în funcție de suma, cardul și adresa cu care a fost făcută tranzacția (de exemplu: “Nume: Olimpiu Stefan. Ați plătit suma 2300 RON folosind cardul cu numărul 1234 1234 1234 1234 pentru adresa: str. Republicii, nr. 12, Cluj-Napoca”)
 
-Intr-o clasa main, instantiaza obiectele de care ai nevoie, pentru a testa functionalitatile.
+#### Clasa `Shop`
+Clasa `Shop` va avea o metodă `main` unde vor fi testate funcționalitățile implementate (se va crea un `shopping account`, se vor adăuga adrese și modalități de plată în el, se va selecta o adresă, se va selecta o modalitate de plată, se va plăti o anumită sumă de bani folosind metoda de plată selectată și apoi se va genera o factură)
