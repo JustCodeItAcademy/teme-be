@@ -148,6 +148,9 @@ Clasa va avea doar metoda `main()`, unde se va instanția o persoană și se vor
 
 ### 5.Creează o aplicație de plăți
 
+In aceasta aplicatie voi putea stoca mai multe carduri personale si voi putea plati cu cel pe care il aleg.
+Construieste desing-ul si functionalitatile astfel:
+
 #### Interfața `Payable`
 Metode:
 * `pay(double amount)` - care primește ca parametru o valoare de tip double (suma plătită)
