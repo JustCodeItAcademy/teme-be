@@ -192,7 +192,7 @@ Clasa va avea doar metoda `main()`, unde se va instanția o persoană și se vor
 
 
 
-### 5.Creează o aplicație de plăți
+### 7.Creează o aplicație de plăți
 
 In aceasta aplicatie voi putea stoca mai multe carduri personale si voi putea plati cu cel pe care il aleg.
 Construieste desing-ul si functionalitatile astfel:
@@ -251,3 +251,57 @@ Metode:
 
 #### Clasa `Shop`
 Clasa `Shop` va avea o metodă `main` unde vor fi testate funcționalitățile implementate (se va crea un `shopping account`, se vor adăuga adrese și modalități de plată în el, se va selecta o adresă, se va selecta o modalitate de plată, se va plăti o anumită sumă de bani folosind metoda de plată selectată și apoi se va genera o factură)
+
+### 8. Creeaza o aplicatie de gestiune a unei companii
+O companie are un nume, data infiintarii, o lista de departamente
+Un departament un nume si o lista de angajati.
+Un angajat are nume, prenume, salariu si o adresa.
+O adresa are oras, strada, numar.
+
+#### 8.1. Scrie o metoda care afiseaza numele angajatului
+
+#### 8.2. Scrie o metoda care afiseaza strada adresei angajatului
+
+#### 8.3. Scrie o metoda care afiseaza toate atributele adresei angajatului
+
+#### 8.4. scrie un program care afiseaza numarul de angajati din departament
+
+#### 8.5. scrie o metoda care printeaza toti angajatii din departament
+
+#### 8.6. scrie o metoda care printeaza toate strazile adreselor angajatilor din departament
+
+#### 8.7. scrie o metoda care cauta un anumit angajat dupa nume in departament, si ii afiseaza numele daca il gaseste
+
+#### 8.8. scrie o metoda care printeaza adresa unui anumit angajat din departament
+
+#### 8.9. scrie o metoda care cauta o adresa (dupa strada) in lista de angajati a departamentului, si ii afiseaza strada daca o gaseste
+
+#### 8.10. scrie o metoda care printeaza toate departamentele din companie
+
+#### 8.11. scrie o metoda care printeaza toti angajatii dintr-un anumit departament din companie
+
+#### 8.12. scrie o metoda care printeaza cati angajati are un anumit departament din companie
+
+#### 8.13. scrie o metoda care printeaza toate strazile adreselor angajatilor dintr-un anumit departament din companie
+
+#### 8.14. scrie o metoda care printeaza strada adresei unui anumit angajat din companie
+
+#### 8.15. scrie o metoda care cauta un angajat (dupa nume) intr-un anumit departament din companie si ii afiseaza numele, daca il gaseste
+
+#### 8.16. scrie o metoda care printeaza toti angajatii din toate departamentele din companie
+
+#### 8.17. scrie o metoda care printeaza numarul total de angajati din toate departamentele din companie
+
+#### 8.18. scrie o metoda care cauta un angajat in toate departamentele din companie si ii afiseaza numele, daca il gaseste
+
+#### 8.19. scrie o metoda care printeaza numele angajatului cu cel mai mare salariu dintr-un anumit departament
+
+#### 8.20. scrie o metoda care printeaza numele angajatului cu cel mai mare salariu din companie
+
+#### 8.21. scrie o metoda care printeaza numele angajatului cu cel mai mic salariu din companie
+
+#### 8.22. scrie o metoda care printeaza numele angajatului cu cel mai mic salariu dintr-un anumit departament;
+
+
+
+
