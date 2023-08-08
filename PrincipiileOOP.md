@@ -61,45 +61,52 @@ Metode:
 ex: “I am Dave Brown, I am in 12A class and I am a student”
 
 ### 3. Creează o clasă care să simuleze un adăpost de animale
-Creează clasa `Animal`
+
+#### Clasa `Animal`
 
 Atribute:
 * `name`
 * `age`
 
 Metode:
-* metoda abstractă `makeSound()`
+* Metoda abstractă `makeSound()`
 
-Creează clasa `Cat`, care extinde `Animal`
-
-Atribute: niciun atribut nou
-
-Metoda `makeSound()`
-* va afișa un mesaj ca de exemplu: “Pisica Tom face miau”
-
-Creează clasa `Dog`, care extinde `Animal`
+#### Clasa `Cat` (extinde `Animal`)
 
 Atribute: niciun atribut nou
 
-Metoda `makeSound()`
-* va afișa un mesaj ca de exemplu: “Câinele Azor latră”
+Metoda `makeSound()`:
+* Va afișa un mesaj ca de exemplu: “Pisica Tom face miau”
 
-Creează clasa `SecurityDog`, care extinde `Dog`
+#### Clasa `Dog` (extinde `Animal`)
 
 Atribute: niciun atribut nou
 
-Metoda `makeSound()`
-* va afișa un mesaj ca de exemplu: “Câinele Azor latră agresiv”
+Metoda `makeSound()`:
+* Va afișa un mesaj ca de exemplu: “Câinele Azor latră”
 
-Creează o clasă `Shelter`
+#### Clasa `SecurityDog` (extinde `Dog`)
+
+Atribute: niciun atribut nou
+
+Metoda `makeSound()`:
+* Va afișa un mesaj ca de exemplu: “Câinele Azor latră agresiv”
+
+#### Clasa `Shelter`
 
 Atribute:
 * `animals` (adică o listă de animale)
 
 Metode:
-* `makeNoise()` - această metodă va face ca toate animalele din listă să scoată sunet
-* `addAnimal()` - această metodă va adăuga un animal în lista de animale
-* `main()` - în această metodă se vor adăuga animale în lista folosind metoda `addAnimal()`, iar mai apoi se va apela metoda `makeNoise()` pentru ca fiecare animal din listă să facă sunetul corespuzător (de câine sau de pisică, după caz)
+* `makeNoise()`:
+  - Această metodă va face ca toate animalele din listă să scoată sunet
+
+* `addAnimal()`:
+  - Această metodă va adăuga un animal în lista de animale
+
+* `main()`:
+  - În această metodă se vor adăuga animale în lista folosind metoda `addAnimal()`
+  - Apoi se va apela metoda `makeNoise()` pentru ca fiecare animal din listă să facă sunetul corespunzător (de câine sau de pisică, după caz)
 
 
 
