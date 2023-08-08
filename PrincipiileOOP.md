@@ -111,53 +111,52 @@ Metode:
 
 
 ### 4. Creează o aplicație de gestionare a conturilor deschise la o bancă pentru un client.
-Creează o clasă abstractă numită `BankAccount`
+#### Clasa abstractă `BankAccount`
 
 Atribute:
-* `balance` (câți bani se află în cont, o valoare de tip `double` care semnifică suma în lei)
+* `balance` (câți bani se află în cont, o valoare de tip double care semnifică suma în lei)
 * `accountNumber`
 
-Metode: (va trebui să îți dai seama ce returnează și ce parametrii primește fiecare metodă)
-* `withdraw()` - metodă abstractă
-* `deposit()` - metodă abstractă
+Metode:
+* Metoda abstractă `withdraw()`
+* Metoda abstractă `deposit()`
 
-Creează o clasă numită `StudentAccount`, care să extindă `BankAccount`
+#### Clasa `StudentAccount` (extinde `BankAccount`)
 
 Atribute:
 * `maxDepositAmount` - va trebui să nu își schimbe valoarea o dată ce a fost inițializată
 
-Metode: (va trebui să îți dai seama ce returnează și ce parametrii primește fiecare metodă)
-* `withdraw()` - se pot retrage maxim câți bani sunt în cont în momentul retragerii
-* `deposit()` - se pot depune maxim “maxDepositAmount” bani o dată
+Metode:
+* Metoda `withdraw()` - se pot retrage maxim câți bani sunt în cont în momentul retragerii
+* Metoda `deposit()` - se pot depune maxim “maxDepositAmount” bani o dată
 
-Creează o clasă numită `SpendingAccount`, care să extindă `BankAccount`
+#### Clasa `SpendingAccount` (extinde `BankAccount`)
 
 Atribute:
 * `maxWithdrawalAmount` - poate să își schimbe valoarea o dată ce a fost inițializată
 
-Metode: (va trebui să îți dai seama ce returnează și ce parametrii primește fiecare metodă)
-* `withdraw()` - se pot retrage cu maxim “maxWithdrawalAmount” RON mai mult decât există în cont în momentul retragerii
-  * ex: dacă în cont sunt 5000 de RON, iar maxWithdrawalAmount este 2000 RON, se pot retrage maxim 7000 RON
-* `deposit()` - oricâți bani se pot depune în cont
+Metode:
+* Metoda `withdraw()` - se pot retrage cu maxim “maxWithdrawalAmount” RON mai mult decât există în cont în momentul retragerii (exemplu: dacă în cont sunt 5000 de RON, iar maxWithdrawalAmount este 2000 RON, se pot retrage maxim 7000 RON)
+* Metoda `deposit()` - oricâți bani se pot depune în cont
 
-Creează o clasă `Person`
+#### Clasa `Person`
 
 Atribute:
 * `firstName`
 * `lastName`
 * `accountList` - adică un array care ține lista de conturi ale unei persoane
 
-Metode: (va trebui să îți dai seama ce returnează și ce parametrii primește fiecare metodă)
-* `addAccount()` - va da posibilitatea persoanei să adauge un cont în lista de conturi
-* `listAccounts()` - va printa `accountNumber` împreună cu `balance` pentru fiecare cont din listă
-* `deposit()` - va adăuga o anumită sumă de bani într-un cont
-* `withdraw()` - va retrage o anumită sumă de bani dintr-un cont
-* `checkAccountDetails()` - va printa toate detaliile unui anumit cont
-* `main()`
+Metode:
+* Metoda `addAccount()` - va da posibilitatea persoanei să adauge un cont în lista de conturi
+* Metoda `listAccounts()` - va printa accountNumber împreună cu balance pentru fiecare cont din listă
+* Metoda `deposit()` - va adăuga o anumită sumă de bani într-un cont
+* Metoda `withdraw()` - va retrage o anumită sumă de bani dintr-un cont
+* Metoda `checkAccountDetails()` - va printa toate detaliile unui anumit cont
 
-Creează o clasă `BankingApp`
+#### Clasa `BankingApp`
 
 Clasa va avea doar metoda `main()`, unde se va instanția o persoană și se vor testa metodele pe care le poate face persoana (adăugare cont, deposit, etc.).
+
 
 
 ### 5.Creează o aplicație de plăți
