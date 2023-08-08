@@ -84,6 +84,13 @@ Atribute: niciun atribut nou
 Metoda `makeSound()`
 * va afișa un mesaj ca de exemplu: “Câinele Azor latră”
 
+Creează clasa `SecurityDog`, care extinde `Dog`
+
+Atribute: niciun atribut nou
+
+Metoda `makeSound()`
+* va afișa un mesaj ca de exemplu: “Câinele Azor latră agresiv”
+
 Creează o clasă `Shelter`
 
 Atribute:
