@@ -118,7 +118,7 @@ Scrie o clasă de bază abstractă nouă numită BaseEntity (Entitate de bază).
 
 După modificările tale, următorul cod trebuie să funcționeze corect:
 
-```json
+```java
 User user = new User();
 user.setName("John Grant");
 
