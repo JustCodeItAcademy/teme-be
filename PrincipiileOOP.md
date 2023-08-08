@@ -33,32 +33,32 @@ Comportamentele câinelui sunt "bark" (adică se afișează în consolă "woof")
 Creează mai mulți câini în `Main` și apelează-le comportamentele.
 
 ### 2. Creează o aplicație care să simuleze o școală
-Creează o clasă `Person`, care să fie abstractă. 
+#### Clasa `Person` (abstractă)
 
 Atribute:
 * `firstName`
 * `lastName`
 
-Metode: `introduce()` (care să fie metodă abstractă)
+Metode:
+* Metoda abstractă `introduce()`
 
-Creează o clasă `Teacher`, care să extindă `Person`
+#### Clasa `Teacher` (extinde `Person`)
 
 Atribute:
 * `department`
 * `subject` (adică ce predă profesorul)
 
-Metode: 
-* `introduce()` - implementează metoda abstractă din subclasă și afișează un mesaj. 
-ex: “I am John Decker, I teach Math and I am a teacher”
+Metode:
+* Metoda `introduce()` - implementează metoda abstractă din subclasă și afișează un mesaj. Exemplu: “I am John Decker, I teach Math and I am a teacher”
 
-Creează o clasă `Student`, care să extindă `Person`
+#### Clasa `Student` (extinde `Person`)
 
 Atribute:
 * `groupClass` (adică clasa în care este studentul)
 
-Metode: 
-* `introduce()` - implementează metoda abstractă din subclasă și afișează un mesaj. 
-ex: “I am Dave Brown, I am in 12A class and I am a student”
+Metode:
+* Metoda `introduce()` - implementează metoda abstractă din subclasă și afișează un mesaj. Exemplu: “I am Dave Brown, I am in 12A class and I am a student”
+
 
 ### 3. Creează o clasă care să simuleze un adăpost de animale
 
