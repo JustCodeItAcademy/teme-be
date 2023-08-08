@@ -4,20 +4,21 @@
 ## Principiile OOP (mai puțin confortabil)
 
 ### 1. Construiește o aplicație care să modeleze în cod forme geometrice și operațiile cu ele
-Creează o interfață `Shape`
 
-Metode: 
+#### Interfața `Shape`
+
+Metode:
 * `computeArea()` - tipul returnat este `double` și nu primește niciun parametru
 
-Creează o clasă `Circle` care implementează interfața `Shape`
+#### Clasa `Circle` (implementează interfața `Shape`)
 
-Atribute: 
+Atribute:
 * `radius` (raza cercului)
 
 Metode:
 * `computeArea()`
 
-Creează o clasă `Rectangle` care implementează interfața `Shape`
+#### Clasa `Rectangle` (implementează interfața `Shape`)
 
 Atribute:
 * `height` (lungime)
@@ -26,11 +27,12 @@ Atribute:
 Metode:
 * `computeArea()`
 
-Creează o clasă `Canvas`, în care să ai o metodă `main` unde vei testa calculul ariei atât pentru cercuri cât și pentru dreptunghiuri
+#### Clasa `Canvas`
 
-Creează clasa `Dog` care are ca și atribute nume, culoare și rasă.
-Comportamentele câinelui sunt "bark" (adică se afișează în consolă "woof") și "run" (adică se afișează în consolă "dog is running").
-Creează mai mulți câini în `Main` și apelează-le comportamentele.
+Metoda `main()`:
+* În această metodă vei testa calculul ariei atât pentru cercuri cât și pentru dreptunghiuri
+
+
 
 ### 2. Creează o aplicație care să simuleze o școală
 #### Clasa `Person` (abstractă)
