@@ -110,9 +110,40 @@ Metode:
   - În această metodă se vor adăuga animale în lista folosind metoda `addAnimal()`
   - Apoi se va apela metoda `makeNoise()` pentru ca fiecare animal din listă să facă sunetul corespunzător (de câine sau de pisică, după caz)
 
+### 4. Ești în procesul de dezvoltare a unei aplicații care colectează informații despre ce site-uri web au fost vizitate de către ce utilizatori. 
 
+Există trei clase: User (Utilizator), WebSite (Site web) și Visit (Vizită). Multe câmpuri și metode ale acestor clase sunt identice.
 
-### 4. Creează o aplicație de gestionare a conturilor deschise la o bancă pentru un client.
+Scrie o clasă de bază abstractă nouă numită BaseEntity (Entitate de bază). Clasele furnizate trebuie să o extindă. Mută toate câmpurile și metodele repetitive în noua clasă.
+
+După modificările tale, următorul cod trebuie să funcționeze corect:
+
+```json
+User user = new User();
+user.setName("John Grant");
+
+BaseEntity userEntity = user;
+userEntity.setId(100);
+userEntity.setVersion(1);
+
+WebSite site = new WebSite();
+site.setUrl("https://hyperskill.org");
+
+BaseEntity siteEntity = site;
+siteEntity.setId(101);
+siteEntity.setVersion(1);
+
+Visit visit = new Visit();
+visit.setUser(user);
+visit.setSite(site);
+
+BaseEntity baseVisit = visit;
+baseVisit.setId(102);
+baseVisit.setVersion(103);
+
+```
+
+### 6. Creează o aplicație de gestionare a conturilor deschise la o bancă pentru un client.
 #### Clasa abstractă `BankAccount`
 
 Atribute:
