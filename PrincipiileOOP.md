@@ -384,4 +384,43 @@ Spot 2 is free.
 3 CJ96BOS Red
 > exit
 ```
+#### Varianta 4
+Comanda `reg_by_color` afișează toate numerele de înmatriculare ale mașinilor de o anumită culoare, luând culoarea ca parametru. Culoarea poate fi scrisă cu litere mari sau mici. De exemplu, `reg_by_color black`. Răspunsul ar trebui să conțină numerele de înmatriculare separate prin virgule. Ordinea ar trebui să fie aceeași ca în comanda status. Dacă nu există mașini de această culoare, ar trebui sa printezi: `no black cars found`
+
+Comanda `spot_by_color` este similară cu cea anterioară, dar afișează toate umerele locurilor de parcare unde sunt parcate masini de o anumita culoare.
+
+Comanda `spot_by_reg` îți returnează numărul locului unde este parcată o mașină pe baza numărului său de înmatriculare, de exemplu, spot_by_reg BN39GIM. Această comandă va returna, de asemenea, un mesaj de eroare dacă mașina ta nu a fost găsită: `No cars with number BN39GIM where found`. Pentru comoditate, să presupunem că toate numerele de înmatriculare ale mașinilor sunt unice.
+
+##### Exemplu:
+Simbolul `>` reprezinta input-ul oferit de utilizator.
+
+```
+> spot_by_color yellow
+Sorry, a parking lot has not been created.
+> create 4
+Created a parking lot with 4 spots.
+> park BN39GIM White
+White car parked in spot 1.
+> park BN39ABC White
+White car parked in spot 2.
+> park CJ96BOS Red
+Red car parked in spot 3.
+> park CJ96SSS Red
+Red car parked in spot 4.
+> reg_by_color GREEN
+No cars with color GREEN were found.
+> reg_by_color WHITE
+BN39GIM, BN39ABC
+> spot_by_color GREEN
+No cars with color GREEN were found.
+> spot_by_color red
+3, 4
+> spot_by_reg ABC
+No cars with registration number ABC were found.
+> spot_by_reg BN39ABC
+2
+> spot_by_reg CJ96BOS
+3
+> exit
+```
 
