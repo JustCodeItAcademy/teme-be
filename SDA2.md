@@ -11,7 +11,7 @@ Ar trebui să creezi o clasă numită `Candidate` care să aibă următoarele pr
 #### Clasa Election
 Va avea o lista de candidati si urmatoarele functionalitati:
 
-#### Funcția vote
+##### Funcția vote
 Creeaza funcția `vote` care:
 * Primește un singur argument, `name`, reprezentând numele candidatului pentru care s-a votat.
 * Dacă `name` corespunde cu numele unui candidat, actualizează totalul de voturi al candidatului.
@@ -20,12 +20,12 @@ Creeaza funcția `vote` care:
 
 > **Notă**: Poți presupune că nu există doi candidați cu același nume.
 
-#### Funcția declareWinner
+##### Funcția declareWinner
 Completează funcția `declareWinner`:
 * Afișează numele candidatului cu cele mai multe voturi.
 * Dacă există un egalitate, afișează numele fiecărui candidat câștigător, fiecare pe o linie nouă.
 
-##### Exemplu, pentru 3 candidati: Alice, Bob si Charlie:
+#### Exemplu, pentru 3 candidati: Alice, Bob si Charlie:
 ```
 Number of voters: 4
 Vote: Alice
