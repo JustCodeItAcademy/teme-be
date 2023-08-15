@@ -311,8 +311,8 @@ Să începem prin scrierea unui program care poate plasa mașina ta într-o parc
 
 Prima versiune a programului tău ar trebui să afișeze următoarele:
 
-`Mașina albă s-a parcat.\n
-Mașina galbenă a părăsit parcarea.\n
-Mașina verde tocmai s-a parcat aici.`
+```Mașina albă s-a parcat.
+Mașina galbenă a părăsit parcarea.
+Mașina verde tocmai s-a parcat aici.```
 
 
