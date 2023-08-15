@@ -423,4 +423,50 @@ No cars with registration number ABC were found.
 3
 > exit
 ```
+### 10. Creaza un sistem de gestiune pentru o sala de cinema 
+
+#### Context:
+Clientul tău este o sală de cinema care are nevoie de un sistem de gestiune. Există două tipuri de utilizatori: `admin` (care gestionează sala) și `client` (adică cel care vine să se uite la film).
+
+#### Cerințe pentru `Admin`:
+1. **Creează structura sălii**: generează un grid format dintr-un anumit număr de linii și coloane.
+2. **Vede statisticile pentru sala sa**:
+    - Câte bilete sunt vândute (adică câte locuri sunt ocupate).
+    - Care este procentajul de locuri ocupate.
+    - Care este suma obținută din vânzări în momentul actual.
+    - Care este suma maximă care se poate obține din vânzări dacă se vând toate locurile.
+3. **Resetează** toate locurile din sală ca fiind libere.
+
+#### Cerințe pentru `Client`:
+1. **Vede structura sălii**: care locuri sunt ocupate și care nu.
+2. **Află prețul unui loc** de la un anumit rând și coloană:
+    - Dacă numărul total de locuri este mai mic decât 60, prețul este 10.
+    - Altfel, dacă numărul total de locuri este mai mare decât 60 și biletul selectat este în prima jumătate, prețul este 10; dacă este în a doua jumătate, prețul este dublu.
+3. **Cumpără un bilet** pentru un loc de la un anumit rând și coloană.
+
+#### Enunț Tehnic:
+
+##### **Clasa `CinemaHall`**
+
+- **Atribute**:
+    - `numberOfRows`
+    - `numberOfCols`
+    - `Grid`
+
+- **Metode**:
+
+    - `initializeGridWithEmptySeats()`: Va pune caracterul ‘E’, semnificând “empty”, în fiecare celulă din grid. Adică face ca toate locurile să fie disponibile.
+    
+    - `showStatistics()`: Va printa în consolă câte bilete sunt vândute, procentajul de locuri ocupate, suma obținută din vânzări până acum și suma maximă care se poate obține din vânzări.
+    
+    - `printGrid()`: Va afișa în consolă structura sălii de cinema.
+    
+    - `getPrice(int row, int col)`: Va afișa prețul pentru un loc de la un anumit rând și coloană.
+    
+    - `buyTicket(int row, int col)`: Va seta locul de la un anumit rând și coloană ca fiind ocupat. Dacă locul este deja ocupat sau nu există, va arunca o excepție `InvalidSeatException`.
+
+##### **Clasa `Main`**
+
+- Creează clasa `Main` unde se testează toate operațiile menționate mai sus.
+
 
