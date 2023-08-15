@@ -254,8 +254,11 @@ Clasa `Shop` va avea o metodă `main` unde vor fi testate funcționalitățile i
 
 ### 8. Creeaza o aplicatie de gestiune a unei companii
 O companie are un nume, data infiintarii, o lista de departamente
+
 Un departament un nume si o lista de angajati.
+
 Un angajat are nume, prenume, salariu si o adresa.
+
 O adresa are oras, strada, numar.
 
 #### 8.1. Scrie o metoda care afiseaza numele angajatului
