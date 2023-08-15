@@ -311,7 +311,8 @@ Să începem prin scrierea unui program care poate plasa mașina ta într-o parc
 
 Prima versiune a programului tău ar trebui să afișeze următoarele, ca exemplu:
 
-```Mașina albă cu numarul BN39GIM s-a parcat.
+```
+Mașina albă cu numarul BN39GIM s-a parcat.
 Mașina galbenă cu numarul HD23ABC a părăsit parcarea.
 Mașina verde cu numarul CJ96BOS s-a parcat.
 ```
