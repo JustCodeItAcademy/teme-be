@@ -313,6 +313,7 @@ Prima versiune a programului tău ar trebui să afișeze următoarele, ca exempl
 
 ```Mașina albă cu numarul BN39GIM s-a parcat.
 Mașina galbenă cu numarul HD23ABC a părăsit parcarea.
-Mașina verde cu numarul CJ96BOS s-a parcat.```
+Mașina verde cu numarul CJ96BOS s-a parcat.
+```
 
 
