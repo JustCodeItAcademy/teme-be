@@ -302,15 +302,17 @@ O adresa are oras, strada, numar.
 
 #### 8.22. scrie o metoda care printeaza numele angajatului cu cel mai mic salariu dintr-un anumit departament;
 
-### Parcările sunt o necesitate urbană.
+### 9. Parcările sunt o necesitate urbană.
+#### Varianta 1
+
 Ele oferă locuri unde poți lăsa mașina fără să-ți faci griji că ar fi furată sau ridicată. Sistemele moderne de parcare auto sunt automate și sunt capabile de auto-gestionare. În acest proiect, vei crea un sistem similar, dar într-o formă simplificată.
 
 Să începem prin scrierea unui program care poate plasa mașina ta într-o parcare și elibera locul atunci când mașina pleacă. Acesta va fi "scheletul" parcării noastre funcționale și vom adăuga la el în pașii următori. În momentele aglomerate, parcarea poate rămâne fără locuri vacante. Programul ne va oferi informații agregate despre starea actuală a parcării.
 
 Prima versiune a programului tău ar trebui să afișeze următoarele:
 
-`Mașina albă s-a parcat.
-Mașina galbenă a părăsit parcarea.
+`Mașina albă s-a parcat.\n
+Mașina galbenă a părăsit parcarea.\n
 Mașina verde tocmai s-a parcat aici.`
 
 
