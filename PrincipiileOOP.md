@@ -353,3 +353,35 @@ Spot 1 is free.
 Red car parked in spot 1.
 > exit
 ```
+#### Varianta 3
+Tot ce facem e sa adaugam, pe langa comenzile `park` si `leave`, comenzile `create` si `status`
+
+Comanda `create` va crea o parcare cu un anumit numar de locuri. De exemplu, `create 3` va crea o parcare cu 3 locuri.
+
+Comanda `status` va printa toate locurile ocupate, in ordine crescatoare. Pentru fiecare loc, se va printa numarul locului, numarul de inregistrare al masinii si culoarea masinii.
+Daca nu este niciun loc ocupat, se va printa `Parking lot is empty`
+
+##### Exemplu:
+Simbolul `>` reprezinta input-ul oferit de utilizator.
+
+```
+> park BN39GIM White
+Sorry, a parking lot has not been created.
+> create 3
+Created a parking lot with 3 spots.
+> status
+Parking lot is empty.
+> park BN39GIM White
+White car parked in spot 1.
+> park HD23ABC Green
+Green car parked in spot 2.
+> park CJ96BOS Red
+Red car parked in spot 3.
+> leave 2
+Spot 2 is free.
+> status
+1 BN39GIM White
+3 CJ96BOS Red
+> exit
+```
+
