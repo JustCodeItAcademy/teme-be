@@ -309,10 +309,10 @@ Ele oferă locuri unde poți lăsa mașina fără să-ți faci griji că ar fi f
 
 Să începem prin scrierea unui program care poate plasa mașina ta într-o parcare și elibera locul atunci când mașina pleacă. Acesta va fi "scheletul" parcării noastre funcționale și vom adăuga la el în pașii următori. În momentele aglomerate, parcarea poate rămâne fără locuri vacante. Programul ne va oferi informații agregate despre starea actuală a parcării.
 
-Prima versiune a programului tău ar trebui să afișeze următoarele:
+Prima versiune a programului tău ar trebui să afișeze următoarele, ca exemplu:
 
-```Mașina albă s-a parcat.
-Mașina galbenă a părăsit parcarea.
-Mașina verde tocmai s-a parcat aici.```
+```Mașina albă cu numarul BN39GIM s-a parcat.
+Mașina galbenă cu numarul HD23ABC a părăsit parcarea.
+Mașina verde cu numarul CJ96BOS s-a parcat.```
 
 
