@@ -316,5 +316,40 @@ Mașina albă cu numarul BN39GIM s-a parcat.
 Mașina galbenă cu numarul HD23ABC a părăsit parcarea.
 Mașina verde cu numarul CJ96BOS s-a parcat.
 ```
+#### Varianta 2
 
+Avem nevoie de mai multe locuri de parcare, spre deosebire de varianta 1, unde nu am alocat mai multe locuri de parcare. Sa zicem ca avem 20 de locuri.
 
+Când utilizatorul vrea să parcheze mașina, programul ar trebui să găsească un loc de parcare disponibil cu cel mai mic număr.
+
+Utilizatorul poate scrie comenzile `park` și `leave` de mai multe ori și poate tasta `exit` pentru a încheia programul.
+
+Dacă parcarea este plină și nu mai există loc, programul ar trebui să afișeze Mesajul: `Ne pare rău, parcarea este plină..`
+
+Dacă există mai multe locuri disponibile pentru o mașină, programul ar trebui să aloce întotdeauna locul cu cel mai mic număr.
+
+```
+Mașina albă cu numarul BN39GIM s-a parcat.
+Mașina galbenă cu numarul HD23ABC a părăsit parcarea.
+Mașina verde cu numarul CJ96BOS s-a parcat.
+```
+##### Exemplu:
+Simbolul `>` reprezinta input-ul oferit de utilizator.
+
+```
+> park BN39GIM White
+White car parked in spot 1.
+>leave 2
+There is no car in spot 2.
+> park HD23ABC Green
+Green car parked in spot 2.
+...(parking 20 cars)...
+
+> park CJ96BOS Red
+Sorry, the parking lot is full.
+> leave 1
+Spot 1 is free.
+> park CJ96BOS Red
+Red car parked in spot 1.
+> exit
+```
