@@ -8,7 +8,10 @@ Ar trebui să creezi o clasă numită `Candidate` care să aibă următoarele pr
 * `name` - Numele candidatului
 * `numberOfVotes` - Totalul voturilor primite de candidat
 
-#### Funcția Vote
+#### Clasa Election
+Va avea o lista de candidati si urmatoarele functionalitati:
+
+#### Funcția vote
 Creeaza funcția `vote` care:
 * Primește un singur argument, `name`, reprezentând numele candidatului pentru care s-a votat.
 * Dacă `name` corespunde cu numele unui candidat, actualizează totalul de voturi al candidatului.
