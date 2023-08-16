@@ -49,5 +49,9 @@ Acum transforma functia in felul urmator: functia va primi, in plus si un numar 
 Returneaza index-ul celei de-a k aparitii a numarului n in array.
 De exemplu, pentru `19 14 17 15 17`, indexul celei de-a 2-a aparitii a lui 17 in array este 5.
 
+### 6. Scrie o functie care accepta 2 numere reprezentand anul si luna.
+Functia va returna prima si ultima zi din luna.
 
+De exemplu, pentru anul `2017` si luna `1`, functia va returna "2017-01-01 2017-01-31"
+Foloseste-te de functiile deja existente in clasa LocalDate.
 
