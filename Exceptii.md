@@ -121,8 +121,42 @@ file2.txt
 untracked files:
 no untracked files
 ```
+#### Detalii de implementare
+Vei avea nevoie sa creezi o clasa si sa retii calea spre folderul vcs si spre fisierele `config.txt` si `index.txt`
+In constructor, putem ca daca folderul nu exista deja, sa il cream noi din cod:
 
+```
+    private final String VCS_DIRECTORY = "./vcs";
+    private final String CONFIG_FILE = VCS_DIRECTORY + "/config.txt";
+    private final String INDEX_FILE = VCS_DIRECTORY + "/index.txt";
 
+    public SVCS() {
+        File vcsDir = new File(VCS_DIRECTORY);
+        if (!vcsDir.exists()) {
+            vcsDir.mkdir();
+        }
+    }
+```
+Foloseste aurmatoarea structura de cod pentru a citi, linie cu linie, textul dintr-un fisier.
+De exemplu, citim din fisierul index.txt:
+
+```
+                BufferedReader reader = new BufferedReader(new FileReader(INDEX_FILE));
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    System.out.println(line);
+                }
+                reader.close();
+```
+
+Foloseste apoi urmatoarea a scrie o linie de text intr-un fisier:
+De exemplu, scriem in fisierul index.txt:
+
+```
+PrintWriter writer = new PrintWriter(new FileWriter(INDEX_FILE, true));
+writer.println("o noua linie in fisier");
+writer.close();
+```
 
 
 
