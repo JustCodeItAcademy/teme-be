@@ -34,10 +34,10 @@ Vote: Charlie
 Vote: Alice
 Alice is the winner
 ```
+### 2. Scrie un program care citește un șir de numere întregi și două numere n și m. Programul trebuie să verifice că n și m nu apar niciodată unul lângă celălalt (în orice ordine) în șir.
 
-
-
-
+### 3. Scrie un program care citește un șir de numere întregi și afișează numărul de "triplete" din șir. 
+Un "triplet" reprezintă trei numere întregi consecutive în ordine crescătoare, care diferă cu 1 (de exemplu, 3,4,5 este un triplet, dar 5,4,3 și 2,4,6 nu sunt).
 
 
 
