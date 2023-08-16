@@ -38,10 +38,89 @@ checkout vă permite să comutați între commit-uri și să restaurați o stare
 * Daca comanda este una valida, atunci se va afisa o descriere a comenzii
 * Daca comanda nu exista, atunci se va afisa "comanda inexistenta"
 
-Nu au nevoie de o bucla care sa afiseze in mod repetat un meniu. Programul porneste, utilizatorul introduce o comanda, si programul se opreste apoi.
+##### Exemplu:
+Simbolul `>` reprezinta input-ul oferit de utilizator.
 
+```
+> --help
+These are all the commands:
+config     Get and set a username.
+add        Add a file to the index.
+log        Show commit logs.
+commit     Save changes.
+checkout   Restore a file.
 
-* `numberOfVotes` - Totalul voturilor primite de candida
+> 
+These are all the commands:
+config     Get and set a username.
+add        Add a file to the index.
+log        Show commit logs.
+commit     Save changes.
+checkout   Restore a file.
+
+> config
+This command gets and sets a username
+
+> fsgfsdgsg
+This command does not exist
+```
+
+#### Varianta 2
+Acum vrem sa implementam comenzile `config`, `add` si `status`.
+Fisierul `index.txt` va stoca username-ul care va fi setat prin comanda config.
+Fisierul `config.txt` va stoca numele tuturor fisierelor care vor fi adaugate prin comanda add in "staging area".
+Cele doua fisiere vor fi stocate intr-un folder numit `vcs`. La acelasi nivel cu folderul, vor fi fisierele normale din "repository"
+
+Structura ar trebui sa fie urmatoarea:
+
+```
+.
+├── vcs
+│   ├── config.txt
+│   └── index.txt
+├── file1.txt
+└── file2.txt
+```
+Avem deci un folder care are niste fisiere unde stocam informatii despre repository, iar in rest avem doua fisiere normale din repository.
+Unul dintre ele este in staging area, iar unul nu, in exemplul de mai sus.
+
+Comanda `config` va adauga in fisierul `confix.txt` username-ul utilizatorului.
+Daca este deja un nume setat, acesta va fi suprascris.
+
+Comanda `add` va adauga numele unui anumit fisier in `index.txt`.
+Daca fisierul nu exista, atunci se va trata acest caz exceptional si utilizatorul va fi informat.
+
+Comanda `status` va afisa numele fisierelor care sunt in staging area (adica numele fisierelor care sunt in index.txt) si numele fisierelor care nu sunt in staging area (adica celelalte fisiere).
+
+##### Exemplu:
+Simbolul `>` reprezinta input-ul oferit de utilizator.
+
+```
+> config john
+username set to 'john'
+
+> add file1.txt
+'file1.txt' was added to index
+
+> add non_existing_file.txt
+can't find 'non_existing_file.txt'
+
+> status
+tracked files:
+file1.txt
+untracked files:
+file2.txt
+
+> add file2.txt
+'file2.txt' was added to index
+
+> status
+tracked files:
+file1.txt
+file2.txt
+untracked files:
+no untracked files
+```
 
 
 
