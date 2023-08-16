@@ -472,4 +472,38 @@ Clientul tău este o sală de cinema care are nevoie de un sistem de gestiune. E
 
 - Creează clasa `Main` unde se testează toate operațiile menționate mai sus.
 
+### 11. Ajuta-i pe Bills Burgers sa isi gestioneze procesul de vanzare a burgerilor.
 
+Scopul aplicației este să ajute o companie fictivă numită **Bills Burgers** să-și gestioneze procesul de vânzare a hamburgerilor. Aplicația noastră îl va ajuta pe Bill să selecteze tipuri de hamburgeri, unele dintre produsele adiționale (adăugiri) care trebuie adăugate la hamburgeri și stabilirea prețurilor.
+
+#### Descrierea Hamburgerului de Bază
+
+Vrem să creăm un hamburger de bază, dar și alte două tipuri de hamburgeri care sunt cele mai populare în magazinul lui Bill. Hamburgerul de bază ar trebui să aibă următoarele ingrediente:
+- Tip de chiflă
+- Carne 
+- Până la 4 adăugiri suplimentare (lucruri precum salată verde, roșii, morcovi, etc.) pe care clientul le poate selecta pentru a fi adăugate la hamburger.
+
+> Fiecare dintre aceste produse are un preț suplimentar, așa că ai nevoie de o metodă de a urmări câte produse au fost adăugate și de a calcula prețul final (hamburgerul de bază cu toate adăugirile). Acest hamburger are un preț de bază, iar adăugirile au toate prețuri separate (până la 4 adăugiri).
+
+#### Clasa Hamburger
+
+Crează o clasă `Hamburger` pentru a gestiona tot ce este mai sus. Constructorul ar trebui să includă doar tipul de chiflă, carnea și prețul, poate include și numele hamburgerului sau poți folosi un setter.
+
+#### Varietăți Suplimentare de Hamburgeri
+
+De asemenea, creează alte două varietăți de hamburgeri (subclase) pentru:
+
+1. **Hamburger Sănătos**: 
+    - Pe o chiflă de secară brună
+    - Plus două produse adiționale care pot fi adăugate
+    - Hamburgerul sănătos poate avea în total 6 adăugiri.
+
+    _Sfat_: probabil vrei să procesezi cele două adăugiri suplimentare în această nouă clasă (subclasă a Hamburger), nu în clasa de bază (Hamburger), deoarece cele două adăugiri sunt potrivite doar pentru această nouă clasă.
+
+2. **Hamburger Deluxe**: 
+    - Vine cu cartofi prăjiți și băuturi ca adăugiri
+    - Nu sunt permise alte adăugiri. Obiectul este creat, iar apoi se previne adăugarea altor produse.
+
+#### Prețuri și Totaluri
+
+Toate cele 3 clase ar trebui să aibă o metodă care poate fi apelată oricând pentru a arăta prețul de bază al hamburgerului plus toate produsele adiționale, fiecare arătând numele și prețul adăugirii, și un total/grand total pentru hamburger (prețul de bază + toate adăugirile). Pentru cele două clase adiționale, s-ar putea să ai nevoie să te uiți la clasa de bază pentru stabilirea prețurilor și apoi să adaugi totalurile la prețul final.
