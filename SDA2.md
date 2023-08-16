@@ -55,3 +55,21 @@ Functia va returna prima si ultima zi din luna.
 De exemplu, pentru anul `2017` si luna `1`, functia va returna "2017-01-01 2017-01-31"
 Foloseste-te de functiile deja existente in clasa LocalDate.
 
+### 7. Scrie o functie care accepta un array bidimensional (o matrice) si doua numere: i si j.
+Interschimba coloanele cu indicii i si j din matrice.
+
+De exemplu, pentru matricea:
+
+```
+11 12 13 14
+21 22 23 24
+31 32 33 3
+```
+
+Daca vrem sa interschimba coloana 0 cu coloana 1, matricea va deveni:
+
+```
+12 11 13 14
+22 21 23 24
+32 31 33 34
+```
