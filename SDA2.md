@@ -39,5 +39,15 @@ Alice is the winner
 ### 3. Scrie un program care citește un șir de numere întregi și afișează numărul de "triplete" din șir. 
 Un "triplet" reprezintă trei numere întregi consecutive în ordine crescătoare, care diferă cu 1 (de exemplu, 3,4,5 este un triplet, dar 5,4,3 și 2,4,6 nu sunt).
 
+### 4. Scrie o functie care primeste un string, in care exista mai multe cuvinte separate prin spatiu.
+Returneaza cel mai lung cuvant din acel string.
+
+### 5. Scrie o functie care primeste un array si un numar n.
+Returneaza decate ori apare numarul n in array.
+
+Acum transforma functia in felul urmator: functia va primi, in plus si un numar k.
+Returneaza index-ul celei de-a k aparitii a numarului n in array.
+De exemplu, pentru `19 14 17 15 17`, indexul celei de-a 2-a aparitii a lui 17 in array este 5.
+
 
 
