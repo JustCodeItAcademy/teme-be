@@ -141,12 +141,12 @@ Foloseste aurmatoarea structura de cod pentru a citi, linie cu linie, textul din
 De exemplu, citim din fisierul index.txt:
 
 ```
-                BufferedReader reader = new BufferedReader(new FileReader(INDEX_FILE));
-                String line;
-                while ((line = reader.readLine()) != null) {
-                    System.out.println(line);
-                }
-                reader.close();
+BufferedReader reader = new BufferedReader(new FileReader(INDEX_FILE));
+String line;
+while ((line = reader.readLine()) != null) {
+    System.out.println(line);
+}
+reader.close();
 ```
 
 Foloseste apoi urmatoarea a scrie o linie de text intr-un fisier:
