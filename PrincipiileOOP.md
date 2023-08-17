@@ -508,7 +508,7 @@ De asemenea, creează alte două varietăți de hamburgeri (subclase) pentru:
 
 Toate cele 3 clase ar trebui să aibă o metodă care poate fi apelată oricând pentru a arăta prețul de bază al hamburgerului plus toate produsele adiționale, fiecare arătând numele și prețul adăugirii, și un total/grand total pentru hamburger (prețul de bază + toate adăugirile). Pentru cele două clase adiționale, s-ar putea să ai nevoie să te uiți la clasa de bază pentru stabilirea prețurilor și apoi să adaugi totalurile la prețul final.
 
-### 2. Creeaza o aplicatie de gestiune a unei biblioteci - nivel avansat
+### 12. Creeaza o aplicatie de gestiune a unei biblioteci - nivel avansat
 
 #### Enunt non-tehnic:
 
