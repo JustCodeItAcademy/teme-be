@@ -73,3 +73,18 @@ Daca vrem sa interschimba coloana 0 cu coloana 1, matricea va deveni:
 22 21 23 24
 32 31 33 34
 ```
+### 8. Scrie o functie care accepta un numar n si printeaza urmatorul pattern de marime n:
+Exemplu, pentru n = 7:
+
+```
+Input : 7
+Output :
+
+    *******
+    **   **
+    * * * *
+    *  *  *
+    * * * *
+    **   **
+    *******
+```
