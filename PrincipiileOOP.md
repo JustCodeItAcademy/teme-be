@@ -480,29 +480,28 @@ Scopul aplicației este să ajute o companie fictivă numită **Bills Burgers** 
 
 Vrem să creăm un hamburger de bază, dar și alte două tipuri de hamburgeri care sunt cele mai populare în magazinul lui Bill. Hamburgerul de bază ar trebui să aibă următoarele ingrediente:
 - Tip de chiflă
-- Carne 
+- Carnea folosita
+- Pretul de baza
 - Până la 4 adăugiri suplimentare (lucruri precum salată verde, roșii, morcovi, etc.) pe care clientul le poate selecta pentru a fi adăugate la hamburger.
 
 > Fiecare dintre aceste produse are un preț suplimentar, așa că ai nevoie de o metodă de a urmări câte produse au fost adăugate și de a calcula prețul final (hamburgerul de bază cu toate adăugirile). Acest hamburger are un preț de bază, iar adăugirile au toate prețuri separate (până la 4 adăugiri).
 
 #### Clasa Hamburger
 
-Crează o clasă `Hamburger` pentru a gestiona tot ce este mai sus. Constructorul ar trebui să includă doar tipul de chiflă, carnea și prețul, poate include și numele hamburgerului sau poți folosi un setter.
+Crează o clasă `Hamburger` pentru a gestiona tot ce este mai sus. Constructorul ar trebui să primeasca ca parametru includă tipul de chiflă, carnea și prețul.
 
 #### Varietăți Suplimentare de Hamburgeri
 
 De asemenea, creează alte două varietăți de hamburgeri (subclase) pentru:
 
 1. **Hamburger Sănătos**: 
-    - Pe o chiflă de secară brună
-    - Plus două produse adiționale care pot fi adăugate
-    - Hamburgerul sănătos poate avea în total 6 adăugiri.
-
-    _Sfat_: probabil vrei să procesezi cele două adăugiri suplimentare în această nouă clasă (subclasă a Hamburger), nu în clasa de bază (Hamburger), deoarece cele două adăugiri sunt potrivite doar pentru această nouă clasă.
+    - Tipul de chifla este chiflă de secară brună
+    - Pana la 6 adaugiri suplimentare
+    - carne (mostenita din superclasa)
+    - pret de baza (mostenita din superclasa)
 
 2. **Hamburger Deluxe**: 
-    - Vine cu cartofi prăjiți și băuturi ca adăugiri
-    - Nu sunt permise alte adăugiri. Obiectul este creat, iar apoi se previne adăugarea altor produse.
+    - Vine cu maxim 2 adaugiri: cartofi prăjiți și băutura (nu sunt permise alte adăugiri)
 
 #### Prețuri și Totaluri
 
