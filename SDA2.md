@@ -120,3 +120,5 @@ Acum adăugăm acea sumă (13) la suma cifrelor care nu au fost înmulțite cu 2
 Da, ultima cifră din acea sumă (20) este un 0, deci cardul lui David este autentic!
 
 Scrie un program care valideaza un card Visa.
+
+### 10. Avand la dispozitie o lista de litere, gaseste secventa de litere de cea mai mare lungime din lista, care reprezinta un palindrom.
