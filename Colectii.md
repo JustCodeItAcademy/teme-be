@@ -198,3 +198,69 @@ Asigură operațiile de codificare și decodificare pentru un cuvânt, având la
 
 - Aici vor fi apelate metodele cifrului
 
+### 11. Implementează o librărie
+
+Librăria va trebui să conțină o colecție de cărți. Fiecare carte are atributele: `year`, `title`, `genre` (gen) și `author`.
+
+Librăria va trebui să implementeze următoarele funcționalități:
+- Afișarea cărților ordonate după `year`
+- Afișarea cărților ordonate după `autor`
+- Gruparea cărților după `genre`	
+- Afișarea tuturor cărților dintr-un anumit gen 
+- Afișarea tuturor genurilor împreună cu toate cărțile din fiecare gen 
+- Afișarea tuturor genurilor 
+- Adăugarea unei cărți
+- Ștergerea unei cărți
+
+#### Creează clasa Book
+
+##### Atribute:
+- **Year**
+- **Title**
+- **Genre**
+- **Author**
+
+##### Metode:
+
+###### compareTo 
+(suprascrisă din interfața Comparable)
+- Va compara cărțile după `year`
+
+#### Creează clasa AuthorComparator
+
+- Va implementa interfața Comparator
+- Va suprascrie metoda `compare()` pentru a compara două cărți după autor (se va apela metoda `compareTo()` pentru String-uri)
+
+#### Creează clasa BookStore
+
+##### Atribute:
+- **Books**: va fi un set 
+
+##### Metode:
+
+###### addBook()
+- Adaugă o carte primită ca parametru în set-ul `books`
+
+###### deleteBook()
+- Șterge cartea primită ca parametru din set-ul `books`
+
+###### getAllBooksOrderedByYear()
+- Va returna valoarea atributului `books`
+
+###### getAllGenres()
+- Va returna un set cu toate genurile existente în colecția de cărți
+
+###### getAllBooksOrderedByAuthor()
+- Va returna un TreeSet care va folosi AuthorComparator pentru a sorta cărțile după autor
+
+###### getAllBooksByGenre()
+- Va construi o mapă, în care cheia este un gen, iar valoarea este set-ul de cărți care au acel gen
+- Va returna această mapă (toate genurile, cu toate cărțile din fiecare gen)
+(HINT: mapă cu cheia `gen`, iar valoarea lista de cărți cu acel gen)
+
+###### getBooksByGenre()
+- Va primi ca parametru un gen
+- Va returna toate cărțile care au acel gen
+(HINT: valoarea de la o anumită cheie din mapă)
+
+
