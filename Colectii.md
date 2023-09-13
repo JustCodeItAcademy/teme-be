@@ -27,6 +27,19 @@
 - Metoda non-statică
 - Adaugă numărul primit ca parametru în lista de numere și îl șterge din lista de numere blocate
 
+### 2.Scrie o metoda care:
+- primeste ca si parametru o lista de numere si returneaza o alta lista de numere formata din numerele din lista primita ca parametru, ridicate la patrat (puteti folosi Math.pow(2) pentru a ridica la patrat)
+
+#### Exemplu: 
+```
+Input: {2,3,4,5}
+Output: {4,9,16,25}
+```
+
+
+
+## Colectii (confortabil)
+
 ### 2. Implementeaza un spell checker
 
 Cel mai simplu spell checker este bazat pe o lista de cuvinte cunoscute (un dictionar). Daca scrii un text, fiecare cuvant trebuie cautat in lista de cuvinte cunoscute, iar daca nu este gasit, inseamna ca e eronat. Implementeaza un astfel de spell checker.
