@@ -79,7 +79,7 @@ Output2: false
 
 ### 7. Scrie o metoda care:
 - Primeste ca parametru o lista de cuvinte si returneaza de cate ori apare fiecare cuvant in lista
-- 
+
 #### Exemplu:
 ```
 Input: {“ana”, “are”, “mere”, “are”}
@@ -106,12 +106,46 @@ Scrie 2 metode:
 - O metoda care sa gaseasca compania cu cel mai mare pret al unei actiuni din mapa
 - O metoda care sa gaseasca pretul mediu al preturilor actiunilor din mapa
 
+### 10. Gestiunea produselor dintr-un magazin
 
+Într-un magazin există produse, caracterizate de **nume**, **preț**, **categorie**. Categoria este un enum, care are valorile `LACTATE`, `MEZELURI`, `LEGUME&FRUCTE`. Task-ul este să grupăm produsele după categorii.
 
+Astfel, avem:
+- Clasa **Product**
+- Enum-ul **Category**
+
+Într-o clasă **Shop**, avem atributul `products`, care este o mapă având cheia **Category** (care este un enum) și valoarea o listă de produse (din acea categorie).
+
+#### Metode:
+
+##### Add product
+- Adaugă un produs nou în mapa.
+- Dacă categoria produsului există deja, se va adăuga produsul la acea categorie în mapa, altfel se va crea o nouă categorie în care va fi inițial produsul adăugat.
+
+##### getProductByCategory
+- Va returna toate produsele dintr-o anumită categorie.
+
+##### getAllCategories
+- Va returna toate categoriile din mapa.
+
+##### deleteProduct
+- Va șterge un produs din mapa.
+
+### 11. Scrie o metoda care:
+- Primeste ca parametru o lista de numere, care are un element duplicat
+- Returneaza elementul duplicat
+  
+**HINT**: (alt mod de rezolvare decat cel clasic): metoda add din interfata Set returneaza false, daca nu poate adauga elementul primit ca parametru in set
+
+### 12. Scrie o metoda care:
+- Primeste ca parametru o lista de numere
+- Afiseaza cel mai mic si cel mai mare element din lista
+  
+**HINT**: (alt mod de rezolvare decat cel clasic): adauga toate elementele din lista intr-un treeset, apoi apeleaza metodele first() si last() pe acel treeset
 
 ## Colectii (confortabil)
 
-### 8. Implementeaza un spell checker
+### 13. Implementeaza un spell checker
 
 Cel mai simplu spell checker este bazat pe o lista de cuvinte cunoscute (un dictionar). Daca scrii un text, fiecare cuvant trebuie cautat in lista de cuvinte cunoscute, iar daca nu este gasit, inseamna ca e eronat. Implementeaza un astfel de spell checker.
 
@@ -149,7 +183,7 @@ aaa
 aba
 ```
 
-### 9. Implementeaza un simulator de joc de carti
+### 14. Implementeaza un simulator de joc de carti
 
 #### Scrie clasa **Deck**
 
@@ -185,7 +219,7 @@ aba
 - Se vor crea niște jucători și se vor adăuga într-o listă.
 - Pentru fiecare jucător din listă, se va amesteca pachetul și se va apela metoda `dealHand()`.
 
-### 10. Implementează un cifru (encryption - decryption)
+### 15. Implementează un cifru (encryption - decryption)
 
 Cel mai simplu cifru este definit de o regulă în care fiecare caracter este codificat prin alt caracter.
 
@@ -220,7 +254,7 @@ Asigură operațiile de codificare și decodificare pentru un cuvânt, având la
 
 - Aici vor fi apelate metodele cifrului
 
-### 11. Implementează o librărie
+### 16. Implementează o librărie
 
 Librăria va trebui să conțină o colecție de cărți. Fiecare carte are atributele: `year`, `title`, `genre` (gen) și `author`.
 
@@ -285,4 +319,14 @@ Librăria va trebui să implementeze următoarele funcționalități:
 - Va returna toate cărțile care au acel gen
 (HINT: valoarea de la o anumită cheie din mapă)
 
+### 17. Scrie o metoda care:
+- Primeste ca parametrii doua cuvinte si returneaza true, daca cuvintele sunt anagrame.
+  
+Exemple:
+```
+Input1: “race”, “care”
+Output1: true, pentru ca care contine aceleasi litere ca si race, si literele apar de acelasi numar de ori
+Input2:”race”, “carec”
+Output2: false, pentru ca nu contin acelasi litere, de acelasi numar de ori
+```
 
