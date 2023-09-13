@@ -86,6 +86,28 @@ Input: {“ana”, “are”, “mere”, “are”}
 Output: {ana=1, are=2, mere=1}
 ```
 
+### 8. Gestiunea angajatilor din companie
+O companie multinationala are o lista de angajati, iar fiecare angajat este caracterizat de: varsta, tara, nume.
+
+Scrie urmatoarele metode:
+- O metoda care returneaza angajatii care au peste 50 de ani, din companie
+- O metoda care returneaza o lista cu angajatii din Romania
+- O metoda care sorteaza angajatii dupa tara
+- O metoda care sorteaza angajatii dupa nume
+- O metoda care returneaza o mapa, in care cheia este tara si valoarea este numarul de angajati din acea tara
+- O metoda care returneaza o mapa, in care cheia este tara si valoarea o lista cu toti angajatii din acea tara
+
+### 9. Scrie o aplicatie pentru bursa
+O bursa este structurata sub forma unei mape, cu cheia fiind numele companiei si valoarea fiind pretul unei actiuni la acea companie.
+
+Exemplu: {Oracle=56, Google=421, Tesla=950}
+
+Scrie 2 metode:
+- O metoda care sa gaseasca compania cu cel mai mare pret al unei actiuni din mapa
+- O metoda care sa gaseasca pretul mediu al preturilor actiunilor din mapa
+
+
+
 
 ## Colectii (confortabil)
 
