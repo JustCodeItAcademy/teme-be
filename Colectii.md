@@ -87,10 +87,9 @@ Output: {ana=1, are=2, mere=1}
 ```
 
 
-
 ## Colectii (confortabil)
 
-### 2. Implementeaza un spell checker
+### 8. Implementeaza un spell checker
 
 Cel mai simplu spell checker este bazat pe o lista de cuvinte cunoscute (un dictionar). Daca scrii un text, fiecare cuvant trebuie cautat in lista de cuvinte cunoscute, iar daca nu este gasit, inseamna ca e eronat. Implementeaza un astfel de spell checker.
 
@@ -128,7 +127,7 @@ aaa
 aba
 ```
 
-### 3. Implementeaza un simulator de joc de carti
+### 9. Implementeaza un simulator de joc de carti
 
 #### Scrie clasa **Deck**
 
@@ -163,3 +162,39 @@ aba
 - Se va genera pachetul.
 - Se vor crea niște jucători și se vor adăuga într-o listă.
 - Pentru fiecare jucător din listă, se va amesteca pachetul și se va apela metoda `dealHand()`.
+
+### 10. Implementează un cifru (encryption - decryption)
+
+Cel mai simplu cifru este definit de o regulă în care fiecare caracter este codificat prin alt caracter.
+
+De exemplu, dacă un cifru are la dispoziție:
+- Caractere valide: {'a', 'e', 'i', 'o', 'u', 'c', 'n', 'd', 'b', 's', 'l', 'm'}
+- Codificările caracterelor valide: {'s', 't', 'n', 'f', 'g', 'h', 'j', 'k', 'x', 'y', 'z', 'q'}
+
+Atunci când încercăm să codificăm cuvântul “slab”, vom obține “yzsx”.
+Iar atunci când încercăm să decodificăm “qsjs”, vom obține “mana”.
+
+Asigură operațiile de codificare și decodificare pentru un cuvânt, având la dispoziție lista de caractere valide și lista de caractere codificate.
+
+#### Creează clasa Cypher
+
+##### Atribute:
+- **inputChars**: (lista de caractere valide)
+- **outputChars**: (lista de caractere codificate)
+
+##### Metode:
+
+###### initializeCypher()
+- Construiește o mapă în care fiecare cheie este un caracter și fiecare valoare este codificarea caracterului. 
+- De exemplu, pentru exemplul de mai sus, mapa va arăta așa: {a=s, b=x, c=h, d=k, e=t, i=n, l=z, m=q, n=j, o=f, s=y, u=g}
+
+###### encrypt()
+- Primește ca parametru un cuvânt și returnează cuvântul codificat
+
+###### decrypt()
+- Primește ca parametru un cuvânt și returnează cuvântul decodificat
+
+#### Creează clasa Main
+
+- Aici vor fi apelate metodele cifrului
+
