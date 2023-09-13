@@ -27,13 +27,63 @@
 - Metoda non-statică
 - Adaugă numărul primit ca parametru în lista de numere și îl șterge din lista de numere blocate
 
-### 2.Scrie o metoda care:
+### 2. Scrie o metoda care:
 - primeste ca si parametru o lista de numere si returneaza o alta lista de numere formata din numerele din lista primita ca parametru, ridicate la patrat (puteti folosi Math.pow(2) pentru a ridica la patrat)
 
 #### Exemplu: 
 ```
 Input: {2,3,4,5}
 Output: {4,9,16,25}
+```
+
+### 3. Scrie o metoda care:
+- Gaseste cuvantul cel mai lung dintr-o lista de cuvinte (primita ca parametru), si il returneaza
+
+#### Exemplu:
+```
+Input: {“ana”, “are”, “mere”}
+Output: “mere”
+```
+
+### 4. Scrie o metoda care:
+- Primeste ca parametru 2 liste de numere si returneaza un set format din numerele pozitive din ambele liste primite ca parametru
+  
+#### Exemplu:
+```
+Input: {1, -2, 3, 4, 4, -5}, {1, -7, 2}
+Output: {1, 3, 4, 2}
+```
+
+### 5. Scrie o metoda care:
+- Primeste ca si parametru o lista de cuvinte si returneaza lista de cuvinte inversata, cu mentiunea ca lista inversata nu va include cuvintele care au lungimea mai mica decat 3
+- 
+#### Exemplu:
+
+```
+Input: {“ana”, “nu”, “are”, “mere”}
+Output: {“mere”, “are”, “ana”}
+```
+
+### 6. Scrie o metoda care:
+- Primeste ca parametru doua set-uri si returneaza true daca primul set primit ca parametru este superset al celui de-al doilea set
+- Un set “set1” este superset al altui set “set2”, daca “set1” contine toate elementele din “set2”, dar seturile nu sunt egale   - containsAll()
+
+#### Exemple:
+
+```
+Input1: {“ana”, “are”, “mere”}, {“ana”, “are”}    
+Output1: true
+Input2: {“ana”, “are”, “mere”}, {“ana”, “are”, “mere”}
+Output2: false
+```
+
+### 7. Scrie o metoda care:
+- Primeste ca parametru o lista de cuvinte si returneaza de cate ori apare fiecare cuvant in lista
+- 
+#### Exemplu:
+```
+Input: {“ana”, “are”, “mere”, “are”}
+Output: {ana=1, are=2, mere=1}
 ```
 
 
