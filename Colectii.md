@@ -452,3 +452,90 @@ Daca se incearca inceperea unui joc u un numar mai mare de jucatori decat cel su
 
 Totodata sa se creeze o clasa de test pentru diferite scenarii ale metodei play.
 
+## Algoritmica (rezolvari folosind colectii)
+
+### 1. Afla profitul maxim pe care il poti face cumparand si vanzand actiuni.
+Ca si input ai un array cu preturile unei actiuni in fiecare zi. Va trebui sa determini in ce zi trebuie sa cumperi si in ce zi trebuie sa vinzi ca sa obtii profitul maxim
+
+Exemplu:
+```
+Input: [100, 180, 260, 310, 40, 535, 695]
+Output: Cumpara in ziua 5 (la pretul de 40) si vinde in ziua 7 (la pretul de 695), adica profit maxim 695-40=655
+Input2: [2, 3, 10, 6, 4, 8, 1]
+Output: Cumpara in ziau 0 (la pretul de 2) si vinde in ziua 2 (la pretul de 10), adica profit maxim 10-2=8
+```
+
+### 2. Inlocuieste fiecare element dintr-un array cu produsul tuturor celorlalte elemente
+Exemplu: 
+```
+Input: { 1, 2, 3, 4, 5 }
+Output: { 120, 60, 40, 30, 24 }
+```
+(hint: foloseste un alt array in care sa pui rezultatul)
+
+### 3.Sa se verifice daca un array contine duplicate
+Exemplu:
+```
+Input: [6,5,6,2,3,1]
+Output: true, pentru ca 6 apare de doua ori
+```
+(hint: construieste o mapa care sa numere de cate ori apare fiecare element din lista)
+
+### 4. Sunt afisate n-1 numere dintr-un interval de la 1 la n. Sa se gaseasca numarul care lipseste.
+Exemplu:
+```
+Input: n=7, a=[3,2,1,6,5,7]
+Output: 4 - lipseste doar 4 din array.
+```
+(hint: sorteaza array-ul si verifica daca gasesti o diferenta de 2 intre 2 elemente consecutive. Un gasesti diferenta, acolo va fi si numarul care lipseste. Gandeste-te apoi si la alta metoda de rezolvare)
+
+### 5. Grupeaza elementele dintr-un array astfel incat elementele duplicate sa fie unul langa altul
+Exemplu:
+```
+Input: { 1, 2, 3, 1, 2, 1 }
+Output: { 1, 1, 1, 2, 2, 3 }
+```
+(hint: construieste o mapa in care cheia este elementul, iar valoarea de cate ori apare. Apoi construieste rezultatul parcurgand mapa si adaugand elementele unul dupa altul intr-un nou array, in functie de mumarul de aparitii al fiecarui element)
+
+
+### 6. Gaseste diferenta maxima intre 2 numere dintr-o lista, astfel incat elementul mai mic sa apara inaintea elementului mai mare
+Exemplu: 
+```
+Input: [2,7,9,5,1,3,5]
+Output: 7 (perechea de numere care indeplineste conditia este (2,9)
+```
+
+### 7. Muta toate zero-urile dintr-un array la final
+Exemplu: 
+```
+Input: [6,0,8,2,3,0,4,0,1]
+Output: [6,8,2,3,4,1,0,0,0]
+```
+
+### 8. Gaseste un subarray dintr-un array,  care sa aiba o anumita suma 
+Un subarray are capatul din stanga inaintea capatului din dreapta in array-ul original.
+Array-ul original poate avea doar numere pozitive
+
+Exemplu: 
+```
+Input: [1,4,20,3,10,5], sum=33
+Ouput:suma a fost gasita intre indicii 2 si 4 (20+3+10=33)
+Input: [1,4], sum = 0
+Output: niciun subarray nu a fost gasit
+```
+
+### 9. Roteste un array la stanga cu o pozitie
+Exemplu: 
+```
+Input: [1,2,3,4,5]
+Output: [5,1,2,3,4]
+```
+Rezolva apoi problema in mod general, adica roteste un array la stanga cu n pozitii
+Exemplu: 
+```
+Input: [1,2,3,4,5] , n=2
+Output: [3,4,5,1,2] - array-ul s-a rotit cu 2 pozitii
+```
+
+### 10. Inverseaza un array fara sa folosesti un alt array
+
