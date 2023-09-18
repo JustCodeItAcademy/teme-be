@@ -3,7 +3,41 @@
 
 ## Lambda&Streams (mai puțin confortabil)
 
-### 1. Implementeaza un PhoneBook
+### 1. Sorteaza o o lista de persoane dupa nume, utilizand un comparator
+Comparatorul nu va fi definit printr-o clasa care sa implementeze interfata Comparator
+
+### 2. Sterge persoanele care nu pot vota
+Avand o lista de persoane, sterge din lista persoanele care au varsta mai mica decat 18 ani, folosind expresii lambda.
+
+### 3. Suma numerelor pare
+Calculeaza suma numerelor pare dintr-o lista de Integer-uri.
+`HINT`: foloseste filter si sum sau foloseste reduce
+
+Rezolva problema si fara expresii lambda.
+
+### 4. Suma numerelor divizibile cu x sau cu y
+Scrie o metoda care sa calculeze suma numerelor divizibile cu x sau y (unde x si y sunt primiti ca parametri), dintr-o lista de Integer-uri.
+`HINT`: foloseste filter si sum sau foloseste reduce
+
+Rezolva problema si fara expresii lambda.
+
+### 5. Sorteaza numerele dintr-un array
+Scrie o metoda care sa sorteze numerele dintr-o lista de Integer-uri, dar inainte de asta sa le transforme in valori pozitive
+
+Ex: 
+
+```Input: [-1,2,-3,4,-5]
+Output:[1,2,3,4,5]
+````
+
+(`HINT`: map pentru a transforma fiecare numar din negativ in pozitiv, apoi sorted() ca si operatie finala. Foloseste Math.abs() pentru a transforma un numar din negativ in pozitiv)
+
+Rezolva problema si fara expresii lambda
+
+Rezolva problema si fara expresii lambda. 
+(`HINT`: foloseste metoda sort din arraylist)
+
+
 
 #### Atribute: 
 - **contacts**: o lista de String-uri reprezentand numere de telefon
