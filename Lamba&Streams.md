@@ -24,9 +24,10 @@ Rezolva problema si fara expresii lambda.
 ### 5. Sorteaza numerele dintr-un array
 Scrie o metoda care sa sorteze numerele dintr-o lista de Integer-uri, dar inainte de asta sa le transforme in valori pozitive
 
-Ex: 
+Exemplu: 
 
-```Input: [-1,2,-3,4,-5]
+```
+Input: [-1,2,-3,4,-5]
 Output:[1,2,3,4,5]
 ````
 
@@ -36,6 +37,53 @@ Rezolva problema si fara expresii lambda
 
 Rezolva problema si fara expresii lambda. 
 (`HINT`: foloseste metoda sort din arraylist)
+
+### 6. Filtreaza persoanele care pot vota
+O persoana este caracterizata de nume si varsta.
+Scrie o metoda statica numita isPersonEligibleForVoting(), care accepta ca parametru o lista de persoane si returneaza o lista cu persoanele care pot vota. 
+
+Scrie apoi metoda si fara expresii lambda.
+
+### 7. Spell checker 2
+Avand intr-un main un String, in care se stocheaza un text si o lista de cuvinte gresite, scrie o functie care accepta acesti 2 parametrii si returneaza lista cu cuvintele gresite care se regasesc in text
+Exemplu: 
+
+```
+Input: String text = “acesta etse nu text”
+      List<String> badWords = [“etse”, “nu”, “acetsa”, “extt”]
+Output: [“etse”, “nu”], pentru ca acestea sunt cuvintele din badWords care se regasesc in text
+```
+
+(`HINT`: stream pe lista badWords, apoi filtram doar cuvintele care sunt continute in text (folosind metoda contains()) )
+
+Rezolva problema si fara expresii lambda
+
+### 8. Gestiunea tranzactiilor
+O tranzactie este caracterizata de id, amount si de contul din care s-a facut tranzactia 
+
+(`HINT`: atribute: id, sum, account - care este de tip Account)
+
+Un cont este caracterizat de balance (sold) si un account number (numar de cont)
+(`HINT` - aceasta va fi clasa Account).
+
+Avand o lista de tranzactii intr-un main, scrie o metoda care primeste aceasta lista de tranzactii si genereaza o mapa in care cheia sa fie numarul de cont, iar valoarea sa fie suma amount-urilor tututor tranzactiilor care au avut loc din acel cont.
+
+(`HINT`) - Collectors.summingLong.
+
+Rezolva apoi problema si fara expresii lambda.
+
+### 9. Gestiunea angajatilor 2
+Un angajat este caracterizat de nume si salariu.
+Un departament este caracterizat de nume, cod, si o lista de angajati. Codul este un String
+
+Avand o lista de departamente intr-un main, care are fiecare o lista de angajati, scrie o metoda care primeste lista de departamente si un salariu minim.
+
+Metoda va returna cati angajati din toate departamentele au salariul mai mare decat salariul minim primit ca parametru.
+
+(`HINT`: stream pe departamente si apoi flatMap pentru a ajunge la angajati, apoi filter pentru a filtra pe cei cu salariul mai mare decat salariul minim si count la final pentru a-i numara)
+
+Rezolva problema si fara expresii lambda
+
 
 
 
