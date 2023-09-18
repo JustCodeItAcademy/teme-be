@@ -72,7 +72,7 @@ Avand o lista de tranzactii intr-un main, scrie o metoda care primeste aceasta l
 
 Rezolva apoi problema si fara expresii lambda.
 
-### 9. Gestiunea angajatilor 2
+### 9. Gestiunea angajatilor
 Un angajat este caracterizat de nume si salariu.
 Un departament este caracterizat de nume, cod, si o lista de angajati. Codul este un String
 
@@ -84,6 +84,20 @@ Metoda va returna cati angajati din toate departamentele au salariul mai mare de
 
 Rezolva problema si fara expresii lambda
 
+### 10. Gestiunea tranzactiilor 2
+O tranzactie este caracterizata de id, state si amount. 
+(`HINT`: atribute: id, state si amount)
+
+Starea tranzactiei (state) este un enum care poate avea valorile FINISHED, CANCELED, PROCESSING.
+
+Un cont (account) este caracterizat de balance (sold) si un account number (numar de cont) si de o lista de tranzactii
+(`HINT`: atribute: number, balance, transactions - care este o lista)
+
+Avand intr-un main o lista de conturi, care au fiecare lista lor de tranzactii, scrie o metoda care sa returneze suma tranzactiilor cu starea CANCELED din conturile care au soldul mai mare decat 0.
+
+(`HINT`: stream pe lista de conturi si filter pentru a filtra conturile cu balanta mai mare decat 0, apoi flatMap pentru a ajunge la tranzactiile conturilor si filter pentru a filtra tranzactiile CANCELED)
+
+Rezolva apoi problema si fara expresii lambda.
 
 
 
