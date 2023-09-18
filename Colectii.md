@@ -345,9 +345,13 @@ Implementeaza in ShoppingCart functionalitatile de:
 ## Colectii (proiecte finale)
 ### 19. IMDB clone
 Un film este caracterizat de title, releaseYear, genre, cast (lista de actori), type, reviews (lista de review-uri)
+
 Genre poate fi DRAMA, COMEDY, sau ACTION. Type poate fi MOVIE sau TV_SHOW.
+
 Un review poate sa fie ONE_STAR, TWO_STARS, THREE_STARS, FOUR_STARS, FIVE_STARS.
+
 Un actor are nume si prenume.
+
 Un utilizator al aplicatiei are nume, prenume si o lista de filme favorite. Utilizatorul poate fi de doua tipuri: admin sau client.
 
 Creeaza o clasa UserService
@@ -363,5 +367,58 @@ Creeaza o clasa IMDBService, care sa aiba o lista de filme si care sa implemente
 - Gasirea celui mai apreciat film de un anumit tip si gen
 - Gasirea autorului care a jucat in cele mai multe filme
 - Cele mai populare n filme (bazat pe cat de des apar acele filme apar in listele de filme favorite ale utilizatorilor)
+
+### 20. Budget Manager	
+Aplicatia le va permite utilizatorilor sa isi gestioneze bugetul.
+
+O cheltuiala (purchase) este caracterizata de nume, pret si categorie
+
+Categoriile pot fi: mancare, distractie, haine, utilitati, altele. 
+
+Un utilizator va avea o lista de cheltuieli si un buget maxim.
+
+Ca si utilizator in aplicatie, vei avea acces la mai multe functionalitati:
+- Vizualizarea tututor cheltuielilor
+- Vizualizarea cheltuielilor dintr-o anumita categorie
+- Vizualizarea cheltuielilor grupate pe categorii
+- Vizualizarea categoriei in care a cheltuil cel mai mult/mai putin
+- Vizualizarea tuturor cheltuielilor dintr-un interval de pret
+- Sortarea tuturor cheltuielilor dupa pret
+- Sortarea cheltuielilor dintr-o anumita categorie dupa pret
+- Salvarea tuturor cheltuielilor intr-un fisier
+- Incarcarea in aplicatie a tuturor cheltuielilor dintr-un fisier
+- Setarea unui buget
+- Vizualizarea bugetului disponibil
+- Adaugarea unei cheltuieli
+- Stergerea unei cheltuieli
+
+### 21. Booking system (booking.com clone)
+Dezvolta un sistem de rezervari la hotel asemanator cu booking.com
+
+Aplicatia va avea 2 tipuri de utilizatori: administratori de hotel si clienti.
+
+O camera are numar, pret pe noapte, numar de persoane care pot fi cazate si o lista de rezervari
+
+O rezervare poate fi facuta pentru o camera, de catre un client, intre doua date (check in si check out).
+
+Un utilizator are o lista de rezervari, nume, prenume.
+
+Administratorii de hotel vor putea sa:
+- Managerieze camerele 
+- Adaugare camera
+- Stergere camera
+- Vizualizare camere
+- Editare pret camera
+- Sa vada cate camere sunt libere/ocupate pentru o anumita perioada
+- Sa vada care este pretul obtinut din toate rezervarile dintr-o anumita perioada
+
+Clinetii vor putea sa:
+- Vada disponibilitatile (camerele libere) pentru o anumita perioada si un anumit numar de locuri
+- Adica sa vada care camere sunt disponibile intr-o anumita perioada
+- Sorteze disponibilitatile (camerele libere) dupa pret pentru o anumita perioada si un anumit numar de locuri
+- Faca o rezervare pentru o anumita camera
+
+Dupa ce aceasta versiune a aplicatiei functioneaza, permite ca in aplicatie sa existe mai multe hoteluri. Administratorul va putea adauga si hotel in aplicatie.
+
 
 
