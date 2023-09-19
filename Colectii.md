@@ -401,7 +401,7 @@ You are sitting in front of a computer learning Java.
 In this session, the player starts at the road (location 1) and chooses to go west to the hill (location 2). From the hill, they proceed north to the forest (location 5). Deciding to head south, they return to the road. Curious about what lies to the east, they explore the building (location 3). Finally, they decide to quit the game, ending up "sitting in front of a computer learning Java."
 
 ## Colectii (proiecte finale)
-### 19. IMDB clone
+### 20. IMDB clone
 Un film este caracterizat de title, releaseYear, genre, cast (lista de actori), type, reviews (lista de review-uri)
 
 Genre poate fi DRAMA, COMEDY, sau ACTION. Type poate fi MOVIE sau TV_SHOW.
@@ -426,7 +426,7 @@ Creeaza o clasa IMDBService, care sa aiba o lista de filme si care sa implemente
 - Gasirea autorului care a jucat in cele mai multe filme
 - Cele mai populare n filme (bazat pe cat de des apar acele filme apar in listele de filme favorite ale utilizatorilor)
 
-### 20. Budget Manager	
+### 21. Budget Manager	
 Aplicatia le va permite utilizatorilor sa isi gestioneze bugetul.
 
 O cheltuiala (purchase) este caracterizata de nume, pret si categorie
@@ -450,7 +450,7 @@ Ca si utilizator in aplicatie, vei avea acces la mai multe functionalitati:
 - Adaugarea unei cheltuieli
 - Stergerea unei cheltuieli
 
-### 21. Booking system (booking.com clone)
+### 22. Booking system (booking.com clone)
 Dezvolta un sistem de rezervari la hotel asemanator cu booking.com
 
 Aplicatia va avea 2 tipuri de utilizatori: administratori de hotel si clienti.
@@ -478,7 +478,7 @@ Clinetii vor putea sa:
 
 Dupa ce aceasta versiune a aplicatiei functioneaza, permite ca in aplicatie sa existe mai multe hoteluri. Administratorul va putea adauga si hotel in aplicatie.
 
-### 22. Joc de carti
+### 23. Joc de carti
 Dezvoltati o aplicatie Java pentru simularea jocurilor de carti: 
 - BlackJack
 - Poker
