@@ -118,6 +118,50 @@ n: 10
 un posibil output este: [11,-1]
 ```
 
+### 7. Doua perechi cu aceeasi suma (two pairs of same sum)
+Avand un array, gaseste 2 perechi de elemente astfel incat a+b = c+d
+
+**Input**:
+```
+arr = {3, 4, 7, 1, 12, 9}
+```
+**Output**: 
+```
+"{4,12}{7,9}", pentru ca 4+12=7+9
+```
+**Hint**:
+Pentru output, genereaza o mapa in care cheia este suma, si valoarea este o pereche care are acea suma
+
+### 8. Gaseste 2 perechi simetrice (find symetric pairs)
+Avand o matrice (un array de array-uri de 2 elemente, adica un array de perechi), gaseste doua perechi simetrice.
+**Input**:
+```
+arr[][] = [{1, 2}, {3, 4}, {5, 9}, {4, 3}, {9, 5}]
+```
+**Output**: 
+```
+"{3,4}{4,3}" este un posibil output, pentru ca cele doua perechi au aceleasi elemente in ordine inversa
+```
+**Hint**:
+Pentru output, genereaza o mapa in care cheia va fi primul element din pereche, iar valoarea al doilea element din pereche
+
+### 9. Gaseste timpul minim de executare a task-urilor (minimum waiting time)
+Ai un array care reprezinta indicii reprezinta task-urile pe care le ai de facut, iar elementele de la fiecare index reprezinta cat dureaza sa faci fiecare task.
+
+De exemplu, pentru [3,2,1,2,6], primul task dureaza 0 secunde, al doilea task dureaza 3 secunde (adica al doilea task asteapta sa se termine primul, ca mai apoi sa se execute).
+
+Al treilea task dureaza 3+2=5 secunde (adica asteapta dupa primele 2 sa se execute)
+
+Care este timpul minim de executare a task-urilor? Poti sa modifici ordinea in care se executa si apoi sa calculezi timpul.
+
+**Hint**:
+Tot timpul vei cauta sa executi task-ul care dureaza cel mai putin prima data.
+
+Astfel ca daca sortezi array-ul, vei obtine [1,2,2,3,6].
+
+Atentie: toate task-urile de dupa un anumit task vor astepta dupa acel task.
+
+De exemplu, dupa primul task (de la indicele 0) vor astepta o secunda toate celelalte task-uri (de la indicele 1 pana la final)
 
 ## Algoritmi liste inlantuite
 
