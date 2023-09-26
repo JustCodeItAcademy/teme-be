@@ -33,6 +33,8 @@ Rezultatul turneului din exemplu este ca:
 
 Avand la dispozitie un astfel de input, scrie un algoritm care sa determine castigatorul turneului.
 
+**HINT**: foloseste un array de array-uri pentru a stoca competitiile venite ca input, si o mapa (in care cheia este echipa si valoarea este scorul obtinut) pentru output
+
 ### 2. Subsir al unui array (validate subsequence)
 
 Avand la dispoizitie doua array-uri, verifica daca al doilea este subsir al primului.
@@ -51,6 +53,36 @@ array2: [1,6,-1,10]
 true (array2 este subsir al lui array1)
 ```
 
+**HINT**: Parcurge array-ul cu 2 pointeri
+
+### 3. Gaseste primul element duplicat dintr-un array (first duplicate value)
+**Input**: 
+```
+[2,1,5,2,3,3,4]
+```
+**Output**: 
+```
+2 - este primul element care se repeta (al doilea 3 apare dupa al doilea 2)
+```
+**HINT**: Varianta "brute force" va lua fiecare element cu fiecare, iar varianta mai eficienta va folosit un Set
+
+### 4. Subsir de suma 0
+Scrie o functie care sa determina daca exista un subsir cum suma 0 intr-un array.
+
+**Input**: 
+```
+[-5,-5,2,3,-1]
+```
+**Output**: 
+```
+true - subsitul [-5,2,3] are suma 0
+```
+**HINT**: 
+Suma de la fiecare index este suma pana acolo + elementul de la acel index. 
+De exemplu, suma pana la elementul -1 este suma pana la elementul 4 (adica 7), la care adunam -1 (si obtinem 6)
+Array-ul de sume pana la fiecare element ar arata asa: [4  1  3  7  6  1  8]
+Exista un array de suma 0, daca suma de la inceput pana la un index mai este regasita si pana la alt index.
+De la 4 la -5 suma este 1, dar si de la 4 la -3 suma este 1. Deci suma de la 2 la -5 nu are cum sa fie alta decat 0.
 
 ## Algoritmi liste inlantuite
 
