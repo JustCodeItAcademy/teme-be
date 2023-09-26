@@ -2,7 +2,7 @@
 
 ## Algoritmi array-uri
 
-### 1. Determina castigatorul unui turneu.
+### 1. Determina castigatorul unui turneu (tournament winner)
 
 **Input:**
 	
@@ -32,6 +32,24 @@ Rezultatul turneului din exemplu este ca:
     Python - 6 puncte.
 
 Avand la dispozitie un astfel de input, scrie un algoritm care sa determine castigatorul turneului.
+
+### 2. Subsir al unui array (validate subsequence)
+
+Avand la dispoizitie doua array-uri, verifica daca al doilea este subsir al primului.
+De exemplu, daca array-ul [1,3,4] este subsir al array-ului [1,2,3,4]
+Dar si [2,4] este subsir al array-ului [1,2,3,4].
+E nevoie sa se pastreze ordinea, dar elementele nu trebuie sa fie neaparat consecutive.
+
+**Input**:
+```
+array1: [5,1,2,,25,5,-1,8,10]
+array2: [1,6,-1,10]
+```
+
+**Output**: 
+```
+true (array2 este subsir al lui array1)
+```
 
 
 ## Algoritmi liste inlantuite
