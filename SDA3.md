@@ -66,7 +66,7 @@ true (array2 este subsir al lui array1)
 ```
 **HINT**: Varianta "brute force" va lua fiecare element cu fiecare, iar varianta mai eficienta va folosit un Set
 
-### 4. Subsir de suma 0
+### 4. Subsir de suma 0 (zero sum subarray)
 Scrie o functie care sa determina daca exista un subsir cum suma 0 intr-un array.
 
 **Input**: 
@@ -78,11 +78,46 @@ Scrie o functie care sa determina daca exista un subsir cum suma 0 intr-un array
 true - subsitul [-5,2,3] are suma 0
 ```
 **HINT**: 
+
 Suma de la fiecare index este suma pana acolo + elementul de la acel index. 
+
 De exemplu, suma pana la elementul -1 este suma pana la elementul 4 (adica 7), la care adunam -1 (si obtinem 6)
+
 Array-ul de sume pana la fiecare element ar arata asa: [4  1  3  7  6  1  8]
+
 Exista un array de suma 0, daca suma de la inceput pana la un index mai este regasita si pana la alt index.
+
 De la 4 la -5 suma este 1, dar si de la 4 la -3 suma este 1. Deci suma de la 2 la -5 nu are cum sa fie alta decat 0.
+
+### 5. Cea mai mica diferenta dintre 2 array-uri (smallest difference)
+Daca ai 2 array-uri, gaseste elementele (unul din primul si celalalt din al doilea) care sa dea suma minima
+
+**Input**:
+```
+Arr1: [-1,5,10,20,28,3]
+Arr2: [26,134,135,15,17]
+```
+**Output**: 
+```
+[28,26]
+```
+**Hint**:
+Cea mai simpla solutie este sa generezi toate perechile de numere si sa gasesti diferenta minima.
+
+Alta solutie este sa sortezi inainte cele 2 array-uri, si apoi apoi sa parcurgi cu 2 pointeri (cate unul pentru fiecare array)
+
+### 6. Elementele cu o anumita suma (two number sum)
+Avand un array, gaseste 2 elemente a caror suma este egala cu n.
+**Input**:
+```
+Arr1: [3,5,-4,,8,11,1,-1,6]
+n: 10
+```
+**Output**: 
+```
+un posibil output este: [11,-1]
+```
+
 
 ## Algoritmi liste inlantuite
 
