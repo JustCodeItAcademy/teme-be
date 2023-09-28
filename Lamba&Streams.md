@@ -151,5 +151,8 @@ Avand intr-un main o lista de conturi, care au fiecare lista lor de tranzactii, 
 
 Rezolva apoi problema si fara expresii lambda.
 
+### 14. Event planner
+Un eveniment are un nume si o data.
 
+Avand o lista de evenimente, scrie o functi care sa returneze numele tuturor evenimentelor care au loc intre 2 data care vin ca parametru.
 
