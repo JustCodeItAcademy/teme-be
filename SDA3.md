@@ -163,7 +163,7 @@ Atentie: toate task-urile de dupa un anumit task vor astepta dupa acel task.
 
 De exemplu, dupa primul task (de la indicele 0) vor astepta o secunda toate celelalte task-uri (de la indicele 1 pana la final)
 
-### 10. Cauta intr-o matrice sortata
+### 10. Cauta intr-o matrice sortata (search in sorted matrix)
 O matrice sortata arata astfel:
 
 ```
@@ -177,9 +177,70 @@ Toate elementele "din stanga" si "de deasupra" unui element sunt mai mici decat 
 
 **HINT**: daca vrei sa il cauti pe 44 de exemplu, de unde pleci ca sa parcurgi matricea si ca sa te folosesti de proprietatea de mai sus?
 
+### 11. Parcurge o matrice in spirala (spiral traverse)
+De exemplu, daca ai matricea:
 
+```
+1 2 3 4
+12 13 14 5
+11 16 15 6
+10 9 8 7
+```
+
+Si daca vrei sa o parcurgi in spirala, vei parcurge elementele in urmatoarea ordine:
+```
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,
+```
+
+Construieste un algoritm care sa parcurga matricea in acest fel.
+
+**HINT**: Foloseste patru variabile in care sa pui initial indicii bordurilor matricii (startRow, endRow, startCol, endCol).
+Apoi parcurge fiecare bordura folosindu-te de acesti indici si updateaza indicii astfel incat sa parcurgi apoi bordurile din interior.
 
 ## Algoritmi liste inlantuite
+
+### 1. Sterge elementele duplicate dintr-o lista inlantuita sortata
+
+Exemplu:
+```
+Input: 1->1->3->4->4->4->5->6->6
+Output: 1->3->4->5->6
+```
+
+### 2. Gaseste nodul din mijloc al unei liste inlantuite
+
+Exemplu:
+```
+Input: 1->2->3->4->5->6->7
+Output: 4
+```
+
+**HINT**: cum poti parcurge lista cu 2 pointeri pentru a accesa elementul din mijloc?
+
+### 3. Sterge al k-lea element de la sfarsit dintr-o lista inlantuita 
+
+Exemplu:
+```
+Input: 1->2->3->4->5->6->7, k=2
+Output: 1->3->4->6->7
+```
+
+**HINT**: nu poti parcurge o lista inlantuita de la coada la cap, asa ca cum te poti folosi de 2 pointeri ca sa accesezi al k-lea element de la coada la cap?
+
+### 4. Afla nodul de intersectie dintre 2 liste dublu inlanuite 
+
+Exemplu:
+```
+Input: 2->3->8->4, 6->8->4,
+Output: 8
+```
+
+Adica nodul de intersectie e nodul de unde elementele din prima lista sunt aceleasi cu elementele din a doua lista
+
+**HINT**: ce se intampla daca adaugi toate elementele din prima lista intr-un set?
+
+
+
 
 
 
