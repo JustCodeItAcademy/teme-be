@@ -163,6 +163,22 @@ Atentie: toate task-urile de dupa un anumit task vor astepta dupa acel task.
 
 De exemplu, dupa primul task (de la indicele 0) vor astepta o secunda toate celelalte task-uri (de la indicele 1 pana la final)
 
+### 10. Cauta intr-o matrice sortata
+O matrice sortata arata astfel:
+
+```
+1,4,7,12,15,1000
+2,5,19,31,32,1001
+3,8,24,33,35,1002
+40,41,42,44,45,1003
+```
+
+Toate elementele "din stanga" si "de deasupra" unui element sunt mai mici decat el, si toate elementele "din dreapta" si "de dedesubt" sunt mai mare decat el.
+
+**HINT**: daca vrei sa il cauti pe 44 de exemplu, de unde pleci ca sa parcurgi matricea si ca sa te folosesti de proprietatea de mai sus?
+
+
+
 ## Algoritmi liste inlantuite
 
 
