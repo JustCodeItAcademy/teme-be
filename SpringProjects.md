@@ -198,7 +198,8 @@ Exemplu:
   "code": "SpringApplication.run(CodeSharingPlatform.class, args);",
   "time": 5000,
   "views": 5
-}```
+}
+```
 
 Codul se va salva în baza de date, împreună cu data la care a fost adăugat.
 
