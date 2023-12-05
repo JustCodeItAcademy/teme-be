@@ -207,3 +207,45 @@ Codul se va salva în baza de date, împreună cu data la care a fost adăugat.
 
 Acest endpoint va da ca răspuns ultimele 5 bucăți de cod publice adăugate (în funcție de data creării), împreună cu celelalte detalii.
 
+### Booking.com clone
+
+Dezvoltă un sistem de rezervări la hotel asemănător cu booking.com. Aplicația va avea 2 tipuri de utilizatori: administratori de hotel și clienți.
+
+#### Structura Aplicației:
+
+- **Camera**: 
+  - Număr
+  - Preț pe noapte
+  - Număr de persoane care pot fi cazate
+  - Listă de rezervări
+
+- **Rezervare**: 
+  - Poate fi făcută pentru o cameră, de către un client, între două date (check-in și check-out).
+
+- **Utilizator**: 
+  - Listă de rezervări
+  - Nume
+  - Prenume
+
+#### Funcționalități:
+
+##### Administratori de Hotel:
+
+- **Managerierea Camerelor**:
+  - Adăugare cameră
+  - Ștergere cameră
+  - Vizualizare camere
+  - Editare preț cameră
+
+- Vizualizarea numărului de camere libere/ocupate pentru o anumită perioadă.
+- Vizualizarea veniturilor obținute din toate rezervările dintr-o anumită perioadă.
+
+##### Clienți:
+
+- Vizualizarea disponibilităților (camere libere) pentru o anumită perioadă și un anumit număr de locuri.
+- Sortarea disponibilităților (camere libere) după preț pentru o anumită perioadă și un anumit număr de locuri.
+- Facerea unei rezervări pentru o anumită cameră.
+
+#### Extensii ale Aplicației:
+
+După ce această versiune a aplicației funcționează, permite ca în aplicație să existe mai multe hoteluri. Administratorul va putea să adauge și hoteluri în aplicație.
