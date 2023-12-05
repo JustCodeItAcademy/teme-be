@@ -177,7 +177,32 @@ Avem nevoie sa:
 
 
 
+### 2. Code sharing platform
 
+Vrem să construim o platformă prin care un programator să poată share-ui o bucată de cod cu alt programator (vezi Pastebin). Însă, la Pastebin, fiecare bucată de cod este publică pentru toată lumea. Noi vrem să putem să share-uim și bucăți de cod în secret (pentru companiile care nu pot dezvălui codul public). Fiecare bucată de cod va avea un număr limitat de views (adică de câte ori se poate vedea acea bucată de cod) și o limită pentru timpul în care poate fi văzut. După o anumită perioadă de timp, codul va expira și va fi șters din baza de date.
 
+#### Endpoint-uri:
 
+##### `/api/code/{codeId}`
+
+Acest endpoint va da ca răspuns codul căutat după id (împreună cu celelalte detalii). De fiecare dată când requestul este efectuat, dacă codul este secret, numărul de views va scădea cu 1. Totodată, atunci când request-ul este efectuat, se va verifica dacă timpul a expirat sau dacă numărul de vizualizări este 0, iar dacă este așa, codul se va șterge din baza de date.
+
+##### `/api/code/add`
+
+Acest endpoint va primi în body o bucată de cod, împreună cu timpul (în secunde) în care bucata de cod este valabilă și numărul maxim de vizualizări. Dacă valorile pentru timp și views sunt 0, înseamnă că bucata de cod nu are nicio restricție.
+
+Exemplu:
+
+```json
+{
+  "code": "SpringApplication.run(CodeSharingPlatform.class, args);",
+  "time": 5000,
+  "views": 5
+}
+
+Codul se va salva în baza de date, împreună cu data la care a fost adăugat.
+
+##### `/api/code/latest`
+
+Acest endpoint va da ca răspuns ultimele 5 bucăți de cod publice adăugate (în funcție de data creării), împreună cu celelalte detalii.
 
