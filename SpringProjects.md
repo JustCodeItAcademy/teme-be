@@ -288,7 +288,7 @@ După ce această versiune a aplicației funcționează, permite ca în aplicaț
 ```
 
 - Adaug un nou film, care se va difuza intr-o anumita sala.
-- 
+  
 ###### Exemplu request body:
 
 ```json
@@ -314,7 +314,7 @@ In plus, filmul va avea un pret.
 Hint: daca in sala respectiva exista deja alte filme care se vor difuza la cel putin una din datele primite in request, se va raspunde cu eroare.
 
 - Vad statisticile cinema-ului:
-- 
+  
 Care este valoarea tuturor biletelor vandute intr-o anumita zi (la un film sau la toate filmele).
 /ticket/totalprice/
 
