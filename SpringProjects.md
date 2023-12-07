@@ -207,7 +207,7 @@ Codul se va salva în baza de date, împreună cu data la care a fost adăugat.
 
 Acest endpoint va da ca răspuns ultimele 5 bucăți de cod publice adăugate (în funcție de data creării), împreună cu celelalte detalii.
 
-### Booking.com clone
+### 3. Booking.com clone
 
 Dezvoltă un sistem de rezervări la hotel asemănător cu booking.com. Aplicația va avea 2 tipuri de utilizatori: administratori de hotel și clienți.
 
@@ -249,3 +249,105 @@ Dezvoltă un sistem de rezervări la hotel asemănător cu booking.com. Aplicaț
 #### Extensii ale Aplicației:
 
 După ce această versiune a aplicației funcționează, permite ca în aplicație să existe mai multe hoteluri. Administratorul va putea să adauge și hoteluri în aplicație.
+
+### 4. Cinema city clone
+
+#### Ca si admin, vreau sa:
+
+- Adaug o sala de cinema, cu capacitatea de n randuri * m coloane (adica se vor genera n*m locuri), intervalele de randuri intre care vreau sa pun un pret extra.
+- Initial toate locurile vor fi disponibile pentru cumparare.
+
+##### Ce se va intampla:
+
+- Se va adauga in baza de date o noua sala de cinema.
+- Se vor adauga in baza de date 64 de locuri (legate de aceasta sala de cinema).
+- Fiecare loc din acele 64 locuri va avea valoarea true pentru atributul isAvailable.
+- Locurile de pe randurile 6 si 7 vor avea valoarea atributului extraPrice egala cu 3.
+- Locurile de pe randurile 5 si 6 vor avea valoarea atributului extraPrice egala cu 2.
+- Fiecare loc va avea valoarea atributelor “row” si “col” egale cu randul si coloana locului.
+
+###### Exemplu request body:
+
+```json
+{
+  "numberOfRows": 8,
+  "numberOfCols": 8,
+  "extraPrices": [
+    {
+      "startingRow": 6,
+      "endingRow": 7,
+      "extraPrice": 3
+    },
+    {
+      "startingRow": 5,
+      "endingRow": 6,
+      "extraPrice": 2
+    }
+  ]
+}
+```
+
+- Adaug un nou film, care se va difuza intr-o anumita sala.
+- 
+###### Exemplu request body:
+
+```json
+{
+  "movieName": "Goodfellas",
+  "cinemaRoomId": 2,
+  "dates": [
+    {
+      "startTime": "2016-11-09T11:00:00",
+      "endTime": "2016-11-09T13:00:00"
+    },
+    {
+      "startTime": "2016-11-09T15:00:00",
+      "endTime": "2016-11-09T17:00:00"
+    }
+  ]
+}
+```
+
+Practic fiecare film va avea o sala in care se va difuza si mai multe date in care se va difuza.
+Celelalte detalii ale filmului se vor popula printr-un request la un API, care sa ne dea gen, descriere, etc.
+In plus, filmul va avea un pret.
+Hint: daca in sala respectiva exista deja alte filme care se vor difuza la cel putin una din datele primite in request, se va raspunde cu eroare.
+
+- Vad statisticile cinema-ului:
+- 
+Care este valoarea tuturor biletelor vandute intr-o anumita zi (la un film sau la toate filmele).
+/ticket/totalprice/
+
+- Cate bilete s-au vandut la un anumit film sau la toate filmele.
+
+
+#### Ca si client, vreau sa:
+- Vad lista de locuri disponibile la un film.
+Hint - asta numai daca filmul are date la care se va difuza in viitor.
+
+- Cumpar un bilet la un film.
+Pretul pentru fiecare loc se va calcula in functie de pretul firmului, la care se va adauga un extraPrice daca acel loc are extraPrice.
+
+###### Exemplu request body:
+```json
+{
+  "movieId": 3,
+  "seats": [
+    {
+      "row": 2,
+      "column": 4
+    },
+    {
+      "row": 2,
+      "Column": 5
+    }
+  ]
+}
+```
+
+- Extra bonus points(optional) - pentru utilizator se va genera un bilet PDF care se va trimite pe mail-ul utilizatorului.
+Hint: se poate face o abordare similar ca la aplicatie cu magazin on-line: utilizatorul sa aiba un order, care contine mai multe seats. Automat dupa plasarea comenzii, seat-urile nu vor mai fi disponibile.
+
+
+
+
