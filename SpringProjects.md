@@ -315,7 +315,7 @@ Hint: daca in sala respectiva exista deja alte filme care se vor difuza la cel p
 
 - Vad statisticile cinema-ului:
   
-Care este valoarea tuturor biletelor vandute intr-o anumita zi (la un film sau la toate filmele).
+- Care este valoarea tuturor biletelor vandute intr-o anumita zi (la un film sau la toate filmele).
 /ticket/totalprice/
 
 - Cate bilete s-au vandut la un anumit film sau la toate filmele.
