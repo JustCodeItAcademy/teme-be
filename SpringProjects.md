@@ -411,6 +411,7 @@ Vom defini oferta de preț sub numele de cotație (quotation).
 - CRUD produse
 - Vezi reducerea totală care s-a aplicat pentru toate comenzile dintr-o zi
 
-
+### 4. Reddit clone
+ 
 
 
