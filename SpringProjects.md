@@ -349,5 +349,68 @@ Pretul pentru fiecare loc se va calcula in functie de pretul firmului, la care s
 Hint: se poate face o abordare similar ca la aplicatie cu magazin on-line: utilizatorul sa aiba un order, care contine mai multe seats. Automat dupa plasarea comenzii, seat-urile nu vor mai fi disponibile.
 
 
+### 4. Weather app
+Aceasta aplicatie are ca scop ca un utilizator sa poata vedea vremea.
+
+El are o lista de orase favorite. 
+
+Endpoint-uri:
+- CRUD utilizator 
+- adauga oras favorit in lista utilizatorului
+- Stergere oras favorit din lista utilizatorului
+- Vizualizare orase favorite pentru un utilizator
+- Vizualizare vreme curenta pentru un anumit oras
+- Viualizare forecast pe 5 zile pentru un anumit oras
+
+Datele despre vreme se preiau dintr-un api extern
+
+### 5. Price generator
+
+În magazinul tău on-line vrei să faci oferte de preț personalizate pentru clienții tăi, în funcție de produsele pe care doresc să le cumpere, și de alte criterii.
+Vom defini oferta de preț sub numele de cotație (quotation).
+
+**Cotația se calculează în funcție de:**
+- Vârsta clientului
+- Țara din care provine
+- Numărul de zile de produse cumpărate
+
+**Condiții:**
+- Dacă vârsta clientului este mai mare decât un prag stabilit pentru produsul pe care vrea să îl cumpere, atunci se aplică o reducere de 20% față de prețul de listă al produsului. Dacă nu, cotația rămâne egală cu prețul inițial.
+- În plus, clientul primește o reducere în funcție de țara de unde comandă. Pentru România va fi o reducere de 5%, pentru Anglia 2%, etc.
+- În plus, clientul primește o reducere de 0.5% per produs, dacă cumpără minim 3 produse. Reducerea se aplică pentru maxim 10 produse cumpărate (De exemplu, reducerea totală va fi de 4,5% pentru produsele 2,3,4,5,6,7,8,9,10, dacă clientul cumpără 15 produse)
+
+**Entități:**
+- Un produs va avea:
+  - Preț de listă (exemplu: 100 RON)
+  - Pragul de vârstă de unde se aplică reducerea (ex: de la 45 de ani în sus ai reducere)
+  - Lista de discounturi pentru fiecare țară 
+  - Cum modelăm asta în baza de date? Avem nevoie de entități noi? Dacă da, ce relații vor fi între ele?
+
+- Un client va avea:
+  - Data nașterii
+  - Username
+  - Parola
+
+- O cotație va avea:
+  - Data de expirare
+  - Produsul pentru care a fost generată
+  - Clientul pentru care a fost generată
+
+- O comandă va avea:
+  - Data creării
+
+**Ca și client vei putea să:**
+- Îți vezi cotațiile generate de tine, care încă sunt active
+- Faci o comandă pentru una, două… sau toate cotațiile (ofertele de preț) active 
+  - Aici se va aplica, după caz, și reducerea pentru numărul de cotații din comandă, care practic este egal cu numărul de produse (pentru că o cotație se generează pentru un produs)
+- Vezi reducerea totală pe care ai primit-o pentru o comandă
+- Generezi o cotație pentru un produs
+- **Bonus:** cotațiile care ajung la data de expirare se șterg automat din baza de date
+
+**Ca și admin vei putea să:**
+- CRUD produse
+- Vezi reducerea totală care s-a aplicat pentru toate comenzile dintr-o zi
+
+
 
 
