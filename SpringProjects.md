@@ -349,7 +349,7 @@ Pretul pentru fiecare loc se va calcula in functie de pretul firmului, la care s
 Hint: se poate face o abordare similar ca la aplicatie cu magazin on-line: utilizatorul sa aiba un order, care contine mai multe seats. Automat dupa plasarea comenzii, seat-urile nu vor mai fi disponibile.
 
 
-### 4. Weather app
+### 5. Weather app
 Aceasta aplicatie are ca scop ca un utilizator sa poata vedea vremea.
 
 El are o lista de orase favorite. 
@@ -364,7 +364,7 @@ Endpoint-uri:
 
 Datele despre vreme se preiau dintr-un api extern
 
-### 5. Price generator
+### 6. Price generator
 
 În magazinul tău on-line vrei să faci oferte de preț personalizate pentru clienții tăi, în funcție de produsele pe care doresc să le cumpere, și de alte criterii.
 Vom defini oferta de preț sub numele de cotație (quotation).
@@ -411,7 +411,7 @@ Vom defini oferta de preț sub numele de cotație (quotation).
 - CRUD produse
 - Vezi reducerea totală care s-a aplicat pentru toate comenzile dintr-o zi
 
-### 4. Reddit clone
+### 7. Reddit clone
  
 Creează o aplicație de tip forum, ca și [https://www.reddit.com/](https://www.reddit.com/)
 
@@ -579,7 +579,20 @@ _Vote_
 - **Văd toate comentariile unui utilizator**
   - Voi vedea aceleași detalii ca și pentru funcționalitatea de “see all post comments”
 
+### 8. Discord bot
 
+Construiește un chatbot pentru Discord.
+Bot-ul va accepta comenzi de la utilizator.
+
+- Bot-ul va putea să îți spună ce lucruri ai de făcut azi, cu ajutorul comenzii `!todo`.
+  - Lucrurile pe care le ai de făcut azi se vor prelua din Google Tasks ([Google Tasks API Overview](https://developers.google.com/tasks/overview)).
+
+- Ulterior, se poate face o comandă prin care să adaugi din Discord task-urile de făcut într-o zi, și acestea să se salveze în Google Tasks sau într-o bază de date.
+
+- Pentru început, fă pur și simplu bot-ul să funcționeze fără Google Tasks, după acest tutorial: [Building a Discord Bot with Spring and Discord4J](https://www.baeldung.com/spring-discord4j-bot).
+  - În plus, aici e documentația completă pentru librăria care se va folosi (Discord4J): [Discord4J Quickstart](https://docs.discord4j.com/quickstart).
+  
+- Se pot adăuga apoi orice comenzi consideri că ți-ar fi folositoare.
 
 
 
