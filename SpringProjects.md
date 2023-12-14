@@ -413,5 +413,173 @@ Vom defini oferta de preț sub numele de cotație (quotation).
 
 ### 4. Reddit clone
  
+Creează o aplicație de tip forum, ca și [https://www.reddit.com/](https://www.reddit.com/)
+
+**Idei:**
+- User-ul să poată să aibă rol de Subreddit admin și să poată bana alți useri, astfel încât ei să nu mai poată posta în subredditul creat de admin
+
+**Tabele și relații:**
+- Un Subreddit are mai multe Post-uri. Un Post face parte dintr-un Subreddit
+- Un User are mai multe Post-uri. Un Post este făcut de un User.
+- Un Post are mai multe Comment-uri. Un Comment este lăsat la un Post.
+- Un User are mai multe Comment-uri. Un Comment este făcut de un User.
+- Un Post are mai multe Vote-uri. Un Vote aparține unui Post.
+
+**Ca și utilizator, voi putea să:**
+
+_Subreddit_
+- Creez subreddit (un subreddit este ca un “forum în forum”, unde se pot face postări)
+  - exemplu: [https://www.reddit.com/r/funny/](https://www.reddit.com/r/funny/) 
+  - Un subreddit, ca entitate, va avea:
+    - Name
+    - Description
+    - createdDate
+    - List<Post>
+  - Request
+    - URL: `/subreddit/create`
+    - BODY:
+    ```json
+    {
+      "name": "funny",
+      "description": "description of subreddit"
+    }
+    ```
+
+_Post_
+- Creez un post nou într-un anumit subreddit
+  - Un post, ca entitate, va avea:
+    - Id 
+    - postName
+    - Description
+    - VoteCount (diferența dintre voturile cu + și voturile cu -)
+    - creationDate
+    - Subreddit
+    - User
+    - List<Comment>
+    - List<Vote>
+  - Request
+    - URL: `/post/create`
+    - BODY:
+    ```json
+    {
+      "postName": "funny",
+      "description": "description of subreddit",
+      "subredditId": "2"
+    }
+    ```
+
+_Comment_
+- Creez un comment pentru un anumit post
+  - Un comment, ca entitate, va avea:
+    - Id
+    - Text
+    - Data creării
+    - Post
+    - User
+  - În acel moment, se va trimite un mail către utilizatorul care a creat post-ul
+  - În textul mail-ului se va specifica care utilizator a lăsat un comentariu pentru utilizatorul care a creat postul
+  - Ex: "Andrei a adăugat un comentariu la post-ul tău"
+  - Totodată, înainte de adăugare, se va verifica textul comentariului pentru injurături, iar dacă vor fi găsite cuvinte obscene, comentariul nu va fi adăugat
+  - Se poate folosi un API: [https://www.purgomalum.com/](https://www.purgomalum.com/) 
+  - Sau se poate construi un hashset cu niște cuvinte pe care le considerăm noi obscene și apoi să ne folosim de el pentru a verifica dacă există vreun cuvânt obscen în textul comentariului
+  - Request
+    - URL: `/comment/create`
+    - BODY:
+    ```json
+    {
+      "text": "acesta e un comentariu",
+      "postId": "3"
+    }
+    ```
+
+_Vote_
+- Adaug un vot (votez un anumit post)
+  - Votul va avea:
+    - Id
+    - voteType (tipul votului - upVote sau downVote - adică +1 sau -1)
+    - Post
+  - Request
+    - URL: `/vote`
+    - BODY:
+    ```json
+    {
+      "voteType": "UP_VOTE",
+      "postId": "3"
+    }
+    ```
+
+**User**
+- Mă înregistrez ca utilizator
+  - Un user va avea:
+    - Email
+    - Username
+    - Password
+- Mă loghez ca utilizator
+
+
+**ALTE Funcționalități:**
+- **Văd toate subreddit-urile**
+  - Pentru fiecare subreddit, vreau să văd:
+    - Name
+    - Description
+    - createdDate
+    - numberOfPosts (numărul de post-uri din subreddit)
+  - Request
+    - URL: `/subreddit/all`
+    - BODY: Nu avem
+- **Văd un anumit subreddit**
+  - Voi vedea aceleași detalii ca și pentru funcționalitatea de “see all subreddits”
+  - Request
+    - URL: `/subreddit/{id}`
+    - BODY: Nu avem
+- **Șterg un anumit subreddit**
+
+**Post**
+- **Văd toate post-urile (din toate subreddit-urile)**
+  - Pentru fiecare post, vreau să văd:
+    - Id
+    - postName
+    - Description
+    - userName (user-ul care a creat post-ul)
+    - subredditName
+    - voteCount
+    - commentCount
+    - Duration
+    - isUpVoted
+      - are valoarea true, dacă utilizatorul logat a dat un upVote pentru post
+    - isDownVoted
+      - are valoarea true, dacă utilizatorul logat a dat un downVote pentru post
+  - Request
+    - URL: `/post/all`
+    - BODY: Nu avem
+- **Văd un anumit post**
+  - Voi vedea aceleași detalii ca și pentru funcționalitatea de “see all posts”
+  - Request
+    - URL: `/post/{id}`
+    - BODY: Nu avem
+- **Văd toate post-urile dintr-un anumit subreddit**
+  - Voi vedea aceleași detalii ca și pentru funcționalitatea de “see all posts”
+  - Request
+    - URL: `/post/subreddit/{id}`
+    - BODY: Nu avem
+- **Văd toate post-urile unui utilizator**
+  - Voi vedea aceleași detalii ca și pentru funcționalitatea de “see all posts”
+  - Request
+    - URL: `/post/user/{id}`
+    - BODY: Nu avem
+
+**Comment**
+- **Văd toate comentariile de la un post**
+  - Pentru fiecare comentariu, vreau să văd:
+    - Id
+    - postId
+    - createdDate
+    - Text
+    - Username
+- **Văd toate comentariile unui utilizator**
+  - Voi vedea aceleași detalii ca și pentru funcționalitatea de “see all post comments”
+
+
+
 
 
