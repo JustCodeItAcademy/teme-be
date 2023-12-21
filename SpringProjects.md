@@ -594,5 +594,214 @@ Bot-ul va accepta comenzi de la utilizator.
   
 - Se pot adăuga apoi orice comenzi consideri că ți-ar fi folositoare.
 
+### 9. Trello clone
+
+Aplicația Trello este o aplicație de management al proiectelor ([https://trello.com/en](https://trello.com/en)) 
+
+Ca și utilizator, voi putea să fiu ADMIN, TEAM_LEADER, sau TEAM_MEMBER și să:
+
+- Un Team are mai mulți Useri. Un User poate să aparțină mai multor Echipe
+- Un Team are mai multe Board-uri. Un Board aparține unui Team.
+- Un Board are mai multe Column-uri. O Column aparține unui Board.
+- Un Column are mai multe Task-uri. Un Task aparține unui Column.
+- Un Task are o listă de Step-uri. Un Step aparține unui Task
+- Un Task are mai multe TaskHistory.
+
+**Team**
+- Creez o nouă echipă (admin, team_leader)
+  - O echipă, ca entitate, va avea:
+    - Id
+    - Title
+    - Description 
+    - List<User>
+  - Request
+    - URL: `/team/create`
+    - BODY:
+    ```json
+    {
+      "title": "echipa smechera",
+      "description": "invingatorii",
+      "userIds": [1,6,15]
+    }
+    ```
+
+**Invit un utilizator în echipa mea (admin, team-leader)**
+  - Varianta ușoară:
+    - Pentru început, pur și simplu se va adăuga un nou utilizator existent (dar care să aibă rolul de team_member) în echipă, fără a mai fi invitat înainte
+    - Request
+      - URL: `/team/addMember/{userId}`
+      - BODY: Nu avem
+  - Varianta ulterioară
+    - Se va trimite o invitație pe mail-ul utilizatorului cu un link
+    - Când acel link va fi apăsat, se va accesa un alt endpoint care va face, de fapt, adăugarea utilizatorului (similar cu cum funcționează adăugarea unui utilizator într-un repository de github)
+    - Inspirație: [https://www.baeldung.com/registration-verify-user-by-email](https://www.baeldung.com/registration-verify-user-by-email)
+
+**Șterg un utilizator din echipa mea (admin, team-leader)**
+  - Request
+    - URL: `/team/deleteMember/{userId}`
+    - BODY: Nu avem
+
+**Văd toate echipele (admin, team_leader, team_member)**
+  - Voi dori să văd următoarele informații:
+    - Id
+    - Title
+    - Description
+    - Lista de membrii
+  - Request
+    - URL: `/team/all`
+    - BODY: Nu avem
+
+**Văd echipele din care fac eu parte (admin, team_leader, team_member)**
+  - Voi dori să văd următoarele informații:
+    - Id
+    - Title
+    - Description
+    - Lista de membrii
+  - Request
+    - URL: `/team/myTeams`
+    - BODY: Nu avem
+    
+**Board**
+- Creez un nou board pentru o echipă (admin, team_leader)
+  - Un board, ca entitate, va avea:
+    - Id
+    - Title
+    - Description 
+    - createdDate
+    - Team
+    - List<Column>
+- Văd toate board-urile din care fac parte(adică board-urile din echipele în care sunt membru) (admin, team_leader, team_member)
+  - Voi dori să văd următoarele informații:
+    - Id
+    - Title
+    - Description
+    - createdDate
+  - Request
+    - URL: `/board/myBoards`
+    - BODY: Nu avem
+- Generez un raport în format CSV pentru un anumit board (admin, team_leader)
+  - Raportul va conține:
+    - numărul de task-uri din fiecare coloană a board-ului
+  - Request
+    - URL: `/board/report/{id}`
+    - BODY: Nu avem
+- Șterg un anumit board (admin, team_leader)
+
+**Column**
+- Creez o nouă coloană într-un anumit board (admin, team_leader)
+  - O coloană va avea:
+    - Id
+    - Title
+    - createdDate
+    - Board
+    - List<Task>
+  - Request
+    - URL: `/column/create?title=”to-do”`
+    - BODY: Nu avem
+- Văd coloanele dintr-un anumit board (admin, team_leader, team_member)
+  - Voi vrea să văd următoarele informații
+    - Id
+    - Title
+    - Description
+    - Board-ul din care face parte coloana
+  - Request
+    - URL: `/column/board/{boardId}`
+    - BODY: Nu avem
+- Șterg o anumită coloană dintr-un board (admin, team_leader)
+  - Request
+    - URL: `/column/delete/{columnId}`
+    - BODY: Nu avem
+
+**Task**
+- Creez un nou task într-o anumită coloană (admin, team_leader, team_member)
+  - Un task va avea:
+    - Id
+    - Title
+    - Description
+    - User (asignee - responsabil)
+    - CreatedDate
+    - Deadline
+    - Column
+    - List<Step> (checklist - o listă de pași pentru rezolvarea task-ului)
+  - O dată cu crearea task-ului se va asigna și un responsabil
+    - Dacă task-ul e creat de team_leader sau admin, se va specifica și membrul echipei care e responsabil
+    - Dacă task-ul e creat de un team_member, atunci el va fi automat responsabil
+  - Se va trimite și o notificare prin mail, în momentul asignării, către user-ul asignat
+  - Request
+    - URL: `/task/create?asignee=1`
+    - BODY:
+    ```json
+    {
+      "title": "task nou",
+      "description": "task descr",
+      "deadline": "2022-12-23",
+      "columnId": 2,
+      "steps": ["fa asta", "apoi fa cealalta"]
+    }
+    ```
+
+- Asignez un responsabil pentru un task existent (admin, team_leader)
+  - Se va trimite și o notificare prin mail, în momentul asignării, către user-ul asignat
+  - Request
+    - URL: `/task/assign?asignee=1&task=2`
+    - BODY: Nu avem
+
+- Văd toate task-urile la care un user asignat (admin, team_leader, team_member)
+  - Voi vrea să văd următoarele informații, pentru fiecare task:
+    - Id
+    - Title
+    - Description
+    - Asignee 
+    - CreatedDate
+    - Deadline
+    - Checklist 
+    - Coloana în care este task-ul
+    - Board-ul în care este task-ul
+  - Request
+    - URL: `/task/mytasks/{userId}`
+    - BODY: Nu avem
+
+- Văd detaliile unui anumit task (admin, team_leader, team_member)
+  - Voi vrea să văd următoarele informații, pentru fiecare task:
+    - Id
+    - Title
+    - Description
+    - Asignee 
+    - CreatedDate
+    - Deadline
+    - Checklist 
+    - Coloana în care este task-ul
+    - Board-ul în care este task-ul
+  - Request
+    - URL: `/task/{taskId}`
+    - BODY: Nu avem
+
+- Mut task-ul din coloana curentă în altă coloană (admin, team_leader, team_member)
+  - Team leader-ul va putea muta orice task
+  - Team member-ul va putea muta doar task-urile la care e asignat
+  - Request
+    - URL: `/task/move/{taskId}/{columnId}`
+    - BODY: Nu avem
+
+- Generez un raport în format CSV pentru un anumit task (admin, team_leader)
+  - Raportul arată cât timp a petrecut fiecare task, în fiecare coloană, și care a fost ordinea în care a fost mutat între coloane, până să ajungă la ultima coloană
+  - Request
+    - URL: `/task/report/{taskId}`
+    - BODY: Nu avem
+      
+- Updatez textul unui task
+  
+- Updatez pașii unui task
+
+**Step**
+- Vreau să bifez un pas dintr-un task 
+  - Request
+    - URL: `/step/check/{stepId}`
+    - BODY: Nu avem
+  
+- Vreau să debifez un pas dintr-un task 
+  - Request
+    - URL: `/step/uncheck/{stepId}`
+    - BODY: Nu avem
 
 
