@@ -804,4 +804,67 @@ Ca și utilizator, voi putea să fiu ADMIN, TEAM_LEADER, sau TEAM_MEMBER și să
     - URL: `/step/uncheck/{stepId}`
     - BODY: Nu avem
 
+### 10. QR code ordering system
+
+În această aplicație, vor avea acces proprietari de restaurante (OWNER) și clienți de restaurante (CLIENT).
+Clienții vor putea să acceseze meniul prin QR code și să comande.
+Ownerii vor vedea comenzile puse în aplicație și le vor putea procesa.
+
+**Ca și user, vreau să:**
+
+**Restaurant:**
+- Creez un nou restaurant (OWNER)
+  - Se va adăuga și locația restaurant-ului
+- Văd toate restaurantele (OWNER, CLIENT)
+- Văd restaurantul un anumit restaurant
+
+**Meniu:**
+- Creez un meniu pentru restaurant (OWNER)
+  - În acest moment se va genera și un QR code pentru acel meniu, iar acest cod va returna tot timpul meniul cu toate categoriile și toate produsele [Java Generating Barcodes and QR Codes](https://www.baeldung.com/java-generating-barcodes-qr-codes)
+
+**Category:**
+- Creez o nouă categorie de produse în meniul restaurantului meu (OWNER)
+  - De exemplu, băuturi, sau feluri principale
+
+**Product:**
+- Creez un nou produs într-o categorie din meniul restaurantului meu (OWNER)
+  - De exemplu, cremes în categoria deserturi
+  - Practic așa se construiește meniul restaurantului
+- Văd toate produsele de la un restaurant (OWNER, CLIENT)
+  - Adică, practic, să văd tot meniul
+
+**Order:**
+- Plasez o comandă (OWNER, CLIENT)
+  - Dacă nu sunt în locația restaurantului la care vreau să pun comanda, nu voi putea pune comanda
+  - Comanda poate avea oricâte produse din meniul restaurantului în care mă aflu
+  - În acest moment se va trimite un push notification (adică o informație de la server la client
+    - https://refactorfirst.com/spring-boot-websockets-stomp-notifications 
+    - https://www.baeldung.com/spring-boot-scheduled-websocket 
+  - Schimb statusul unei comenzi (OWNER)
+  - Vad comenzile facute de mine, ordonate dupa data crearii (OWNER, CLIENT)
+  - Vad toate comenzile facute in restaurantul meu, ordonate dupa data crearii (OWNER)
+
+
+### Alte idei:
+- Aplicatie de food delivery (gen tazz sau bolt food)
+- Aplicatie de inchirieri masini electrice
+  - Poate comunica cu un API ca sa accesezi masina de la distanta https://smartcar.com/docs/api/#smartcar-connect-re-authentication ) 
+- Aplicatie de customer service (relatie cu clientii) in care clientii sa poata deschide tichete, iar compania sa se poata ocupa de ele 
+- Event registration app (un fel de www.meetup.com/home/ )
+- Aplicatie de trading la bursa 
+- o platforma de recrutare, unde companiile sa poata gasi angajati 
+- o platforma prin care poti sa comanzi mancare in grup de la restaurante 
+  - create group (by group owner)
+  - list groups
+  - join group
+  - approve join request
+  - order food
+  - view orders summary categorized per item
+  - view orders summary categorized per user
+  - finish (group owner)
+
+- platforma de automatizare a procesului de internship
+  - centralizarea ofertelor de internship
+  - centralizarea candidatilor
+  - digitalizarea contractelor
 
