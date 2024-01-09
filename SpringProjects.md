@@ -844,6 +844,78 @@ Ownerii vor vedea comenzile puse în aplicație și le vor putea procesa.
   - Vad comenzile facute de mine, ordonate dupa data crearii (OWNER, CLIENT)
   - Vad toate comenzile facute in restaurantul meu, ordonate dupa data crearii (OWNER)
 
+### 11. IaBilet Clone
+
+IaBilet clone
+În această aplicație, voi putea să achiziționez bilete la evenimente din anumite locații sau categorii. [IaBilet](https://www.iabilet.ro/) 
+Vor avea acces în aplicație administratorii site-ului (ADMIN), creatorii de evenimente (OWNER) și clienții (CLIENT).
+
+**Ca și utilizator, vreau să:**
+
+**City**
+- Adaug un nou oraș în care pot avea loc evenimente (ADMIN)
+- Văd toate orașele în care au loc evenimente (ADMIN, OWNER, CLIENT)
+- Șterg un oraș (ADMIN)
+
+**Location**
+- Adaug o nouă locație în care pot avea loc evenimente (ADMIN, OWNER)
+- Văd toate locațiile în care pot avea loc evenimente (ADMIN, OWNER, CLIENT)
+- Văd locațiile din orașul meu (ADMIN, OWNER, CLIENT)
+- Șterg o locație (ADMIN, OWNER)
+
+**Category**
+- Adaug o nouă categorie de evenimente (ADMIN)
+- Văd toate categoriile de evenimente (ADMIN, OWNER, CLIENT)
+- Șterg o categorie de evenimente (ADMIN)
+
+**Event**
+- Adaug un eveniment în locația mea (ADMIN, OWNER)
+- Văd toate evenimentele dintr-o locație - ordonate după dată (ADMIN, OWNER, CLIENT)
+  - Pentru fiecare eveniment, voi vrea să văd:
+    - Name
+    - Description
+    - Date
+    - minPrice
+    - soldOut (true sau false)
+- Văd toate evenimentele dintr-o categorie - ordonate după dată (ADMIN, OWNER, CLIENT)
+- Văd toate evenimentele - ordonate după dată (ADMIN, OWNER, CLIENT)
+- Văd cele mai populare evenimente (ADMIN, OWNER, CLIENT)
+  - Acestea vor fi evenimentele la care s-a vândut cel mai mare procentaj de bilete
+  - Se vor putea vedea toate evenimentele la care s-au vândut peste 50% din bilete
+- Văd evenimentele din următoarea săptămână (ADMIN, OWNER, CLIENT)
+- Văd evenimentele care sunt aproape de sold-out (adică la care s-au vândut peste 90% din bilete)
+- Caut evenimente după nume (ADMIN, OWNER, CLIENT)
+
+**Ticket**
+- Adaug o categorie de bilete pentru un eveniment (ADMIN, OWNER)
+  - Exemple: VIP sau General Access
+  - Bonus: 
+    - fiecare categorie va avea 2 prețuri:
+      - Prețul earlybird: care va fi disponibil până la o anumită dată
+      - Prețul normal: care va fi disponibil imediat după earlybird
+    - Va trebui ca prețul să se schimbe automat la normal când va veni data schimbării (HINT: scheduler)
+- Generez un cod voucher, pentru o categorie de bilete de la un eveniment (ADMIN, OWNER)
+  - Voucher-ul ar trebui să aibă:
+    - Un cod
+    - O dată de expirare
+    - Un procent de reducere
+- Adaug un număr de bilete într-o categorie
+- Văd biletele disponibile din fiecare categorie de la un eveniment (ADMIN, OWNER, CLIENT)
+
+**ShoppingCart**
+- Adaug în coș unul sau mai multe bilete dintr-o anumită categorie a unui eveniment (ADMIN, OWNER, CLIENT)
+  - Bonus 1:
+    - La cumpărare, pot adăuga un cod voucher care să îmi reducă prețul biletului
+  - Bonus 2:
+    - Fiecare bilet va deveni indisponibil (pentru ceilalți), o dată adăugat în coș, pentru 15 minute (practic va fi rezervat pentru tine), însă dacă nu faci comanda în 15 minute, biletul se va șterge automat din coș
+- Șterg din coș un bilet (ADMIN, OWNER, CLIENT)
+- Văd coșul meu de cumpărături (ADMIN, OWNER, CLIENT)
+
+**Order**
+- Pot să dau comanda de cumpărare pentru biletele din coș (ADMIN, OWNER, CLIENT)
+  - Voi primi pe mail biletul/biletele
+- Pot să văd comenzile date la evenimentul meu (ADMIN, OWNER)
+
 
 ### Alte idei:
 - Aplicatie de food delivery (gen tazz sau bolt food)
