@@ -4,60 +4,83 @@
 
 ### Algoritmi string-uri
 
-#### 1. How do you reverse a given string in place?
-#### 2. How do you find duplicate characters from a string? (using map)
-#### 3. How do you print the first non-repeated character from a string?
-#### 4. How do you reverse words in a given sentence without using any library method?
-#### 5. How do you check if a given string is a palindrome?
+#### 1. Given a List of Maps, write a method to average each of the properties independently. 
+Exclude null values from the average in the parameter data. 
+Example data: -
+[ { "temperature": 44, "humidity": 12 }, { "temperature": 23, "humidity": 34 }, { "temperature": 34 } ,{ "temperature": null }]
+The return value should be a single Map containing the averages, e.g.
+{"temperature": 21.0,“humidity”: 33}
+
+#### 2. We have a process that imports a set of product codes into a database, however recently we have noticed that several of the codes have not been formatted correctly and due to the age of the system these are not validated before the import.
+Implement product code validation
+Our import process already reads the file and adds them into the database, however, there is no validation. Create a validation routine that can be called from the existing code.
+Product codes
+Our product codes are 7 digits long and have the format:
+AANNNYY
+AA is 2 alpha characters and NNN is 3 numeric characters and together they form the product ID.
+YY is the offer suffix.
+
+
+#### 3. Given two strings s and t, determine if they are isomorphic.
+
+Two strings s and t are isomorphic if the characters in s can be replaced to get t.
+
+All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.
+
+Example 1:
+
+Input: s = "egg", t = "add"
+Output: true
+Example 2:
+
+Input: s = "foo", t = "bar"
+Output: false
+Example 3:
+
+Input: s = "paper", t = "title"
+Output: true
+
+
+
+#### 4. Given a list of words and two words: word1 and word2, return the shortest distance between these two words in the list.
+Example:
+Assume that words =["practice", "makes", "perfect", "coding", "makes"].
+Input: word1 = “coding”, word2 = “practice”
+Output: 3
+Input: word1 = "makes", word2 = "coding"
+Output: 1
+
+
+#### 5. You are playing the following Flip Game with your friend: Given a string that contains only two characters: + and -, you can flip two consecutive "++" into "--", you can only flip one time. Please find all strings that can be obtained after one flip.
+
+Write a program to find all possible states of the string after one valid move.
+
+Example
+Example1
+
+Input:  s = "++++"
+Output: 
+[
+  "--++",
+  "+--+",
+  "++--"
+]
+Example2
+
+Input: s = "---+++-+++-+"
+Output: 
+[
+	"---+++-+---+",
+	"---+++---+-+",
+	"---+---+++-+",
+	"-----+-+++-+"
+]
+
+
 #### 6. How do you find the length of the longest substring without repeating characters?
 #### 7. How do you find the longest palindromic substring in str?
 #### 8. Longest common prefix
-Given a set of strings, find the longest common prefix.
-Examples:
 
-nput: {“geeksforgeeks”, “geeks”, “geek”, “geezer”}
-Output: “gee”
-
-Input: {“apple”, “ape”, “april”}
-Output: “ap”
-#### 9. Group anagrams
-Example:
-Input: [yo,act,flop,tac,foo,cat,oy,olfp]
-Output: the anagrams are grouped: [[yo, oy], [flop, olfp], [act,tac,cat], [foo]]
-#### 10. SmordnilapPairs
-Given an array, generate the pairs of words that are written in reversed way.
-Example:
-Input: [diaper, abc, test, cba, repaid]
-Output: [[diaper, repaid], [abc, cba]]
-#### 11. Check if two strings are permutation of each other
-Example: "abcd" si permutation of "cadb" 
-
-### Algoritmi array-uri
-
-#### 1. How do you find the missing number in a given integer array of 1 to n?
-#### 2. How do you find the duplicate number on a given integer array?
-#### 3. How do you find all pairs of an integer array whose sum is equal to a given number?
-#### 4. Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
-#### 6. Best time to buy sell stock
-You are given an array prices where prices[i] is the price of a given stock on the ith day.
-You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
-Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
-#### 7. Given an integer array nums, find the subarray with the largest sum, and return its sum (de observat Kadane Algorrithm)
-#### 8. Search in Rotated Sorted Array (de observat cum se face)
-There is an integer array nums sorted in ascending order (with distinct values).
-Prior to being passed to your function, nums is possibly rotated at an unknown pivot index k (1 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2].
-Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
-#### 9. Container with most water
-You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
-Find two lines that together with the x-axis form a container, such that the container contains the most water.
-Return the maximum amount of water a container can store.
-Visual example: https://leetcode.com/problems/container-with-most-water/description/ 
-#### 10. Find max sum of subarray of length k 
-#### 11. Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
-Example:
-Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
-Output: [[1,6],[8,10],[15,18]]
-Explanation: Since intervals [1,3] and [2,6] overlap, merge them into [1,6].
 
 
 
