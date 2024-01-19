@@ -6,9 +6,11 @@
 
 #### 1. Given a List of Maps, write a method to average each of the properties independently. 
 Exclude null values from the average in the parameter data. 
-Example data: -
+
+Example data: 
 [ { "temperature": 44, "humidity": 12 }, { "temperature": 23, "humidity": 34 }, { "temperature": 34 } ,{ "temperature": null }]
 The return value should be a single Map containing the averages, e.g.
+
 {"temperature": 21.0,“humidity”: 33}
 
 #### 2. We have a process that imports a set of product codes into a database, however recently we have noticed that several of the codes have not been formatted correctly and due to the age of the system these are not validated before the import.
