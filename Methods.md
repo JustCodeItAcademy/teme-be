@@ -7,7 +7,7 @@ Metoda va returna true daca suma primilor 2 parametri este egala cu cel de-al 3-
 De exemplu:
 
 ```json
-apelul de metoda cu parametri 1,1,1, adica hasEqualSum(1, 1, 1) va returna  fals2 pentru ca 1 + 1 (suma primilor 2 parametri) nu este egal cu 1 (al 3-lea parametru)
+apelul de metoda cu parametri 1,1,1, adica hasEqualSum(1, 1, 1) va returna  false pentru ca 1 + 1 (suma primilor 2 parametri) nu este egal cu 1 (al 3-lea parametru)
 apelul de metoda cu parametri 1,1,2, adica hasEqualSum(1, 1, 1) va returna  true pentru ca 1 + 1 (suma primilor 2 parametri) este egal cu 2 (al 3-lea parametru)
 ```
 
