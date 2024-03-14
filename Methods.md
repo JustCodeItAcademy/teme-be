@@ -4,22 +4,38 @@
 
 ### 1. Creeaza o metoda numita hasEqualSum(), care primeste 3 parametri reprezentand numere intregi.
 Metoda va returna true daca suma primilor 2 parametri este egala cu cel de-al 3-lea.
+De exemplu:
+
+```json
+apelul de metoda cu parametri 1,1,1, adica hasEqualSum(1, 1, 1) va returna  fals2 pentru ca 1 + 1 (suma primilor 2 parametri) nu este egal cu 1 (al 3-lea parametru)
+apelul de metoda cu parametri 1,1,2, adica hasEqualSum(1, 1, 1) va returna  true pentru ca 1 + 1 (suma primilor 2 parametri) este egal cu 2 (al 3-lea parametru)
+```
+
 Defineste metoda (impreuna cu parametri necesari), implementeaz-o, si apoi apeleaz-o in main().
 
 ### 2. Creeaza o metoda numita getAge(), care primeste ca parametru anul nasterii unei persoane
 Metoda va returna varsta persoanei.
-Defineste metoda (impreuna cu parametri necesari), implementeaz-o, si apoi apeleaz-o in main().
+De exemplu:
+```json
+apelul de metoda cu parametrul 2000, adica getAge(2000) va returna valoarea 24 pentru "anul curent - 2000 = 24"
+```
 
 ### 3. Creeaza o metoda numita shouldWakeUp(), care sa returneze true sau false.
 Metoda va returna true daca primeste informatia ca latra cainele si daca ora este inainte de 8, sau dupa 22.
+De exemplu:
+```json
+apelul de metoda cu parametrii true si 1 (cainele latra si este ora 1) adica shouldWakeUp(true, 1), va returna valoarea true pentru ca ambele conditii din enunt sunt indeplinite
+apelul de metoda cu parametrii false si 2 (cainele nu latra si este ora 2) adica shouldWakeUp(false, 2), va returna valoarea false pentru ca doar a doua conditie este indeplinita (dar cainele nu latra)
+apelul de metoda cu parametrii true si 8 (cainele latra si este ora 1) adica shouldWakeUp(true, 8), va returna valoarea false pentru ca doar prima conditia este indeplinita (ora nu este inainte de 8)
+```
 Defineste metoda (impreuna cu parametri necesari), implementeaz-o, si apoi apeleaz-o in main().
 
 ### 4. Creeaza o metoda numita displayBytesConversions(), care sa accepte un parametru de tip int, care va reprezenta numarul de kilobytes.
 Metoda nu trebuie sa returneze nimic, doar sa calculeze cati megabytes si cati kilobytes reprezinta numarul primit ca parametru.
 De exemplu, daca parametrul are valoarea 2500, metoda va printa: ""2500 KB = 2 MB and 452 KB".
 
-HINT: Ca sa afli numarul de megabytes, trebuie sa imparti numarul primit ca parametru la 1024 folosind operatorul clasic de impartire.
-Iar ca sa afli numarul de kilobytes, trebuie sa imparti numarul primit ca parametru la 1024 folosind operatorul de impartire cu rest.
+HINT: Ca sa afli numarul de megabytes, trebuie sa imparti numarul primit ca parametru la 1024 folosind operatorul clasic de impartire, adica "/".
+Iar ca sa afli numarul de kilobytes, trebuie sa imparti numarul primit ca parametru la 1024 folosind operatorul de impartire cu rest, adica "%".
 Defineste metoda (impreuna cu parametri necesari), implementeaz-o, si apoi apeleaz-o in main().
 
 ### 5. Scrie un program care sa citeasca de la tastatura 3 numere si care sa determine daca cel putin unul dintre numere este un numar "perfect".
@@ -30,7 +46,7 @@ metoda hasTeen(9, 99, 19);  va returna true, pentru ca 19 este in interval
 
 metoda hasTeen(23, 15, 10);  va returna true, pentru ca 15 si 10 sunt in interval
 
-metoda hasTeen(22, 23, 34);  va returna fals pentru ca nu nu exista cel putin un parametru care sa fie in interval
+metoda hasTeen(22, 23, 34);  va returna fals pentru ca nu exista cel putin un parametru care sa fie in interval
 ```
 HINT: foloseste-te de o alta metoda isPerfect() care sa returneze true daca un anumit numar este "perfect"
 
