@@ -152,3 +152,83 @@ boolean isContractExpired
 boolean isMaintenanceHour 
 ```  
 Foloseste variabila canAccessNetwork care sa retina daca reteaua poate fi accesata, sau nu.
+
+## Exericitii suplimentare pentru cei care au avut probleme la 13
+> Aceste exercitii se rezolva fix ca problema 13, doar situatiile (cuvintele) difera. Rezolva-le o data ce intelegi logica de la problema 13 si 12.
+
+### 17. Un membru al bibliotecii poate împrumuta un roman doar dacă acesta este disponibil și dacă membrul nu a depășit limita de cărți împrumutate pe lună. Dacă cartea este o ediție rară (cu valoare istorică semnificativă), atunci poate fi împrumutată doar dacă cititorul are un istoric de cel puțin 10 cărți returnate la timp.
+Citeste de la tastatura:
+```json
+isBookAvailable (boolean): Indică dacă cartea dorită este disponibilă pentru împrumut.
+isBorrowLimitExceeded (boolean): Retine dacă membrul a depășit limita de cărți pe care le poate împrumuta pe lună.
+isRareEdition (boolean): Specifică dacă cartea este o ediție rară cu valoare istorică semnificativă.
+returnedBooksHistory (int): Numărul de cărți pe care membrul le-a returnat la timp în trecut.
+```  
+Foloseste variabila canBorrowBook pentru a construi rezultatul.
+
+### 18. Un șofer poate ocupa un loc de parcare doar dacă acesta este liber și dacă șoferul nu a depășit numărul maxim de ore de parcare pe zi. Dacă locul de parcare este destinat vehiculelor electrice (cu stație de încărcare), atunci poate fi ocupat doar dacă vehiculul șoferului este electric și dacă bateria are nevoie de reîncărcare.
+Citeste de la tastatura:
+```json
+isParkingSpotFree (boolean): Verifică dacă locul de parcare este liber.
+isParkingTimeExceeded (boolean): Indică dacă șoferul a depășit numărul maxim de ore de parcare permise pe zi.
+isElectricVehicleSpot (boolean): Specifică dacă locul de parcare este destinat exclusiv vehiculelor electrice și are stație de încărcare.
+isElectricVehicle (boolean): Verifică dacă vehiculul șoferului este electric.
+batteryNeedsRecharging (boolean): Indică dacă bateria vehiculului electric are nevoie de reîncărcare.
+```  
+Foloseste variabila canPark pentru a construi rezultatul.
+
+### 19. Un fan poate cumpăra un bilet la un concert doar dacă biletele sunt încă disponibile și dacă nu a depășit limita de bilete pe care le poate cumpăra per eveniment. Dacă concertul este unul special (de exemplu, aniversar sau cu un invitat special), atunci biletele pot fi achiziționate doar dacă fanul este membru al fan clubului artistului și a participat la cel puțin 5 concerte anterioare ale acestuia.
+Citeste de la tastatura:
+```json
+isTicketAvailable (boolean): Specifica dacă mai sunt bilete disponibile la concert.
+isPurchaseLimitExceeded (boolean): Indică dacă fanul a depășit limita de bilete pe care le poate cumpăra per eveniment.
+isSpecialConcert (boolean): Specifică dacă concertul este unul special (aniversar, invitat special etc.).
+isFanClubMember (boolean): Verifică dacă fanul este membru al fan clubului artistului.
+previousConcertsAttended (int): Numărul de concerte anterioare ale artistului la care fanul a participat.
+```  
+Foloseste variabila canBuyConcertTicket pentru a construi rezultatul.
+
+> Apoi urmatoarele exercitii sunt cu un nivel mai jos decat exercitiul 13, dar sunt bune pentru antrenament, daca ai nevoie:
+
+### 20.O familie alege un film de vizionat împreună dacă ratingul filmului este potrivit pentru cea mai tânără persoană din familie și dacă durata filmului nu depășește timpul disponibil pentru seara de film. De asemenea, cel puțin jumătate dintre membrii familiei trebuie să fie interesați de genul filmului.
+Citeste de la tastatura:
+```json
+minimumAge (int): Vârsta celei mai tinere persoane din familie.
+movieRating (int): Clasificarea de vârstă a filmului.
+availableTime (int): Timpul disponibil pentru vizionarea filmului (în minute).
+movieDuration (int): Durata filmului (în minute).
+interestedMembers (int): Numărul membrilor familiei interesați de genul filmului.
+totalMembers (int): Numărul total de membri ai familiei.
+```  
+Foloseste variabila canWatchMovie pentru a construi rezultatul.
+
+### 21.O persoană se poate înscrie la maraton dacă îndeplinește criteriile de vârstă, dacă taxa de înscriere este achitată și dacă a completat antrenamentele recomandate de organizatori. Numărul minim de antrenamente recomandate depinde de grupa de vârstă.
+Citeste de la tastatura:
+```json
+age (int): Vârsta persoanei.
+registrationFeePaid (boolean): Indică dacă taxa de înscriere a fost achitată.
+completedTrainings (int): Numărul de antrenamente completate de persoană.
+requiredTrainings (int): Numărul minim de antrenamente recomandate, care variază în funcție de vârstă.
+```  
+Foloseste variabila canEnrollInMarathon pentru a construi rezultatul.
+
+### 22.Un profesionist poate participa la o conferință dacă are invitație sau dacă biletul poate fi achiziționat și îndeplinește una dintre următoarele condiții: este membru al organizației care găzduiește evenimentul sau a participat la cel puțin 3 evenimente anterioare similare.
+Citeste de la tastatura:
+```json
+hasInvitation (boolean): Verifică dacă profesionistul are invitație.
+canPurchaseTicket (boolean): Indică dacă biletul poate fi achiziționat.
+isOrganizationMember (boolean): Verifică dacă este membru al organizației care găzduiește evenimentul.
+pastEventsAttended (int): Numărul de evenimente anterioare similare la care a participat.
+```  
+Foloseste variabila canAttendConference pentru a construi rezultatul.
+
+### 23.Un client primește o reducere la magazin dacă este ziua lui de naștere sau dacă are un voucher de reducere și achiziționează produse de peste o anumită sumă.
+Citeste de la tastatura:
+```json
+isBirthday (boolean): Verifică dacă este ziua de naștere a clientului.
+hasDiscountVoucher (boolean): Indică dacă clientul are un voucher de reducere.
+purchaseAmount (float): Suma totală a achizițiilor clientului.
+minimumAmountForDiscount (float): Suma minimă necesară pentru a aplica reducerea cu voucher.
+```  
+Foloseste variabila getsDiscount pentru a construi rezultatul.
+
