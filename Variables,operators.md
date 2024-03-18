@@ -202,13 +202,13 @@ totalMembers (int): Numărul total de membri ai familiei.
 ```  
 Foloseste variabila canWatchMovie pentru a construi rezultatul.
 
-### 21.O persoană se poate înscrie la maraton dacă îndeplinește criteriile de vârstă, dacă taxa de înscriere este achitată și dacă a completat antrenamentele recomandate de organizatori. Numărul minim de antrenamente recomandate depinde de grupa de vârstă.
+### 21.O persoană se poate înscrie la maraton dacă îndeplinește criteriile de vârstă (varsta sa fie mai mare decat 18 ani), dacă taxa de înscriere este achitată și dacă a completat numarul de antrenamente recomandate de organizatori. Numărul minim de antrenamente recomandate depinde de grupa de vârstă.
 Citeste de la tastatura:
 ```json
 age (int): Vârsta persoanei.
 registrationFeePaid (boolean): Indică dacă taxa de înscriere a fost achitată.
 completedTrainings (int): Numărul de antrenamente completate de persoană.
-requiredTrainings (int): Numărul minim de antrenamente recomandate, care variază în funcție de vârstă.
+requiredTrainings (int): Numărul minim de antrenamente recomandate
 ```  
 Foloseste variabila canEnrollInMarathon pentru a construi rezultatul.
 
