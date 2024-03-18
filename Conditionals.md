@@ -46,7 +46,7 @@ Pasul 7: Scrie o instrucțiune if-then care afișează mesajul 'got some remaind
 
 
 
-### 4. Avand la dispozitie o variabila care stocheaza un numar, afiseaza in consola daca numarul este par sau impar.
+### 5. Avand la dispozitie o variabila care stocheaza un numar, afiseaza in consola daca numarul este par sau impar.
 De exemplu, pentru valoarea initiala:
 ```json
 int a = 12
@@ -55,21 +55,21 @@ se va afisa in consola textul "numarul este par"
 
 
 
-### 5.Construieste un calculator de baza. 
+### 6.Construieste un calculator de baza. 
 Citeste de la tastatura 2 numere si un caracter care reprezinta operatia pe care vrei sa o realizezi: +, -, * sau /.
 Apoi afiseaza rezultatul calculului respectiv in consola. 
 Ai grija sa tratezi cazul in care se face impartire la 0.
 
-### 6. Vrei sa determini BMI-ul (Body Mass Index) al unei persoane. Citeste de la tastatura greutatea si inaltimea unui om. Apoi calculeaza BMI-ul utilizand formula: “greutate / (inaltime * intaltime)”
+### 7. Vrei sa determini BMI-ul (Body Mass Index) al unei persoane. Citeste de la tastatura greutatea si inaltimea unui om. Apoi calculeaza BMI-ul utilizand formula: “greutate / (inaltime * intaltime)”
 Apoi, daca BMI-ul este mai mic decat 18, 5 afiseaza in consola “esti sub greutatea normala”.
 * Daca BMI-ul este intre 18.5 si 24.9, afiseaza in consola “ai greutatea normala”.
 * Daca BMI-ul este intre 25 si 29.9, afiseaza in consola “esti peste greutatea normala”.
 * Daca BMI-ule este mai mare deact 29.9, afiseaza in consola “esti obez”.
 
-### 7. Ai o aplicatie de bilete la cinema si vrei sa determini pretul unui bilet. Pretul normal este de 10 lei. Daca persoana este copil (are varsta mai mica decat 12 ani), sau pensionar (mai mult de 65 de ani), atunci pretul este de 5 lei. In plus, in fiecare marti, este un discount de 2 lei pentru toata lumea.
+### 8. Ai o aplicatie de bilete la cinema si vrei sa determini pretul unui bilet. Pretul normal este de 10 lei. Daca persoana este copil (are varsta mai mica decat 12 ani), sau pensionar (mai mult de 65 de ani), atunci pretul este de 5 lei. In plus, in fiecare marti, este un discount de 2 lei pentru toata lumea.
 Citeste de la tastatura varsta persoanei si ziua din saptamana, apoi afiseaza in consola pretul biletului.
  
-### 8. Vrei sa construiesti un serviciu de tip RO-ALERT
+### 9. Vrei sa construiesti un serviciu de tip RO-ALERT
 Citeste de la tastatura previziunea pentru vreme si viteza vantului. Previziunea pentru vreme poate fi “rainy” sau “snowing”.
 Daca previziunea pentru vreme este “rainy” sau previziunea este “snowing” si viteaza vantului este mai mare decat 30, afiseaza in consola mesajul “Ramai in casa, este periculos afara”
 Altfel, afiseaza mesajul: “S-ar putea sa fie frumos afara”
@@ -81,7 +81,7 @@ int currentWindSpeed = 40
 ```  
 se va afisa in consola mesajul "Ramai in casa, este periculos afara"
  
-### 9. Citeste de la tastatura un numar si afiseaza in consola “fizz” daca numarul este multimplu de 3, “buzz” daca numarul este multiplu de 5 si “fizzbuzz” daca numarul este divizibil atat cu 3 cat si cu 5 
+### 10. Citeste de la tastatura un numar si afiseaza in consola “fizz” daca numarul este multimplu de 3, “buzz” daca numarul este multiplu de 5 si “fizzbuzz” daca numarul este divizibil atat cu 3 cat si cu 5 
 De exemplu, pentru valoarea citita:
 ```json
 int number = 15
@@ -93,7 +93,7 @@ int number = 9
 ```  
 se va afisa in consola "fizz", pentru ca 9 se imparte exact doar la 3
  
-### 10. Citeste 3 numere de la tastatura si scrie un program care sa printeze in consola:
+### 11. Citeste 3 numere de la tastatura si scrie un program care sa printeze in consola:
 * “toate numerele sunt egale”, daca toate numerele sunt egale
 * “toate numerele sunt diferite”, daca toate numerele sunt diferite
 * “cel putin doua sunt egale”, daca oricare doua numere dintre cele trei sunt egale 
@@ -105,7 +105,7 @@ int c = 4
 ```  
 se va afisa in consola: "cel putin doua sunt egale"
 
-### 5. Scrieți o metoda Java care calculează scorul final al unui jucător într-un joc. Funcția va primi patru parametri:
+### 12. Scrieți o metoda Java care calculează scorul final al unui jucător într-un joc. Funcția va primi patru parametri:
 
 ```json
 gameOver, de tip boolean, care indică dacă jocul s-a terminat sau nu.
@@ -120,7 +120,7 @@ Funcția va calcula scorul final în următorul mod:
 
 Metoda va returna apoi scorul final calculat. Apeleaza metoda in metoda main()
 
-### 5. Determinat pozitia unui jucator intr-un joc, in functie de scorul sau
+### 13. Determinat pozitia unui jucator intr-un joc, in functie de scorul sau
 Vom crea două metode:
 Prima metodă ar trebui să se numească displayScorePosition().
 - Această metodă ar trebui să aibă doi parametri, unul pentru numele unui jucător și unul pentru poziția unui jucător în lista de scoruri.
@@ -139,14 +139,14 @@ Toate celelalte scoruri -> poziția	4
 
 În final, vom apeleaza ambele metode și afiseaza rezultatele pentru următoarele scoruri: 1500, 1000, 500, 100 și 25.
  
-### 11. Citeste de la tastatura un numar care reprezinta un an, si afiseaza la consola daca anul este bisect sau nu. Un an este bisect daca este divizibil cu 400 sau cu 4 si in acelasi timp nu este divizibil cu 100
+### 14. Citeste de la tastatura un numar care reprezinta un an, si afiseaza la consola daca anul este bisect sau nu. Un an este bisect daca este divizibil cu 400 sau cu 4 si in acelasi timp nu este divizibil cu 100
 De exemplu, pentru valoarea initiala:
 ```json
 int year = 2020
 ```  
 se va afisa in consola: "anul 2020 este bisect"
  
-### 12. Citeste de la tastatura doua numere, guess si answer si creeaza un joc de ghicit:
+### 15. Citeste de la tastatura doua numere, guess si answer si creeaza un joc de ghicit:
 * daca raspunsul este mai mic decat solutia (adica valoarea variabilei guess, afiseaza “nu ai ghicit, numarul este prea mic”
 * daca raspunsul este mai mare decat solutia, afiseaza “nu ai ghicit, numarul este prea mare”
 * daca raspunsul este egal cu solutia, afiseaza “ai ghicit” 
@@ -157,33 +157,33 @@ int answer = 8
 ```  
 se va afisa in consola: "nu ai ghicit, numarul este prea mare"
 
-### 13. Citeste de la tastatura un numar intre -10 si 10. 
+### 16. Citeste de la tastatura un numar intre -10 si 10. 
 * Daca valoarea citita este 10, -10, sau 0, printeaza un mesaj corespunzator (ex: "numarul este -10", in caz ca valoarea citita este -10)
 * Altfel, printeaza fie "numarul este pozitiv", fie "numarul este negativ", dupa caz
 
-### 14. Scrie un program care citeste de la tastatura 3 numere, reprezentand lugimile laturilor unui triunghi.
+### 17. Scrie un program care citeste de la tastatura 3 numere, reprezentand lugimile laturilor unui triunghi.
 Trebuie sa afisezi in consola daca cele 3 laturi formeaza un triunghi valid, sau nu.
 Un triunghi este valid daca suma lungimilor oricaror doua laturi este mai mare decat lugimea celei de-a 3-a laturi.
 
-### 15. Scrie un program care intreaba utilizatorul care este parola secreta. 
+### 18. Scrie un program care intreaba utilizatorul care este parola secreta. 
 Citeste de la tastatura raspunsul utilizatorului.\
 * Printeaza apoi "corect", daca utilizatorul a raspuns cu 42, "forty-two" sau "forty-two", indiferent daca a folosit litere mari sau mici
 * Atlfel, printeaza "incorect"
 
-### 16. Angajatii unei banci trebuie sa intampine clientii cu salutul "Buna ziua", altfel vor fi penalizati.
+### 19. Angajatii unei banci trebuie sa intampine clientii cu salutul "Buna ziua", altfel vor fi penalizati.
 Scrie un program care citeste de la tastatura salutul folosit.
 * Daca salutul incepe cu "Buna ziua", atunci printeaza "nicio penalizare"
 * Daca salutul incepe cu "B", dar nu este "Buna ziua", atunci printeaza "20 de lei penalizare"
 * Daca salutul nici macar nu incepe cu "B", printeaza "100 de lei penalizare"
 Ignora literele mari si literele mici din salut. Ignora si orice spatii care apar inainte de primul cuvant din salut
 
-### 17. Scrie un program care sa spuna ce format media are un fisier, in functie de extensia lui.
+### 20. Scrie un program care sa spuna ce format media are un fisier, in functie de extensia lui.
 Citeste de la tastatura numele fisierului.
 * Daca extensia fisierului este .jpg, .jpeg, sau .png, atunci fisierul este o imagine
 * Daca extensia fisierului este .webm, su .mp4, fisierul este un video.
 * Daca extensia fisierului este .zip, fisierul este o arhiva
 
-### 18. Vrem sa construim un sistem “smart home”. Sistemul controleaza caldura, lumina, si alarma.
+### 21. Vrem sa construim un sistem “smart home”. Sistemul controleaza caldura, lumina, si alarma.
 Trebuie sa tinem cont de urmatoarele conditii:
 Cladura se va porni daca temperatura este mai mica decat 20 de grade si fie este iarna, fie este cineva acasa
 Luminile se vor porni daca afara este intuneric si daca cineva este acasa. Totusi, daca persoana care este acasa doarme, atunci luminile nu se vor porni
@@ -199,7 +199,7 @@ Casa are multi senzori care primesc informatii:
 
 Citeste de la tastatura valorile senzorilor si apoi implementeaza logica necesara.
 
-### 19. Avem o platforma de cursuri online. 
+### 22. Avem o platforma de cursuri online. 
 Cursantii se pot inscrie la un curs daca indeplinesc toate urmatoarele 3 conditii:
 Au platit costul cursului sau au o bursa pentru curs
 Exista locuri disponibile in curs
@@ -222,7 +222,7 @@ Citeste de la tastatura urmatoarele informatii:
 Apoi implementeaza logica necesara
 
 
-### 19. Scrie un program care sa transforme viteza de la kilometri pe ora, la mile pe ora.
+### 23. Scrie un program care sa transforme viteza de la kilometri pe ora, la mile pe ora.
 Scrieți o metodă numită toMilesPerHour() care are un parametru de tip double cu numele kilometersPerHour. Această metodă trebuie să returneze valoarea rotunjită a parametrului transformat la mile pe ora.
 
 - Dacă parametrul kilometersPerHour este mai mic decât 0, metoda toMilesPerHour trebuie să returneze -1 pentru a indica o valoare invalidă.
@@ -263,7 +263,7 @@ double number = 1.5;
 long rounded = Math.round(number);
 ```
 
-### 20. Dorim sa implementam logica unui semafor pentru masini.
+### 24. Dorim sa implementam logica unui semafor pentru masini.
 Culorile posibile ale semaforului sunt verde, galben si rosu.
 Avem urmatoarele scenarii:
 * Daca lumina este verde, afisam in consola in consola faptul ca masinile circula. Apoi lumina trebuie sa devina galben
@@ -286,7 +286,7 @@ Implementeaza codul care face toate verificarile in locul indicat din urmatoarea
 
 ```  
 
-### 21. Dorim sa implementam logica unui lift.
+### 25. Dorim sa implementam logica unui lift.
 Trebuie sa tinem cont de urmatoarele conditii:
 * Daca etajul curent este mai mic decat etajul dorit, afisam in consola faptul ca liftul urca
 * Daca etajul curent este mai mare decat etajul dorit, afisam in consola faptul ca liftul coboara
@@ -297,7 +297,7 @@ Trebuie sa tinem cont de urmatoarele conditii:
 Citeste de la tastatura etajul curent, etajul dorit, si daca liftul este in mentenanta sau nu.
 Apoi implementeaza logica necesara.
 
-### 22. Dorim sa implementam logica unui semafor pentru masini, unde exista o trecere de pietoni.
+### 26. Dorim sa implementam logica unui semafor pentru masini, unde exista o trecere de pietoni.
 Culorile posibile ale semaforului sunt verde, si rosu.
 Trebuie sa luam in considerare urmatoarele scenarii:
 * Daca semaforul este verde si nu asteapta niciun pieton, afisam in consola faptul ca masinile circula
@@ -338,12 +338,12 @@ pentru a introduce un delay de 2 secunde acolo unde este cazul
 
 Ruleaza codul si observa cum se desfasoara traficul.
 
-### 23. Creeaza un automat de cafea. 
+### 27. Creeaza un automat de cafea. 
 Automatul are 3 tipuri de cafea: espresso, care costa 5 lei, latte, care costa 7 lei si cappuccino, care costa 6 lei.\
 Clientul poate adauga extra lapte pentru 1 leu, sau extra zahar in mod gratuit.\
 Citeste de la tastatura tipul cafelei si daca clientul doreste extra lapte sau extra zahar.\
 Apoi afiseaza in consola pretul total.\
 
-### 24. Citeste de la tastatura 3 numere si afiseaza in consola cel mai mare(maximul) si cel mai mic (minimul) dintre cele 3 numere.
+### 28. Citeste de la tastatura 3 numere si afiseaza in consola cel mai mare(maximul) si cel mai mic (minimul) dintre cele 3 numere.
 
-### 25. Citeste de la tastatura 3 numere si afiseaza-le in ordine crescatoare in consola. Foloseste doar instructiunea IF
+### 29. Citeste de la tastatura 3 numere si afiseaza-le in ordine crescatoare in consola. Foloseste doar instructiunea IF
