@@ -1,4 +1,4 @@
-# TEME BACK-END 📚
+<img width="1706" alt="image" src="https://github.com/JustCodeItAcademy/teme-be/assets/26199925/fb50792d-8e96-4412-824c-08721a783ab2"># TEME BACK-END 📚
 
 ## IF statement
 
@@ -30,12 +30,30 @@ char c = ‘y’
 ```  
 Se va afisa in consola “de acord”
 
+
+### 4. Exerseaza scrisul de cod respectand urmatorii pasi:
+
+```json
+Pasul 1: Creează o variabilă de tip double cu valoarea 20.00.
+Pasul 2: Creează o a doua variabilă de tip double cu valoarea 80.00.
+Pasul 3: Adună ambele numere împreună, apoi înmulțește cu 100.00.
+Pasul 4: Folosește operatorul de rest pentru a afla care este restul impartirii valorii obtinute la pasul 3 la numarul 40.00.
+Pasul 5: Creează o variabilă booleană care atribuie valoarea true, dacă restul din pasul 4 este 0.00, sau false dacă nu este zero.
+Pasul 6: Afișează variabila booleană doar pentru a vedea care este rezultatul.
+Pasul 7: Scrie o instrucțiune if-then care afișează mesajul 'got some remainder', dacă valoarea booleana obtinuta la pasul 5 nu este true.
+```
+
+
+
+
 ### 4. Avand la dispozitie o variabila care stocheaza un numar, afiseaza in consola daca numarul este par sau impar.
 De exemplu, pentru valoarea initiala:
 ```json
 int a = 12
 ```  
 se va afisa in consola textul "numarul este par"
+
+
 
 ### 5.Construieste un calculator de baza. 
 Citeste de la tastatura 2 numere si un caracter care reprezinta operatia pe care vrei sa o realizezi: +, -, * sau /.
@@ -86,6 +104,40 @@ int b = 3
 int c = 4
 ```  
 se va afisa in consola: "cel putin doua sunt egale"
+
+### 5. Scrieți o metoda Java care calculează scorul final al unui jucător într-un joc. Funcția va primi patru parametri:
+
+```json
+gameOver, de tip boolean, care indică dacă jocul s-a terminat sau nu.
+score, de tip int, care reprezintă scorul actual al jucătorului.
+levelCompleted, de tip int, care indică numărul nivelului pe care jucătorul l-a completat.
+bonus, de tip int, care reprezintă bonusul de puncte primit pentru completarea nivelului.
+```
+
+Funcția va calcula scorul final în următorul mod:
+
+- Dacă jocul s-a terminat (adică gameOver este true), funcția adaugă la scor produsul dintre nivelul completat (levelCompleted) și bonusul (bonus), plus un bonus suplimentar de 1000 de puncte.
+
+Metoda va returna apoi scorul final calculat. Apeleaza metoda in metoda main()
+
+### 5. Determinat pozitia unui jucator intr-un joc, in functie de scorul sau
+Vom crea două metode:
+Prima metodă ar trebui să se numească displayScorePosition().
+- Această metodă ar trebui să aibă doi parametri, unul pentru numele unui jucător și unul pentru poziția unui jucător în lista de scoruri.
+- Această metodă ar trebui să afișeze un mesaj de genul "Tim a reușit să ajungă pe poziția 2 în lista de scoruri".
+
+A doua metodă ar trebui să se numească calculateHighScorePosition.
+- Această metodă ar trebui să aibă doar un parametru, scorul jucătorului.
+- Această metodă ar trebui să returneze un număr între 1 și 4, astfel:
+
+```json
+Scor mai mare sau egal cu 1000 -> poziția 1
+Scor mai mare sau egal cu 500 dar mai mic decât 1000 -> poziția	2
+Scor mai mare sau egal cu 100 dar mai mic decât 500 -> poziția	3
+Toate celelalte scoruri -> poziția	4
+```
+
+În final, vom apeleaza ambele metode și afiseaza rezultatele pentru următoarele scoruri: 1500, 1000, 500, 100 și 25.
  
 ### 11. Citeste de la tastatura un numar care reprezinta un an, si afiseaza la consola daca anul este bisect sau nu. Un an este bisect daca este divizibil cu 400 sau cu 4 si in acelasi timp nu este divizibil cu 100
 De exemplu, pentru valoarea initiala:
@@ -168,6 +220,48 @@ Citeste de la tastatura urmatoarele informatii:
 * Numarul de prieteni recomandati de student
 
 Apoi implementeaza logica necesara
+
+
+### 19. Scrie un program care sa transforme viteza de la kilometri pe ora, la mile pe ora.
+Scrieți o metodă numită toMilesPerHour() care are un parametru de tip double cu numele kilometersPerHour. Această metodă trebuie să returneze valoarea rotunjită a parametrului transformat la mile pe ora.
+
+- Dacă parametrul kilometersPerHour este mai mic decât 0, metoda toMilesPerHour trebuie să returneze -1 pentru a indica o valoare invalidă.
+- În caz contrar, dacă este pozitiv, calculează valoarea milelor pe oră, rotunjește-o și returnează-o. 
+
+Exemple:
+```json
+toMilesPerHour(1.5); → ar trebui să returneze valoarea 1
+toMilesPerHour(10.25); → ar trebui să returneze valoarea 6
+toMilesPerHour(-5.6); → ar trebui să returneze valoarea -1
+toMilesPerHour(25.42); → ar trebui să returneze valoarea 16
+toMilesPerHour(75.114); → ar trebui să returneze valoarea 47
+```
+
+Scrie o altă metodă numită printConversion() care accepta un parametru de tip double, cu numele kilometersPerHour.
+Această metodă nu trebuie să nu returneze nimic (void) și trebuie să calculeze conversia de la kilometri pe ora la mile pe ora (luand in considerare parametrul primit si apeland metoda toMilesPerHour()).
+
+Apoi trebuie să afișeze un mesaj în formatul "XX km/h = YY mi/h".
+
+- XX reprezintă valoarea originală in kilometri pe ora.
+- YY reprezintă numarul de mile pe ora calculat.
+
+Dacă parametrul apelul functiei toMilesPerHour() returneaza valoarea -1, atunci să se afișeze textul "Valoare Invalidă".
+
+Exemple:
+```json
+printConversion(1.5); → ar trebui să afișeze următorul text (în consolă - System.out): 1.5 km/h = 1 mi/h
+printConversion(10.25); → ar trebui să afișeze următorul text (în consolă - System.out): 10.25 km/h = 6 mi/h
+printConversion(-5.6); → ar trebui să afișeze următorul text (în consolă - System.out): Valoare Invalidă
+printConversion(25.42); → ar trebui să afișeze următorul text (în consolă - System.out): 25.42 km/h = 16 mi/h
+printConversion(75.114); → ar trebui să afișeze următorul text (în consolă - System.out): 75.114 km/h = 47 mi/h
+```
+
+Apeleaza metoda Math.round() pentru a rotunji numărul de mile pe oră (double). Metoda round() returnează long.
+Exemplu de folosire:
+```json
+double number = 1.5;
+long rounded = Math.round(number);
+```
 
 ### 20. Dorim sa implementam logica unui semafor pentru masini.
 Culorile posibile ale semaforului sunt verde, galben si rosu.
