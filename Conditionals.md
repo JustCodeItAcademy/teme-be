@@ -1,4 +1,4 @@
-<img width="1706" alt="image" src="https://github.com/JustCodeItAcademy/teme-be/assets/26199925/fb50792d-8e96-4412-824c-08721a783ab2"># TEME BACK-END 📚
+# TEME BACK-END 📚
 
 ## IF statement
 
