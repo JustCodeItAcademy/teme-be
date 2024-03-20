@@ -141,9 +141,9 @@ Testeaza codul la final:
 
 ## For loops (mai putin confortabil)
 
-### 17. Scrie un program care sa afiseze numerele de la 1 la n, n fiind citit de la tastatura.
+### 1. Scrie un program care sa afiseze numerele de la 1 la n, n fiind citit de la tastatura.
 
-### 18. Scrie un program care sa printeze urmatorul pattern, in functie de numar n citit de la tastatura.
+### 2. Scrie un program care sa printeze urmatorul pattern, in functie de numar n citit de la tastatura.
 De exemplu, pentru n = 400 se va afisa:
 ```json
 0
@@ -157,23 +157,23 @@ moo
 moo
 ```
 
-### 19. Scrie un program care sa afiseze suma numerelor de la 1 la n, n fiind citit de la tastatura.
+### 3. Scrie un program care sa afiseze suma numerelor de la 1 la n, n fiind citit de la tastatura.
 
-### 20. Scrie un program care sa afiseze numerele pare de la 1 la n, n fiind citit de la tastatura.
+### 4. Scrie un program care sa afiseze numerele pare de la 1 la n, n fiind citit de la tastatura.
 
-### 21. Scrie un program care sa faca media tuturor numerelor consecutive de la x la y, unde x si y sunt citite de la tastatura.
+### 5. Scrie un program care sa faca media tuturor numerelor consecutive de la x la y, unde x si y sunt citite de la tastatura.
 
-### 22. Scrie un program care sa afiseze suma numerelor divizibile cu 3 de la 1 la n, n fiind citit de la tastatura.
+### 6. Scrie un program care sa afiseze suma numerelor divizibile cu 3 de la 1 la n, n fiind citit de la tastatura.
 
-### 23. Scrie un program care sa afiseze factorialul unui numar.
+### 7. Scrie un program care sa afiseze factorialul unui numar.
 
-### 24. Scrie un program care sa afiseze numerele prime din intervalul 1 - n, n fiind citit de la tastatura.
+### 8. Scrie un program care sa afiseze numerele prime din intervalul 1 - n, n fiind citit de la tastatura.
 
-### 25. Scrie un program care calculeaza x la puterea y, unde x si y sunt citite de la tastatura.
+### 9. Scrie un program care calculeaza x la puterea y, unde x si y sunt citite de la tastatura.
 
 ## For loops (confortabil)
 
-### 26. Printeaza jumatate de piramida, in functie de un numar n citit de la tastatura.
+### 10. Printeaza jumatate de piramida, in functie de un numar n citit de la tastatura.
 De exemplu, pentru n = 5, se va printa:
 ```json
 #
@@ -183,7 +183,7 @@ De exemplu, pentru n = 5, se va printa:
 #####
 ```
 
-### 27. Printeaza aceeasi jumatate de piramida (doar ca acum formata din numere), in functie de un numar n citit de la tastatura.
+### 11. Printeaza aceeasi jumatate de piramida (doar ca acum formata din numere), in functie de un numar n citit de la tastatura.
 De exemplu, pentru n = 5, se va printa:
 ```json
 0
@@ -193,7 +193,7 @@ De exemplu, pentru n = 5, se va printa:
 01234
 ```
 
-### 28. Printeaza cealalta jumatate de piramida, in functie de un numar n citit de la tastatura.
+### 12. Printeaza cealalta jumatate de piramida, in functie de un numar n citit de la tastatura.
 De exemplu, pentru n = 5, se va printa:
 ```json
        #
@@ -203,7 +203,7 @@ De exemplu, pentru n = 5, se va printa:
    #####
 ```
 
-### 29. Printeaza jumatate de piramida rasturnata, in functie de un numar n citit de la tastatura.
+### 13. Printeaza jumatate de piramida rasturnata, in functie de un numar n citit de la tastatura.
 De exemplu, pentru n = 5, se va printa:
 ```json
 #####
@@ -213,7 +213,7 @@ De exemplu, pentru n = 5, se va printa:
 #
 ```
 
-### 30. Printeaza o piramida, in functie de un numar n citit de la tastatura.
+### 14. Printeaza o piramida, in functie de un numar n citit de la tastatura.
 De exemplu, pentru n = 5, se va printa:
 ```json
     #
@@ -223,7 +223,7 @@ De exemplu, pentru n = 5, se va printa:
 # # # # #
 ```
 
-### 31. Afiseaza laturile unui partrat forma din "*", cu latura de lunigime n, n fiind citit de la tastatura.
+### 15. Afiseaza laturile unui partrat forma din "*", cu latura de lunigime n, n fiind citit de la tastatura.
 De exemplu, pentru n = 5, se va printa:
 ```json
 * * * * *
@@ -233,7 +233,7 @@ De exemplu, pentru n = 5, se va printa:
 * * * * *
 ```
 
-### 32. Printeaza o piramida cu un spatiu in mijloc, in functie de un numar n citit de la tastatura.
+### 16. Printeaza o piramida cu un spatiu in mijloc, in functie de un numar n citit de la tastatura.
 De exemplu, pentru n = 5, se va printa:
 ```json
        # #
@@ -244,7 +244,7 @@ De exemplu, pentru n = 5, se va printa:
 ```
 
 
-### 33. Printeaza o piramida din numere, in functie de un numar n citit de la tastatura.
+### 17. Printeaza o piramida din numere, in functie de un numar n citit de la tastatura.
 De exemplu, pentru n = 4, se va printa:
 ```json
    4
