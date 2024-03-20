@@ -4,20 +4,28 @@
 
 ### 1. Scrie un program care afiseaza numerele de la 1 la n, n fiind citit de la tastatura
 
-### 2. Scrie un program care afiseaza suma numerelor de la 1 la n, n fiind citit de la tastatura
+### 2. Scrie un program care afiseaza suma numerelor de la 1 la n
 
-### 3. Scrie un program care afiseaza numerele pare de la 1 la n.
+### 3. Scrie un program care afiseaza numerele pare din intervalul [1-n].
 
-### 4. Scrie un program care afiseaza suma numerelor divizibile cu 3 din intervalul [1-n], n fiind citit de la tastatura.
+### 4. Scrie un program care afiseaza suma numerelor pare din intervalul [1-n].
 
-### 5. Scrie un program care afiseaza numerele din sirul fibonacci pana la maxim n, n fiind citit de la tastatura.
+### 5. Scrie un program care afiseaza cate numere pare sunt in intervalul [1-n].
+
+### 6. Scrie un program care afiseaza numerele divizibile cu 3 din intervalul [1-n].
+
+### 7. Scrie un program care afiseaza suma numerelor divizibile cu 3 din intervalul [1-n]
+
+### 8. Scrie un program care afiseaza cate numere divizibile cu 3 sunt in intervalul [1-n]
+
+### 9. Scrie un program care afiseaza numerele din sirul fibonacci pana la maxim n, n fiind citit de la tastatura.
 Sirul fibonacci are urmatoarea regula: fiecare numar din sir este egal cu suma precedentelor doua numere din sir.
 Primele doua numere sunt intodeauna 0 si 1.
 ```json
 0, 1, 1, 2, 3, 5, 8, 13, 21, ...
 ```
 
-### 6. Scrie un program care calculeaza factorialul unui numar n, n fiind citit de la tastatura
+### 10. Scrie un program care calculeaza factorialul unui numar n, n fiind citit de la tastatura
 De exemplu, factorialul numarului 3 este 1 * 2 * 3 = 6\
 Factorialul numarului 4 este 1 * 2 * 3 * 4 = 24\
 Factorialul numarului 5 este 1 * 2 * 3 * 4 * 5 = 120\
