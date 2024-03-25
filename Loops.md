@@ -193,17 +193,7 @@ De exemplu, pentru n = 5, se va printa:
 01234
 ```
 
-### 12. Printeaza cealalta jumatate de piramida, in functie de un numar n citit de la tastatura.
-De exemplu, pentru n = 5, se va printa:
-```json
-       #
-      ##
-     ###
-    ####
-   #####
-```
-
-### 13. Printeaza jumatate de piramida rasturnata, in functie de un numar n citit de la tastatura.
+### 12. Printeaza jumatate de piramida rasturnata, in functie de un numar n citit de la tastatura.
 De exemplu, pentru n = 5, se va printa:
 ```json
 #####
@@ -211,6 +201,16 @@ De exemplu, pentru n = 5, se va printa:
 ###
 ##
 #
+```
+
+### 13. Printeaza cealalta jumatate de piramida, in functie de un numar n citit de la tastatura.
+De exemplu, pentru n = 5, se va printa:
+```json
+       #
+      ##
+     ###
+    ####
+   #####
 ```
 
 ### 14. Printeaza o piramida, in functie de un numar n citit de la tastatura.
