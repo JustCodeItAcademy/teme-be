@@ -4,17 +4,32 @@
 
 ### 1. Scrie un program care afiseaza numerele de la 1 la n, n fiind citit de la tastatura
 
-### 2. Scrie un program care afiseaza suma numerelor de la 1 la n
+### 2. Scrie un program care afiseaza suma numerelor de la 1 la n.
+Variatie de cerinta: "Scrie un program care afiseaza primele suma primelor n numere din intervalul [x,y].
+
+Dupa ce rezolvi direct in main, poti scrie o metoda care sa rezolve problema. 
 
 ### 3. Scrie un program care afiseaza numerele pare din intervalul [1-n].
+Variatie de cerinta: "Scrie un program care afiseaza primele primele n numere pare din intervalul [x,y].
+
+Dupa ce rezolvi direct in main, poti scrie o metoda care sa rezolve problema. Metoda ta va apela la randul ei (pe parcursul algoritmului) alta metoda scrisa tot de tine care verifica daca un numar este par
 
 ### 4. Scrie un program care afiseaza suma numerelor pare din intervalul [1-n].
+Variatie de cerinta: "Scrie un program care afiseaza primele suma primelor n numere pare din intervalul [x,y]
+
+Dupa ce rezolvi direct in main, poti scrie o metoda care sa rezolve problema. Metoda ta va apela la randul ei (pe parcursul algoritmului) alta metoda scrisa tot de tine care verifica daca un numar este par
 
 ### 5. Scrie un program care afiseaza cate numere pare sunt in intervalul [1-n].
 
 ### 6. Scrie un program care afiseaza numerele divizibile cu 3 din intervalul [1-n].
+Variatie de cerinta: "Scrie un program care afiseaza primele primele n numere divizibile cu 3 din intervalul [x,y]
+
+Dupa ce rezolvi direct in main, poti scrie o metoda care sa rezolve problema. Metoda ta va apela la randul ei (pe parcursul algoritmului) alta metoda scrisa tot de tine care verifica daca un numar este divizibil cu 3
 
 ### 7. Scrie un program care afiseaza suma numerelor divizibile cu 3 din intervalul [1-n]
+Variatie de cerinta: "Scrie un program care afiseaza primele primele suma primelor n numere divizibile cu 3 din intervalul [x,y]
+
+Dupa ce rezolvi direct in main, poti scrie o metoda care sa rezolve problema. Metoda ta va apela la randul ei (pe parcursul algoritmului) alta metoda scrisa tot de tine care verifica daca un numar este divizibil cu 3
 
 ### 8. Scrie un program care afiseaza cate numere divizibile cu 3 sunt in intervalul [1-n]
 
