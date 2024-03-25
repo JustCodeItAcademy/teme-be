@@ -203,7 +203,37 @@ De exemplu, pentru n = 5, se va printa:
 #
 ```
 
-### 13. Printeaza cealalta jumatate de piramida, in functie de un numar n citit de la tastatura.
+### 13. Printeaza jumatate de piramida rasturnata, in functie de un numar n citit de la tastatura.
+De exemplu, pentru n = 5, se va printa:
+```json
+12345
+1234
+123
+12
+1
+```
+
+### 14. Printeaza jumatate de piramida rasturnata, in functie de un numar n citit de la tastatura.
+De exemplu, pentru n = 5, se va printa:
+```json
+54321
+5432
+543
+54
+5
+```
+
+### 15. Printeaza jumatate de piramida rasturnata, in functie de un numar n citit de la tastatura.
+De exemplu, pentru n = 5, se va printa:
+```json
+1
+22
+333
+4444
+55555
+```
+
+### 16. Printeaza cealalta jumatate de piramida, in functie de un numar n citit de la tastatura.
 De exemplu, pentru n = 5, se va printa:
 ```json
        #
@@ -213,7 +243,9 @@ De exemplu, pentru n = 5, se va printa:
    #####
 ```
 
-### 14. Printeaza o piramida, in functie de un numar n citit de la tastatura.
+> De aici incolo creste dificultatea destul de mult.
+
+### 17. Printeaza o piramida, in functie de un numar n citit de la tastatura.
 De exemplu, pentru n = 5, se va printa:
 ```json
     #
@@ -223,7 +255,7 @@ De exemplu, pentru n = 5, se va printa:
 # # # # #
 ```
 
-### 15. Afiseaza laturile unui partrat forma din "*", cu latura de lunigime n, n fiind citit de la tastatura.
+### 18. Afiseaza laturile unui partrat forma din "*", cu latura de lunigime n, n fiind citit de la tastatura.
 De exemplu, pentru n = 5, se va printa:
 ```json
 * * * * *
@@ -233,7 +265,7 @@ De exemplu, pentru n = 5, se va printa:
 * * * * *
 ```
 
-### 16. Printeaza o piramida cu un spatiu in mijloc, in functie de un numar n citit de la tastatura.
+### 19. Printeaza o piramida cu un spatiu in mijloc, in functie de un numar n citit de la tastatura.
 De exemplu, pentru n = 5, se va printa:
 ```json
        # #
@@ -244,7 +276,7 @@ De exemplu, pentru n = 5, se va printa:
 ```
 
 
-### 17. Printeaza o piramida din numere, in functie de un numar n citit de la tastatura.
+### 20. Printeaza o piramida din numere, in functie de un numar n citit de la tastatura.
 De exemplu, pentru n = 4, se va printa:
 ```json
    4
