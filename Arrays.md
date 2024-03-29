@@ -2,10 +2,40 @@
 
 ## Arrays (mai putin confortabil)
 
+### 1. Scrie un program care sa adune toate preturile dintr-o lista (ca mai apoi sa fie afisata suma totala in cosul de cumparaturi):
+De exemplu, pentru {1, 7, 3, 10, 9}, se va afisa in consola valoarea 30.
+
+> Atentie: exercitiile 2,3,4 sunt similare cu 5,6,7 si cu 8,9,10. 
+
+### 2. Scrie un program care afiseaza numerele pare dintr-un array.
+Dupa ce rezolvi direct in main, poti scrie o metoda care sa rezolve problema. Metoda ta va apela la randul ei (pe parcursul algoritmului) alta metoda scrisa tot de tine care verifica daca un numar este par
+
+### 3. Scrie un program care afiseaza suma numerelor pare dintr-un array.
+Dupa ce rezolvi direct in main, poti scrie o metoda care sa rezolve problema. Metoda ta va apela la randul ei (pe parcursul algoritmului) alta metoda scrisa tot de tine care verifica daca un numar este par
+
+### 4. Scrie un program care afiseaza cate numere pare sunt intr-un array.
+
+### 5. Scrie un program care afiseaza numerele divizibile cu 3 dintr-un array.
+Dupa ce rezolvi direct in main, poti scrie o metoda care sa rezolve problema. Metoda ta va apela la randul ei (pe parcursul algoritmului) alta metoda scrisa tot de tine care verifica daca un numar este divizibil cu 3
+
+### 6. Scrie un program care afiseaza suma numerelor divizibile cu 3 dintr-un array
+Dupa ce rezolvi direct in main, poti scrie o metoda care sa rezolve problema. Metoda ta va apela la randul ei (pe parcursul algoritmului) alta metoda scrisa tot de tine care verifica daca un numar este divizibil cu 3
+
+### 7. Scrie un program care afiseaza cate numere divizibile cu 3 sunt intr-un array.
+
+### 8. Scrie un program care afiseaza numerele prime dintr-un array.
+Dupa ce rezolvi direct in main, poti scrie o metoda care sa rezolve problema. Metoda ta va apela la randul ei (pe parcursul algoritmului) alta metoda scrisa tot de tine care verifica daca un numar este divizibil cu 3
+
+### 9. Scrie un program care afiseaza suma numerelor prime  dintr-un array
+Dupa ce rezolvi direct in main, poti scrie o metoda care sa rezolve problema. Metoda ta va apela la randul ei (pe parcursul algoritmului) alta metoda scrisa tot de tine care verifica daca un numar este divizibil cu 3
+
+### 10. Scrie un program care afiseaza cate numere prime sunt intr-un array.
+
+
+
+
 ### 1. Scrie un program care sa caute un numar de telefon intr-o lista de numere. Programul va printa “numarul a fost gasit” sau “numarul nu a fost gasit”
 
-### 2. Scrie un program care sa adune toate preturile dintr-o lista (ca mai apoi sa fie afisata suma totala in cosul de cumparaturi):
-De exemplu, pentru {1, 7, 3, 10, 9}, se va afisa in consola valoarea 30.
 
 ### 3. Scrie un program care sa afiseze de cate ori apare un anumit numar n (citit de la tastatura) intr-un array.
 De exemplu, pentru {1, 2, 2, 3, 3, 3, 4, 4, 4, 4} si n=3, se va afisa "3 apare de 3 ori".
