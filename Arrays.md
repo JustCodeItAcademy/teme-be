@@ -31,53 +31,47 @@ Dupa ce rezolvi direct in main, poti scrie o metoda care sa rezolve problema. Me
 
 ### 10. Scrie un program care afiseaza cate numere prime sunt intr-un array.
 
+### 11. Scrie un program care sa calculeze produsul numerelor impare dintr-un array 
 
-
-
-### 1. Scrie un program care sa caute un numar de telefon intr-o lista de numere. Programul va printa “numarul a fost gasit” sau “numarul nu a fost gasit”
-
-
-### 3. Scrie un program care sa afiseze de cate ori apare un anumit numar n (citit de la tastatura) intr-un array.
+### 12. Scrie un program care sa afiseze de cate ori apare un anumit numar n intr-un array.
 De exemplu, pentru {1, 2, 2, 3, 3, 3, 4, 4, 4, 4} si n=3, se va afisa "3 apare de 3 ori".
 
-### 4. Construieste un array bazat pe input-ul utilizatorului.
-Cat timp utilizatorul introduce numere de la tastatura (maxim 100 de numere), adauga-le intr-un array si apoi afiseaza elementele array-ului.
-
-### 5. Scrie un program care sa afiseze pretul mediu pe metru patrat, dintr-o lista de preturi ale unor proprietati imobiliare:
+### 13. Scrie un program care sa afiseze pretul mediu pe metru patrat, dintr-o lista de preturi ale unor proprietati imobiliare:
 De exempu, pentru {1, 7, 3, 10, 9}, se va afisa in consola valoarea 6
 
-### 6. Scrie un program care sa calculeze produsul numerelor impare din intervalul x si y, unde numerele x si y sunt introduse de la tastatura
-
-### 7. Vrei sa pui un discount de n lei (n fiind citit de la tastatura), pentru fiecare produs.
+### 14. Pune un discount de n lei (n fiind citit de la tastatura), pentru fiecare produs dintr-o lista de produse.
 De exemplu, pentru n = 2 si lista de preturi {3, 7, 3, 10, 9}, lista de preturi va deveni {1, 5, 1, 8, 7}
 
-### 8. Vrei sa vezi cat studiezi saptamanal pentru programare
+### 15. Scrie un program care sa caute un numar de telefon intr-o lista de numere. Programul va printa “numarul a fost gasit” sau “numarul nu a fost gasit”
+
+### 16. Vrei sa vezi cat studiezi saptamanal pentru programare
 Citeste de la tastatura numarul de zile pe care le-ai petrecut invatand programare.\
 Citeste apoi cate ore ai invatat in fiecare din aceste zile.\
 Calculeaza media de studiu pe zi.
+> HINT: aceasta problema este de fapt problema calcularii mediei valorilor dintr-un array
 
-### 9. Scrie un program care sa afiseze cel mai mare si cel mai mic pret dintr-o lista de preturi.
+### 17. Scrie un program care sa afiseze cel mai mare pret dintr-o lista de preturi.
 De exemplu, pentru {1, 7, 3, 10, 9}, se vor afisa in consola valorile 1 si 10
 
-### 10. Scrie un program care sa inverseze elementele unui array. Adica vrei ca utilizatorul sa poata vedea o lista de preturi de la coada la cap: 
-De exemplu, pentru {1, 7, 3, 10, 9}, sa va afisa in consola "9, 10, 3, 7, 1"
+### 18. Scrie un program care sa afiseze cel mai mare pret dintr-o lista de preturi.
+De exemplu, pentru {1, 7, 3, 10, 9}, se vor afisa in consola valorile 1 si 10
 
-### 11.Scrie un program care sa afiseze cate numere pare si cate numere impare se afla intr-un array:
-De exemplu, pentru {1, 7, 3, 10, 9}, sa va afisa in consola Odd=4; Even=1
+### 19. Scrie un program care sa verifica daca un array este sortat crescator
 
-### 12. Scrie un program care sa verifica daca un array este sortat crescator
-
-### 13. Scrie un program care verifică dacă un array este palindrom.
-Un array este palindrom daca ordinea elementelor este aceeași dacă o parcurgem de la început la sfârșit, sau de la sfârșit la început.
-
-### 14. Scrie un program care afiseaza produsul a cate 2 numere consecutive din array. 
+### 20. Scrie un program care afiseaza produsul a cate 2 numere consecutive din array. 
 Daca numarul de elemente este impar, ultimul produs va fi numarul insusi.\
 De exemplu, pentru {1, 7, 3, 10, 9}, se va afisa in consola 7, 30, 9.\
 Explicatie: (7 = 1 * 7, 30 = 3 * 10, 9 = 1 * 9)\
 
+### 21. Scrie un program care sa inverseze elementele unui array. Adica vrei ca utilizatorul sa poata vedea o lista de preturi de la coada la cap: 
+De exemplu, pentru {1, 7, 3, 10, 9}, sa va afisa in consola "9, 10, 3, 7, 1"
+
+### 22. Scrie un program care verifică dacă un array este palindrom.
+Un array este palindrom daca ordinea elementelor este aceeași dacă o parcurgem de la început la sfârșit, sau de la sfârșit la început.
+
 ## Arrays (normal)
 
-### 15. Scrie un program care sa evalueze automat raspunsurile date de un student la un quiz.
+### 23. Scrie un program care sa evalueze automat raspunsurile date de un student la un quiz.
 Ca si input (pe care il poti hardcoda initial) vei avea raspunsurile corecte si raspunsurile date de student.
 /De exemplu, pentru:
 ```json
@@ -86,7 +80,7 @@ teachersAnswers : {"A", "D", "D", "B", "B", "C", "B"}
 ```
 functia va returna 5, deoarece sunt 5 raspunsuri care corespund, la indecsii 1,2,3,5,6.
 
-### 16. Esti programator si dezvolti un magazin online. Vrei sa ii arati utilizatorului care este cel mai apropiat pret (dintr-o lista de preturi) de bugetul utilizatorului. 
+### 24. Esti programator si dezvolti un magazin online. Vrei sa ii arati utilizatorului care este cel mai apropiat pret (dintr-o lista de preturi) de bugetul utilizatorului. 
 Scrie un program care afiseaza cel mai apropiat element din array de un numar introdus de la tastatura, n. Daca exista mai multe numere la fel de apropiate,se afiseaza oricare dintre ele.
 De exemplu, pentru n=12 si array-ul {1, 7, 3, 10, 9, 18, 0} se va afisa 10.
 De exemplu, pentru n=5 si array-ul {1, 7, 3, 10, 9, 18, 0} se va afisa 7 sau 3.
