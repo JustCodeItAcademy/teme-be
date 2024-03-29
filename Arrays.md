@@ -85,43 +85,45 @@ Scrie un program care afiseaza cel mai apropiat element din array de un numar in
 De exemplu, pentru n=12 si array-ul {1, 7, 3, 10, 9, 18, 0} se va afisa 10.
 De exemplu, pentru n=5 si array-ul {1, 7, 3, 10, 9, 18, 0} se va afisa 7 sau 3.
 
-### 17. Scrie un program care sa gaseasca intersectia a doua array-uri.
+### 25. Scrie un program care gaseasca perechea de elemente dintr-un array care are produsul maxim.
+
+### 26. Scrie un program care sa gaseasca toate perechile de elemente dintr-un array, a caror suma este egala cu un numar n citit de la tastatura
+
+### 27. Scrie un program care sa gaseasca intersectia a doua array-uri.
 Intersectia a doua array-uri este un array format din elementele care apar atat in primul, cat si in al doilea array.
 
-### 18. Scrie un program care sa insereze un element intr-un array, la o pozitie specificata
+### 28. Scrie un program care sa afiseze daca un array contine sau nu cel putin un element duplicat
+
+### 29. Scrie un program care sa insereze un element intr-un array, la o pozitie specificata
 De exemplu, pentru {1, 7, 3, 10, 9}, daca vrem sa inseram elementul 4 la indexul 2, array-ul va deveni {1, 7, 4, 3, 10, 9}\
 HINT: array-ul avand o lungime fixa, este necesar sa copiem elementele din prim-ul array (impreuna cu elementul de inserat) intr-un nou array care sa aiba lungimea cu 1 mai mare.
         
-### 19. Scrie un program care sa gaseasca al doilea cel mai mare numar dintr-un array: 
+### 30. Scrie un program care sa gaseasca al doilea cel mai mare numar dintr-un array: 
 De exemplu, pentru {1, 7, 3, 10, 9}, se va afisa in consola 9.
 
-### 20. Scrie un program care gaseasca perechea de elemente dintr-un array care are produsul maxim.
-
-### 21. Scrie un program care sa gaseasca toate perechile de elemente dintr-un array, a caror suma este egala cu un numar n citit de la tastatura
-
-### 22. Scrie un program care citeste de la tastatura un numar n, si genereaza un array bidimensional de marime n.
+### 31. Scrie un program care citeste de la tastatura un numar n, si genereaza un array bidimensional (array de arry-uri) de marime n.
 Fiecare element din array-ului bidimensional va fi un element generat random.
 
-## Arrays (confortabil)
+## Arrays (confortabil - de olimpiada)
 
-### 23. Gaseste cea mai mica diferente intre doua numere dintr-un array.
+### 32. Gaseste cea mai mica diferente intre doua numere dintr-un array.
 
-### 24. Gaseste cea mai lunga secventa crescatoare dintr-un array.
+### 33. Gaseste cea mai lunga secventa crescatoare dintr-un array.
 Fiecare element din array-ului bidimensional va fi un element generat random.
 De exemplu, pentru {1, 2, 2, 3, 3, 4, 1, 2, 3, 4, 5}, cea mai lunga secventa crescatoare este 5 (secventa formata din "1,2,3,4,5")
 
-### 25. Gaseste cea mai lunga secventa crescatoare dintr-un array.
+### 34. Gaseste cea mai lunga secventa crescatoare dintr-un array.
 De exemplu, pentru {1, 2, 2, 3, 3, 4, 1, 2, 3, 4, 5}, cea mai lunga secventa crescatoare este 5 (secventa formata din "1,2,3,4,5")
 
-### 26. Avand un array de n numere, unde valoare lor este in intervalul 1->n+1, fiecare numar apare o singura data.
+### 35. Avand un array de n numere, unde valoare lor este in intervalul 1->n+1, fiecare numar apare o singura data.
 Scrie un program care sa printeze numarul care lipseste.
 De exemplu, pentru {1, 2, 4, 6, 3, 7, 8}, se va afisa 5.
 
-### 27. Scrie un program care sa rearanjeze elementele pozitive și negative dintr-un array.
+### 36. Scrie un program care sa rearanjeze elementele pozitive și negative dintr-un array.
 Toate elementele negative trebuie sa mearga in stanga si toate elementele pozitive trebuie sa mearga in dreapta, pastrandu-si orindea initiala din array.
 De exemplu, pentru {-1, 2, -3, 4, 5, -6, 7, -8, 9}, array-ul va deveni: {-1 -3 -6 -8 5 2 7 4 9}
 
-### 28. Gaseste subsecventa cu suma maxima dintr-un array.
+### 37. Gaseste subsecventa cu suma maxima dintr-un array.
 De exemplu, pentru {-2, -3, 4, -1, -2, 1, 5, -3}, se va afisa in consola 7, adica suma secventei {4, -1, -2, 1, 5}
 
 
