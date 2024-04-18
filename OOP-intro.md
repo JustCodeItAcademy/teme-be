@@ -56,7 +56,23 @@ Clasa BankAccount va avea urmatoarele functionalitati:
 
 Creeaza mai multe conturi bancare in Main si apeleaza-le comportamentele.  
 
-### 6. Creeaza un mini joc de lupte
+
+### 6. Creeaza un cronometru
+
+Creează o clasă Timer care să gestioneze un cronometru. Clasa Timer va avea următoarele atribute:
+* timpul de start
+* timpul de stop
+* stare cronometru (pornit/oprit)
+
+Funcționalități:
+* pornirea cronometrului
+* oprirea cronometrului
+* resetarea cronometrului
+* afișarea timpului scurs
+
+Cauta pe internet ce metode deja existente poti apela pentru a lucra cu timpul (de exemplu, cum poti sa vezi care este timpul prezent - atunci cand pornesti cronometrul)
+
+### 7. Creeaza un mini joc de lupte
 Jocul trebuie sa aiba o functie care sa returneze numele castigatorului unei lupte la care participa doi luptatori.
 Fiecare lupator ataca pe rand celalalt luptator si cel care il omoara pe celalalt primul, castiga (adica castiga cel care ramane in viata).
 Un jucator moare atunci cand health-ul lui este mai mic sau egal cu 0.
@@ -66,7 +82,7 @@ Un luptator are urmatoarele atribute:
 * name
 Se vor citi de la tastatura atributele celor 2 jucatori, dar si care dintre jucatori va ataca primul.
 
-### 7. Imagineaza-ti ca esti un student cu un ghiozdan.
+### 8. Imagineaza-ti ca esti un student cu un ghiozdan.
 Ghiozdanul are o anumita capacitate si tu trebuie sa pui niste carti in el.
 Fiecare carte are titlu, numar de pagini si greutate.
 Poti sa pui carti in ghiozdan pana la o anumita greutate maxima (daca la nu moment dat o carte depaseste greutate maxima, nu poti sa o mai pui in ghiozdan)
