@@ -1,1 +1,20 @@
+# TEME BACK-END 📚
+
+## Metode (functii)
+
+### 1. Scrie o metodă calculateAge care primește anul nasterii unui om și returnează vârsta acestuia. Scrie apoi o metoda yearsUntilRetirement, care primeste ca parametru anul nasterii unui om si returneaza cati ani mai are pana la pensie (pana la 65 de ani). Pentru a implementa a doua metoda, apeleaza prima metoda pentru a calcula initial varsta omului, si abia apoi, avand rezultatul returnat de calculateAge, determina cati ani mai are pana la pensie
+
+### 2. Scrie o metodă sum2 care primește două numere întregi și returnează suma lor. Apoi scrie alta metoda numita sum3, care primeste 3 numere si returneaza suma lor. Insa implementeaza algoritmul din metoda sum3, apeland metoda sum2
+
+### 3. Scrie o metoda concatenateStrings care primeste 2 String-uri si returneaza String-urile concatenate. De exemplu, daca primeste "abc" si "def", va returna String-ul "abcdef".
+Scrie o metoda reverseString care primeste un String si il returneaza inversat. De exemplu, daca primeste "abc", va returna "cba".
+Scrie apoi o metoda concatenateAndReverse, care primeste 2 String-uri si returneaza string-ul inversat rezultat din contatenarea lor. De exemplu, daca primeste "abc" si "def", va returna "fedcba". Pentru a implementa metoda, apeleaza metoda concatenateStrings, apoi reverseString
+
+### 4. Scrie o  metodă reverseAllWords care apeleaza reverseString pentru a inversa toate cuvintele dintr-o propozitie. De exemplu, "ana are mere" devine "ana era erem"
+
+### 5. Scrie o metodă isPalindrome care primește un string și returnează true dacă șirul este un palindrom și false altfel. De exemplu, "abccba" este palindrom, dar "abccbb" nu este palindrom. Pentru a rezolva problema, apeleaza metoda de reverseString
+
+### 6. Creează o metodă care determină dacă un număr este prim și o  alta metodă care apeleaza prima metoda pentru a afișa toate numerele prime dintr-un array. Adica trebuie sa apelezi in bucla prima metoda pentru a verifica daca fiecare numar din array-ul tau este prim
+
+
 
