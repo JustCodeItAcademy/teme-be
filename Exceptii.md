@@ -13,9 +13,6 @@ Foloseste metoda parseInt() pentru a converti din string in numar si trateaza ca
 De exemplu, 1 este Luni, 2 este Marti, etc.
 Trateaza cazul exceptional in care ce primeste functia ca input este nu numar in afara intervalului 1-7.
 
-Ar trebui să creezi o clasă numită `Candidate` care să aibă următoarele proprietăți:
-* `name` - Numele candidatului
-* `numberOfVotes` - Totalul voturilor primite de candidat
 
 ### 3. Creaza propriul tau GIT
 Un sistem de control al versiunilor este un software care poate urmări modificările implementate într-un program. Un sistem de control al versiunilor își amintește cine a modificat fișierul, când și de ce. Acesta iti permite sa revii si la versiunile anterioare.
